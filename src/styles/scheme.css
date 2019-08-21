@@ -1,0 +1,5 @@
+#g48:hover #path50 {
+  cursor: pointer;
+  fill: rgb(256, 0, 0) !important;
+  transform: scale(1.05) translate(-2px, 1px);
+}

@@ -389,7 +389,8 @@ option:hover {
 }
 
 .gew-button:hover,
-.program-button:hover {
+.program-button:hover,
+.speakers-button:hover {
   color: black;
 }
 

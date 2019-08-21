@@ -38,6 +38,14 @@
   background: url('./../images/speakers/all/sp-10.png');
 }
 
+.speakers-list {
+  display: none;
+}
+
+.active {
+  display: unset;
+}
+
 .speakers {
   padding: 2rem 0;
   position: relative;
@@ -174,6 +182,13 @@
   transform: scale(1.05);
 }
 
+
+.speakers-button-container {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
+
 @media only screen and (min-width: 550px) {
   .speaker {
     height: auto;
@@ -202,7 +217,6 @@
   }
 
   .speaker__large .speaker__content {
-    font-size: 2.5rem;
     padding: 2.5rem;
   }
 
