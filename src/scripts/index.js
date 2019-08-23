@@ -26,12 +26,12 @@ $(document).ready(function () {
       $('.dial').css('opacity', '1');
       $('.dial').css('display', 'unset');
 
-      $(document).ready(function(){
+      $(document).ready(function () {
         $('.benefits__number').spincrement({
-            thousandSeparator: "",
-            duration: 2600
+          thousandSeparator: "",
+          duration: 2600
         });
-    });
+      });
 
       $(".dial-1").knob({
         min: '0',
@@ -53,7 +53,11 @@ $(document).ready(function () {
         max: '200'
       });
 
-      $({animatedVal: 0}).animate({animatedVal: 200}, {
+      $({
+        animatedVal: 0
+      }).animate({
+        animatedVal: 200
+      }, {
         duration: 2000,
         easing: "swing",
         step: function () {
@@ -61,7 +65,11 @@ $(document).ready(function () {
         }
       });
 
-      $({animatedVal: 0}).animate({animatedVal: 200}, {
+      $({
+        animatedVal: 0
+      }).animate({
+        animatedVal: 200
+      }, {
         duration: 2000,
         easing: "swing",
         step: function () {
@@ -69,7 +77,11 @@ $(document).ready(function () {
         }
       });
 
-      $({animatedVal: 0}).animate({animatedVal: 200}, {
+      $({
+        animatedVal: 0
+      }).animate({
+        animatedVal: 200
+      }, {
         duration: 2000,
         easing: "swing",
         step: function () {
@@ -77,7 +89,11 @@ $(document).ready(function () {
         }
       });
 
-      $({animatedVal: 0}).animate({animatedVal: 200}, {
+      $({
+        animatedVal: 0
+      }).animate({
+        animatedVal: 200
+      }, {
         duration: 2000,
         easing: "swing",
         step: function () {
@@ -89,6 +105,54 @@ $(document).ready(function () {
     }
   });
 
+  $('.owl-carousel').owlCarousel({
+    margin: 10,
+    nav: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 1
+      },
+      1000: {
+        items: 1
+      }
+    },
+    items: 1,
+    URLhashListener: true,
+    startPosition: 'URLHash',
+    dotsContainer: '.date-day__container',
+    mouseDrag: false
+  });
 
+  $('.companies-carousel').slick({
+    infinite: true,
+    autoplay: true,
+    slidesToShow: 5,
+    slidesToScroll: 5,
+    pauseOnHover: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      }
+    ]
+  });
+
+  $('.battle-slider').slick({
+    dots: true
+  });
 
 });

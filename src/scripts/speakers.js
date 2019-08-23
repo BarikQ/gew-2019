@@ -6,17 +6,16 @@ $(document).ready(function () {
     const activeLabel = this.classList[1];
 
     speakersLists.forEach(elem => {
-      if (elem.classList.contains('active')) elem.classList.remove('active');
+      if (elem.classList.contains('active-list')) elem.classList.remove('active-list');
 
       if (elem.classList.contains(activeLabel)) {
         const speakers = elem.querySelectorAll('.speaker__image');
-        console.log(speakers);
 
         speakers.forEach((elem, i) => {
           elem.style.background = `url('${path}${activeLabel}/sp-${i+1}.png')`;
           elem.style.backgroundSize = 'cover';
         });
-        elem.classList.add('active');
+        elem.classList.add('active-list');
       }
     });
   });
