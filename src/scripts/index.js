@@ -155,4 +155,31 @@ $(document).ready(function () {
     dots: true
   });
 
+  $('.reviews-slider').slick({
+    dots: true,
+    autoplay: true,
+    centerMode: true,
+    centerPadding: '25%',
+    slidesToShow: 1,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: false,
+          centerPadding: '0px',
+          slidesToShow: 1
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: false,
+          centerPadding: '5px',
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
 });

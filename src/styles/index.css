@@ -27,8 +27,16 @@
   margin: 0;
 }
 
+:focus {
+  outline: none;
+}
+
 body {
   font-family: 'V';
+}
+
+.container-fluid {
+  padding-bottom: 100px;
 }
 
 section {
@@ -110,12 +118,12 @@ ul {
   cursor: pointer;
 }
 
-.languages-list:focus{
+.languages-list:focus {
   outline: none;
   border: none;
 }
 
-option{
+option {
   background-color: #7c2fbe;
   border: none;
   cursor: pointer;
@@ -316,12 +324,6 @@ option:hover {
 }
 
 .header-bottom-logo {
-  /* background-image: url('./../images/big-logo.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-position-x: -25px;
-  background-position-y: 44px; */
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -363,6 +365,7 @@ option:hover {
   position: relative;
   word-spacing: 0px;
   letter-spacing: 1px;
+  text-align: center;
 }
 
 .hd-bt-head {
@@ -372,7 +375,7 @@ option:hover {
 
 .lines {
   position: relative;
-  left: -17px;
+  left: 0;
   top: -9px;
 }
 
@@ -399,7 +402,6 @@ option:hover {
   font-size: 15px;
   position: relative;
   top: -6px;
-  left: -22px;
   width: 160px;
 }
 
@@ -491,7 +493,7 @@ option:hover {
   font-size: 20px;
   word-spacing: 3px;
   letter-spacing: 0.5px;
-  margin: 0;  
+  margin: 0;
 }
 
 .day-head div {
@@ -610,6 +612,10 @@ option:hover {
   width: 160px;
 }
 
+.speakers .row {
+  margin: 0;
+}
+
 .speakers-head {
   text-align: center;
   margin-top: 21px;
@@ -724,6 +730,7 @@ option:hover {
 .companies-head {
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 .companies-slider__container {
@@ -833,6 +840,280 @@ option:hover {
 
 .battle-button__container {
   padding: 50px;
+}
+
+.gallerys {
+  padding: 100px 0;
+}
+
+.gallerys-head {
+  text-align: center;
+}
+
+.gallerys-head .lines {
+  left: 0;
+}
+
+.gallery-line {
+  display: flex;
+  max-height: 340px;
+  width: 2900px;
+}
+
+.photos-gallery__container .dragscroll {
+  height: 700px;
+}
+
+.dragscroll {
+  overflow-x: auto;
+  overflow-y: visible;
+  width: 100vw;
+}
+
+.dragscroll::-webkit-scrollbar {
+  display: none;
+}
+
+.gallery-line img {
+  max-width: 520px;
+}
+
+.hand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hand-img {
+  position: relative;
+  animation: hand-img 2.3s ease infinite;
+  -webkit-animation: hand-img 2.3s ease infinite;
+}
+
+.slick-dots li button {
+  border-radius: 10rem;
+  background: #af9bd7;
+  border: 3px solid #af9bd7;
+  transition: 0.2s ease all;
+  width: 5px;
+  height: 5px;
+  padding: 3px;
+}
+
+.slick-dots {
+  bottom: -40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick-dots li {
+  height: unset;
+  width: unset;
+}
+
+.slick-dots .slick-active button {
+  border: 3px solid #6d49b6;
+  background: transparent;
+  transition: 0.2s ease all;
+  padding: 5px;
+}
+
+.slick-dots li:hover button {
+  background: #6d49b6;
+  border-color: #6d49b6;
+}
+
+.slick-dots li button::before {
+  content: none;
+}
+
+.mentors {
+  padding-bottom: 100px;
+}
+
+.mentors .row {
+  align-items: flex-start;
+}
+
+.mentors .row .col-md-6, .mentors .row .col-md-12 {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+.question-box {
+  background: #8261cc;
+}
+
+.question-box .speaker__conent {
+  justify-content: center;
+  align-items: center;
+}
+
+.mentors-head {
+  text-align: center;
+}
+
+.mentors-head .lines {
+  left: 0;
+}
+
+.ment-1 {
+  background: url('./../images/year-mentor/Julia_Kaveckaya.png');
+}
+
+.ment-2 {
+  background: url('./../images/year-mentor/Dmity_Matveev_s.png');
+}
+
+.ment-3 {
+  background: url('./../images/year-mentor/Yuri_Gurski.png');
+}
+
+.ment-4 {
+  background: url('./../images/year-mentor/Aleksandr_Knyrovich.png');
+}
+
+.ment-5 {
+  background: url('./../images/year-mentor/Aleksandr_Chekan.png');
+}
+
+.ment-6 {
+  background: url('./../images/year-mentor/Vadim_Nareyko.png');
+}
+
+.ment-7 {
+  background: url('./../images/year-mentor/Yuri_Ziccer.png');
+}
+
+.ment-8 {
+  background: url('./../images/year-mentor/question.png');
+}
+
+.quest {
+  background: #8261cc;
+}
+
+.reviews .container {
+  max-width: 100%;
+  padding: 0;
+}
+
+.reviews-items {
+  transition: 0.2s ease all;
+}
+
+.reviews-slider .slick-list {
+  padding-top: 50px !important; 
+  padding-bottom: 50px !important; 
+}
+
+.reviews .slick-active {
+  transform: scale(1.1);
+  transition: 0.2s ease all;
+}
+
+.review {
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px -6px black;
+  position: relative;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.slick-active .review {
+  box-shadow: 0px 0px 14px -4px black;
+}
+
+.review-text {
+  text-align: left;
+}
+
+.comms {
+  position: absolute;
+  left: 5%;
+  bottom: 5%;
+}
+
+.review-head {
+  max-width: 284px;
+  margin: 0 auto;
+}
+
+.review-image img {
+  width: 100%;
+  border-radius: 10rem;
+}
+
+.partners {
+  padding: 100px 0;
+}
+
+.grateful {
+  text-align: center;
+}
+
+.partners-button__container {
+  width: 150px;
+  margin: 0 auto;
+  margin-top: 31px;
+}
+
+.partners__container .row {
+  margin: 0;
+}
+
+.partn-text {
+  position: absolute;
+  top: 2px;
+}
+
+.partners__container,
+.finInvDay,
+.genInfo,
+.infoPartn {
+  padding-top: 50px;
+}
+
+.partners__container .companies-item {
+  margin: 15px;
+}
+
+.partners__container>div {
+  justify-content: center;
+}
+
+.partners__container .section-head {
+  font-size: 150%;
+  margin: 15px;
+}
+
+.finInvDay .row {
+  justify-content: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .mentors .row .col-md-6 {
+    padding: 0;
+    justify-content: flex-start;
+  }
+}
+
+@keyframes hand-img {
+  from {
+    opacity: 1;
+    left: 0;
+  }
+
+  to {
+    opacity: 0;
+    left: -90px;
+  }
+
 }
 
 @media (max-width: 1200px) {
