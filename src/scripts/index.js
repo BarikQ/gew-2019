@@ -1,10 +1,12 @@
 $(document).ready(function () {
   const modal = document.querySelector('#modal');
 
+  $('select').selectric();
+
   $(".popup-menu").click(function () {
-    $(".modal").fadeToggle('fast');
+    $(".modal-menu").fadeToggle('fast');
   });
-  $(".modal").bind("click", function (e) {
+  $(".modal-menu").bind("click", function (e) {
     e.preventDefault();
     if ($(e.target).attr("class") === "modal-container" ||
         $(e.target).attr('class') === 'close' ||
@@ -21,6 +23,45 @@ $(document).ready(function () {
       }
   });
 
+  $(".video_svg").click(function () {
+    $(".modal-video").fadeToggle('fast');
+    $('.video-modal')[0].requestFullscreen();
+    $('.video-modal')[0].play();
+  });
+  $(".modal-video").bind("click", function (e) {
+    e.preventDefault();
+    if ($(e.target).attr("class") === "modal-container" ||
+        $(e.target).attr('class') === 'close') {
+          $('.video-modal')[0].pause();
+      $(".modal-video").fadeOut('fast');
+    }
+  });
+
+  $(".open-photos").click(function () {
+    $(".modal-hotel").fadeToggle('fast');
+    $('.hotel-slider').slick({
+      centerMode: true,
+      variableWidth: true,
+      centerPadding: '60px',
+      slidesToShow: 3,
+      slidesToScroll: 3,
+      pauseOnHover: true,
+    });
+  });
+  $(".modal-hotel").bind("click", function (e) {
+    e.preventDefault();
+    if ($(e.target).attr("class") === "modal-container" ||
+        $(e.target).attr('class') === 'close') {
+      $(".modal-hotel").fadeOut('fast');
+      $('.hotel-slider').slick('unslick');
+    }
+  });
+
+  $('.hotel-image').on('click', (e) => {
+    e.target.requestFullscreen();
+    console.log(e.target);
+  })
+
   $(".footer-nav").on("click", "a", function (event) {
     event.preventDefault();
     var id = $(this).attr('href'),
@@ -28,6 +69,16 @@ $(document).ready(function () {
     $('body,html').animate({
       scrollTop: top
     }, 1500);
+  });
+
+  $('.speakers-button').on('click', () => {
+
+    $('.fixedList').each(function() {
+      if (this.classList.contains('hidden')) {
+        this.classList.remove('hidden') ;
+        return false;
+      }
+    });
   });
 
   $(".menu-column").on("click", "a", function (event) {

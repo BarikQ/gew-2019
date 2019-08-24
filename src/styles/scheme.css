@@ -215,6 +215,23 @@
   font-size: 0.95rem;
 }
 
+.hover {
+  display: unset;
+}
+
+.all-photos__container {
+  margin: 25px auto;
+  border-bottom: 2px dotted grey;
+  cursor: pointer;
+  transition: 0.2s ease all;
+}
+
+.all-photos__container:hover {
+  transform: scale(1.05);
+  transition: 0.2s ease all;
+  color: #ff981d;
+}
+
 .g52:hover path {
   cursor: pointer;
   fill: #ff3634 !important;
@@ -233,18 +250,3 @@
   border-color: red;
 }
 
-.hover {
-  display: unset;
-}
-
-.all-photos__container {
-  margin: 25px auto;
-  border-bottom: 2px dotted grey;
-  cursor: pointer;
-  transition: 0.2s ease all;
-}
-
-.all-photos__container:hover {
-  transform: scale(1.05);
-  transition: 0.2s ease all;
-  color: #ff981d;

@@ -1,7 +1,8 @@
 $(document).ready(function () {
   let target = null;
 
-  $('.g52').hover(function() {
+  $('.hover-card').hover(function(e) {
+    console.log(e.target.id);
     $(`.${this.id}_card`).addClass( "hover" );
 
     target = 'card';
@@ -18,7 +19,12 @@ $(document).ready(function () {
       if (target === null) {
         removeHover(`.${this.id}_card`);
       }
-    }, 1000);
+    }, 1);
+  });
+
+  $('.scheme__inner').on('click', (e) => {
+    console.log(e.target.id);
+    $(`.${this.id}_card`).addClass( "hover" );
   });
 
   function removeHover(hoverTarget) {
