@@ -3,6 +3,36 @@ $(document).ready(function () {
 
   $('select').selectric();
 
+  // document.addEventListener("DOMContentLoaded", function() {
+  //   var lazyloadImages = document.querySelectorAll("img.lazy");    
+  //   var lazyloadThrottleTimeout;
+    
+  //   function lazyload () {
+  //     if(lazyloadThrottleTimeout) {
+  //       clearTimeout(lazyloadThrottleTimeout);
+  //     }    
+      
+  //     lazyloadThrottleTimeout = setTimeout(function() {
+  //         var scrollTop = window.pageYOffset;
+  //         lazyloadImages.forEach(function(img) {
+  //             if(img.offsetTop < (window.innerHeight + scrollTop)) {
+  //               img.src = img.dataset.src;
+  //               img.classList.remove('lazy');
+  //             }
+  //         });
+  //         if(lazyloadImages.length == 0) { 
+  //           document.removeEventListener("scroll", lazyload);
+  //           window.removeEventListener("resize", lazyload);
+  //           window.removeEventListener("orientationChange", lazyload);
+  //         }
+  //     }, 20);
+  //   }
+    
+  //   document.addEventListener("scroll", lazyload);
+  //   window.addEventListener("resize", lazyload);
+  //   window.addEventListener("orientationChange", lazyload);
+  // });
+
   $(".popup-menu").click(function () {
     $(".modal-menu").fadeToggle('fast');
   });
@@ -38,7 +68,6 @@ $(document).ready(function () {
   });
 
   $(".open-photos").click(function () {
-    $(".modal-hotel").fadeToggle('fast');
     $('.hotel-slider').slick({
       centerMode: true,
       variableWidth: true,
@@ -47,7 +76,10 @@ $(document).ready(function () {
       slidesToScroll: 3,
       pauseOnHover: true,
     });
+
+    $(".modal-hotel").fadeToggle('fast');
   });
+
   $(".modal-hotel").bind("click", function (e) {
     e.preventDefault();
     if ($(e.target).attr("class") === "modal-container" ||
@@ -59,7 +91,6 @@ $(document).ready(function () {
 
   $('.hotel-image').on('click', (e) => {
     e.target.requestFullscreen();
-    console.log(e.target);
   })
 
   $(".footer-nav").on("click", "a", function (event) {
@@ -72,13 +103,15 @@ $(document).ready(function () {
   });
 
   $('.speakers-button').on('click', () => {
-
+    let trigger = false;
     $('.fixedList').each(function() {
       if (this.classList.contains('hidden')) {
-        this.classList.remove('hidden') ;
+        this.classList.remove('hidden');
+        trigger = true;
         return false;
-      }
+      } else trigger = false;
     });
+    if (!trigger) $('.speakers-button')[0].classList.add('hidden');
   });
 
   $(".menu-column").on("click", "a", function (event) {
@@ -262,7 +295,7 @@ $(document).ready(function () {
 
   $('.reviews-slider').slick({
     dots: true,
-    autoplay: true,
+    autoplaySpeed: 4000,
     centerMode: true,
     centerPadding: '25%',
     slidesToShow: 1,
