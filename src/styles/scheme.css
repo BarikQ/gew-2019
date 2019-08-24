@@ -232,7 +232,11 @@
   color: #ff981d;
 }
 
-.g52:hover path {
+.hover-card {
+  cursor: pointer;
+}
+
+.scheme-18 .g52:hover path {
   cursor: pointer;
   fill: #ff3634 !important;
 }

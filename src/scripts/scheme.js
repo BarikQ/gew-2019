@@ -2,7 +2,14 @@ $(document).ready(function () {
   let target = null;
 
   $('.hover-card').hover(function(e) {
-    console.log(e.target.id);
+    console.log($(e.target).css('fill'));
+    console.log($(`.${this.id}_card`).children('.place-info__inner').children('.day-button-container').css('border-top'));
+    let bgColor = $(`.${this.id}_card`).children('.place-info__inner').children('.day-head');
+    let button = $(`.${this.id}_card`).children('.place-info__inner').children('.day-button-container');
+
+    bgColor.css('background', $(e.target).css('fill'));
+    button.css('border-top', `2px solid ${$(e.target).css('fill')}`);
+
     $(`.${this.id}_card`).addClass( "hover" );
 
     target = 'card';
@@ -23,7 +30,6 @@ $(document).ready(function () {
   });
 
   $('.scheme__inner').on('click', (e) => {
-    console.log(e.target.id);
     $(`.${this.id}_card`).addClass( "hover" );
   });
 
