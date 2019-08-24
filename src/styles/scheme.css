@@ -120,12 +120,20 @@
   background: #fc2725;
 }
 
+.scheme_19 .r-8::before {
+  background: #00909d;
+}
+
 .r-9::before {
   background: #b00761;
 }
 
 .r-10::before {
   background: #ff961b;
+}
+
+.scheme_19 .r-10::before {
+  background: #cadc00;
 }
 
 .r-11::before {
@@ -179,6 +187,9 @@
   left: 50%;
   z-index: 10;
   display: none;
+  justify-content: flex-start;
+  align-items: center;
+  height: 400px;
 }
 
 .place-info__inner {
@@ -190,7 +201,6 @@
   display: grid;
   grid-template: 1fr 6fr 1fr / 1fr 1fr;
   position: relative;
-  left: -50%;
   background: white;
 }
 
@@ -216,7 +226,7 @@
 }
 
 .hover {
-  display: unset;
+  display: flex;
 }
 
 .all-photos__container {
