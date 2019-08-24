@@ -1571,6 +1571,25 @@ option:hover {
   margin: 0 auto;
 }
 
+.hotel-arrow {
+  background: none;
+  border: none;
+  color: white;
+  top: 32% !important;
+}
+
+.hotel-prev {
+  left: -50px !important;
+}
+
+.hotel-next {
+  right: -50px !important;
+}
+
+.hotel-arrow:focus {
+  outline: none;
+}
+
 @media only screen and (min-width: 768px) {
   .mentors .row .col-md-6 {
     padding: 0;
@@ -1656,6 +1675,14 @@ option:hover {
 
   .menu-column:nth-child(1)::after {
     right: 0;
+  }
+
+  .hotel-prev {
+    left: -30px !important;
+  }
+  
+  .hotel-next {
+    right: -30px !important;
   }
 }
 
@@ -1791,5 +1818,13 @@ option:hover {
 
   .speaker:not(.speaker__large) .speaker__content {
     padding: 0 !important;
+  }
+
+  .hotel-prev {
+    display: none;
+  }
+  
+  .hotel-next {
+    display: none;
   }
 }

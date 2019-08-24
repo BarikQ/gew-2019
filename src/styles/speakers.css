@@ -1,4 +1,4 @@
-.sp-1 {
+/* .sp-1 {
   background-image: url('./../images/speakers/all/sp-1.png');
 }
 
@@ -36,6 +36,10 @@
 
 .sp-10 {
   background-image: url('./../images/speakers/all/sp-10.png');
+} */
+
+.speaker__image {
+  background-image: url('./../images/logo.png');
 }
 
 .speakers-list {

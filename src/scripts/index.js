@@ -45,6 +45,8 @@ $(document).ready(function () {
       slidesToShow: 3,
       slidesToScroll: 3,
       pauseOnHover: true,
+      prevArrow: `<button type="button" role="presentation" class="owl-prev hotel-arrow hotel-prev"><span aria-label="Previous">‹</span></button>`,
+      nextArrow: `<button type="button" role="presentation" class="owl-next hotel-arrow hotel-next"><span aria-label="Next">›</span></button>`
     });
 
     $(".modal-hotel").fadeToggle('fast');
