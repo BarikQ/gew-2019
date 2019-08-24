@@ -1461,11 +1461,13 @@ option:hover {
 .hotel-content {
   width: 60%;
   height: auto;
-  padding: 50px 0;
+  padding: 30px 0 50px 0;
   display: flex;
   justify-content: center;
   background: white;
   border: 1px solid black;
+  text-align: center;
+  color: black;
 }
 
 .hotel-item {
@@ -1493,7 +1495,8 @@ option:hover {
   cursor: pointer;
 }
 
-.hotel-content .close {
+.hotel-content .close,
+.modal-speaker .close {
   position: absolute;
   top: 15px;
   right: 15px;
@@ -1523,6 +1526,47 @@ option:hover {
 
 .menu-column:nth-child(1)::after {
   right: 0;
+}
+
+.modal-speaker .modal-content {
+  display: flex;
+  background: white;
+  color: black;
+  border-radius: 0;
+  max-height: 444px;
+  max-width: 960px;
+  justify-content: center;
+  align-items: center;
+}
+
+.speaker-image {
+  width: 100%;
+  height: auto;
+}
+
+.speaker-link {
+  color: #00909d;
+  transition: 0.2s ease all;
+}
+
+.speaker-link:hover {
+  font-size: 102%;
+  transition: 0.2s ease all;
+}
+
+.speaker-position {
+  font-size: 1.2rem;
+}
+
+.speaker-text {
+  display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.speaker-image__container {
+  margin: 0 auto;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1614,6 +1658,21 @@ option:hover {
 }
 
 @media (max-width: 768px) {
+  .modal-speaker .modal-content {
+    display: flex;
+    flex-direction: initial;
+    overflow-y: scroll;
+    max-height: unset;
+    max-width: unset;
+    padding: 15px;
+  }
+
+  .speaker-text {
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+  }
+
   .footer-nav li {
     justify-content: center;
   }

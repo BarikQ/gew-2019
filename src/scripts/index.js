@@ -3,36 +3,6 @@ $(document).ready(function () {
 
   $('select').selectric();
 
-  // document.addEventListener("DOMContentLoaded", function() {
-  //   var lazyloadImages = document.querySelectorAll("img.lazy");    
-  //   var lazyloadThrottleTimeout;
-    
-  //   function lazyload () {
-  //     if(lazyloadThrottleTimeout) {
-  //       clearTimeout(lazyloadThrottleTimeout);
-  //     }    
-      
-  //     lazyloadThrottleTimeout = setTimeout(function() {
-  //         var scrollTop = window.pageYOffset;
-  //         lazyloadImages.forEach(function(img) {
-  //             if(img.offsetTop < (window.innerHeight + scrollTop)) {
-  //               img.src = img.dataset.src;
-  //               img.classList.remove('lazy');
-  //             }
-  //         });
-  //         if(lazyloadImages.length == 0) { 
-  //           document.removeEventListener("scroll", lazyload);
-  //           window.removeEventListener("resize", lazyload);
-  //           window.removeEventListener("orientationChange", lazyload);
-  //         }
-  //     }, 20);
-  //   }
-    
-  //   document.addEventListener("scroll", lazyload);
-  //   window.addEventListener("resize", lazyload);
-  //   window.addEventListener("orientationChange", lazyload);
-  // });
-
   $(".popup-menu").click(function () {
     $(".modal-menu").fadeToggle('fast');
   });
@@ -92,6 +62,27 @@ $(document).ready(function () {
   $('.hotel-image').on('click', (e) => {
     e.target.requestFullscreen();
   })
+
+  $('.speaker').on('click', function(e) {
+    let bg = $(this).children('.speaker__content-wrap').children('.speaker__image').css('background-image');
+    let name = $(this).children('.speaker__content-wrap').children('.speaker__content').children('.speaker__content__inner').children('.speaker-name').html();
+    let position = $(this).children('.speaker__content-wrap').children('.speaker__content').children('.speaker__content__inner').children('.speaker-review').html();
+
+    bg = bg.replace('url(','').replace(')','').replace(/\"/gi, "");
+
+    $('.speaker-image').attr('src', bg);
+    $('.speaker-modal-name').html(name);
+    $('speaker-position').html(position);
+    $(".modal-speaker").fadeToggle('fast');
+  });
+
+  $(".modal-speaker").bind("click", function (e) {
+    e.preventDefault();
+    if ($(e.target).attr("class") === "modal-container" ||
+        $(e.target).attr('class') === 'close') {
+      $(".modal-speaker").fadeOut('fast');
+    }
+  });
 
   $(".footer-nav").on("click", "a", function (event) {
     event.preventDefault();
@@ -319,5 +310,9 @@ $(document).ready(function () {
         }
       }
     ]
+  });
+
+  $(function() {
+    $('.lazy').Lazy();
   });
 });
