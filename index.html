@@ -23,6 +23,17 @@
 
 <body>
   <div class="container-fluid">
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar__inner">
+          <a class="h-b-1 button orange" href="#">Купить билет</a>
+          <div class="popup-menu">
+            <img src="./src/images/menu.png">
+          </div>
+        </div>
+      </div>
+    </nav>
+
     <section class="header row">
       <div class="container">
 
@@ -54,9 +65,9 @@
 
             <div class="social-list">
               <ul>
-                <li class="facebook social-link"><img src="./src/images/fb.png"></li>
-                <li class="twetter social-link"><img src="./src/images/twitter.png"></li>
-                <li class="youtube social-link"><img src="./src/images/yt.png"></li>
+                <li class="facebook social-link"><a href="#"><img src="./src/images/fb.png"></a></li>
+                <li class="twetter social-link"><a href="#"><img src="./src/images/twitter.png"></a></li>
+                <li class="youtube social-link"><a href="#"><img src="./src/images/yt.png"></a></li>
               </ul>
             </div>
           </div>
@@ -121,7 +132,7 @@
                   </path>
                 </svg>
                 <span class="play-icon">
-                  play
+                  <img src="./src/images/play-button.png" alt='play'>
                 </span>
               </div>
             </div>
@@ -293,7 +304,7 @@
       </div>
     </section>
 
-    <section class="program row">
+    <section class="program row" id="program">
 
       <img class="bg-circle-2" src='./src/images/bg-circle-2.png'>
       <img class="bg-circle-3" src='./src/images/bg-circle-3.png'>
@@ -694,7 +705,7 @@
       <img class="bg-circle-4" src='./src/images/bg-circle-4.png'>
     </section>
 
-    <section class="speakers row">
+    <section class="speakers row" id="speakers">
       <img class="bg-circle bg-circle-5" src="./src/images/bg-circle-5.png" alt=" ">
 
       <div class="container">
@@ -1799,7 +1810,7 @@
       <img class="bg-circle bg-circle-6" src="./src/images/bg-circle-6.png" alt=" ">
     </section>
 
-    <section class="place row">
+    <section class="place row" id="place">
       <div class="container">
 
         <h2 class="place-head section-head col-12 row">
@@ -8447,7 +8458,7 @@
 
     </section>
 
-    <section class="companies-slider__container row">
+    <section class="companies-slider__container row" id="companies">
       <img class="bg-circle bg-circle-7" src="./src/images/bg-circle-7.png" alt=" ">
 
       <div class="container">
@@ -8509,7 +8520,7 @@
       <img class="bg-circle bg-circle-8" src="./src/images/bg-circle-8.png" alt=" ">
     </section>
 
-    <section class="battle row">
+    <section class="battle row" id="battle">
       <div class="container">
         <h2 class="battle-head section-head col-12">
           BEL.BIZ Battle Международное<br>
@@ -8551,7 +8562,7 @@
       </div>
     </section>
 
-    <section class="gallerys row">
+    <section class="gallerys row" id="gallerys">
       <div class="container">
         <h2 class="gallerys-head section-head col-12">
           9 лет в Беларуси
@@ -8600,18 +8611,39 @@
 
         <div class="video-gallery dragscroll">
           <div class="gallery-line">
-            <img class="gallery_im" src="./src/images/gallery-photos/2-1.jpg">
-            <img class="gallery_im" src="./src/images/gallery-photos/2-2.png">
-            <img class="gallery_im" src="./src/images/gallery-photos/2-3.png">
-            <img class="gallery_im" src="./src/images/gallery-photos/2-4.jpg">
-            <img class="gallery_im" src="./src/images/gallery-photos/2-1.jpg">
-            <img class="gallery_im" src="./src/images/gallery-photos/2-2.png">
+            <div class="gallery-vid">
+              <div class="video-cover video-1">
+                <img class="play-video-icon video-1" src="./src/images/play-button.png">
+              </div>
+              <video class="video-source" id="video-1" width="100%" height="100%">
+                <source src="./src/vids/mov_bbb.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+              </video>
+            </div>
+            <div class="gallery-vid">
+              <div class="video-cover video-2">
+                <img class="play-video-icon video-2" src="./src/images/play-button.png">
+              </div>
+              <video class="video-source" id="video-2" width="100%" height="100%">
+                <source src="./src/vids/mov_bbb.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+              </video>
+            </div>
+            <div class="gallery-vid">
+              <div class="video-cover video-3">
+                <img class="play-video-icon video-3" src="./src/images/play-button.png">
+              </div>
+              <video class="video-source" id="video-3" width="100%" height="100%">
+                <source src="./src/vids/mov_bbb.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+              </video>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="mentors row">
+    <section class="mentors row" id="mentors">
       <div class="container">
         <h2 class="mentors-head section-head col-12">
           Ментор года
@@ -8732,7 +8764,7 @@
       </div>
     </section>
 
-    <section class="reviews row">
+    <section class="reviews row" id="reviews">
       <div class="container">
         <h2 class="mentors-head section-head col-12">
           Отзывы о Всемирной неделе
@@ -8776,7 +8808,7 @@
 
             <div class="reviews-item row">
               <div class="review col-10 row">
-                <div class="review-head col-md-4 col-12">
+                <div class="review-head col-md-6 col-12">
                   <div class="review-image">
                     <img src="./src/images/reviews/Sergei_Roumas_xs.jpg">
                   </div>
@@ -8802,7 +8834,7 @@
 
             <div class="reviews-item row">
               <div class="review col-10 row">
-                <div class="review-head col-md-4 col-12">
+                <div class="review-head col-md-6 col-12">
                   <div class="review-image">
                     <img src="./src/images/reviews/tobias_jost.jpg">
                   </div>
@@ -8830,7 +8862,7 @@
 
             <div class="reviews-item row">
               <div class="review col-10 row">
-                <div class="review-head col-md-4 col-12">
+                <div class="review-head col-md-6 col-12">
                   <div class="review-image">
                     <img src="./src/images/reviews/Tatiana_Marinich_xs.jpg">
                   </div>
@@ -8855,7 +8887,7 @@
 
             <div class="reviews-item row">
               <div class="review col-10 row">
-                <div class="review-head col-md-4 col-12">
+                <div class="review-head col-md-6 col-12">
                   <div class="review-image">
                     <img src="./src/images/reviews/janek_rozov.jpg">
                   </div>
@@ -8879,7 +8911,7 @@
       </div>
     </section>
 
-    <section class="partners row">
+    <section class="partners row" id="partners">
       <div class="container">
         <h2 class="mentors-head section-head col-12">
           Партнёры GEW 2019
@@ -8932,15 +8964,18 @@
           </div>
 
           <div class="finInvDay row">
-              <h3 class="section-head col-md-5 col-5">Финтех партнер</h3>
-              <h3 class="section-head col-md-5 col-5">Investors day партнер</h3>
-
-              <div class="companies-item col-md-5 col-5">
+            <div class="col-md-5 col-12">
+              <h3 class="section-head col-12">Финтех партнер</h3>
+              <div class="companies-item col-12">
                 <img src="./src/images/partners/financeInMotion.png" alt="">
               </div>
+            </div>
 
-              <div class="companies-item col-md-5 col-5">
+            <div class="col-md-5 col-12">
+              <h3 class="section-head col-12">Investors day партнер</h3>
+              <div class="companies-item col-12">
                 <img src="./src/images/imaguru.png" alt="">
+              </div>
             </div>
           </div>
 
@@ -9031,13 +9066,151 @@
         </div>
       </div>
     </section>
+
+    <footer class="footer row">
+      <div class="container row">
+        <div class="footer-left__container col-md-4 col-12">
+          <div class="footer-logo">
+            <div class="navbar-logo col-6">
+              <div class="logo">
+                <img src="./src/images/logo.png">
+              </div>
+
+              <h4 class="logo-text">
+                Всемирная неделя предпринимательства в Беларуси
+              </h4>
+            </div>
+          </div>
+
+          <div class="footer-text">
+            <p>
+              ООО ЦЕНТР ДЕЛОВЫХ КОММУНИКАЦИЙ BELBIZ,
+              ОФИЦИАЛЬНЫЙ ОРГАНИЗАТОР GLOBAL
+              ENTERPRENEURSHIP WEEK В БЕЛАРУСИ,ЗАНИМАЕТСЯ
+              ПОДДЕРЖКОЙ БИЗНЕСА БОЛЕЕ 13 ЛЕТ
+            </p>
+          </div>
+
+          <div class="footer-links">
+            <div class="social-list">
+              <ul>
+                <li class="facebook social-link"><a href="#"><img src="./src/images/fb.png"></a></li>
+                <li class="twetter social-link"><a href="#"><img src="./src/images/twitter.png"></a></li>
+                <li class="youtube social-link"><a href="#"><img src="./src/images/yt.png"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-mid__container col-md-4 col-12">
+          <ul class="footer-nav">
+            <li><a href="#program">Программа</a></li>
+            <li><a href="#reviews">Отзывы</a></li>
+            <li><a href="#speakers">Спикеры</a></li>
+            <li><a href="#partners">Партнеры</a></li>
+            <li><a href="#place">Площадка</a></li>
+            <li><a href="#">Стартапы</a></li>
+            <li><a href="#companies">Компании</a></li>
+            <li><a href="#">История GEW Беларуси</a></li>
+            <li><a href="#battle">Bel.Biz Battle</a></li>
+            <li><a href="#">Стать волонтером</a></li>
+            <li><a href="#gallerys">Фотографии</a></li>
+            <li>
+              <a href="#">Другие проекты
+                <span>IMAGURU</span>
+              </a>
+            </li>
+            <li><a href="#mentors">Ментор года</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-right__container col-md-4 col-12">
+          <h4>Остались вопросы?</h4>
+          <p>Напишите нам!</p>
+          <form action="#" class="callback-form">
+            <span class="form-name" id=name>Имя</span>
+            <input type="text" name="name" placeholder="" id="nameAttr" required autocomplete="off">
+            <span class="form-mail" id="mail">E-mail</span>
+            <input type="text" name="mail" placeholder="" id="mailAttr" required>
+            <span>Сообщение</span>
+            <textarea rows="18" name="comment" placeholder="" id="commentAttr"></textarea>
+            <input type="submit" value="Отправить" class="button trans submit" id="sendButton" formaction="#">
+          </form>
+        </div>
+      </div>
+    </footer>
   </div>
 
 
   <div class="modal">
     <div class="modal-container">
-      <div class="modal-conent">
-        HKSH'HKSD
+      <div class="modal-content">
+        <div class="container row">
+          <div class="col-6">
+            <div class="navbar-logo">
+              <div class="logo">
+                <img src="./src/images/logo.png">
+              </div>
+
+              <h4 class="logo-text">
+                Всемирная неделя предпринимательства в Беларуси
+              </h4>
+            </div>
+          </div>
+
+          <div class="col-6">
+            <img class="close" src="./src/images/close.png">
+          </div>
+        </div>
+
+        <div class="container row">
+          <div class="menu-column col-sm-6 col-lg-4 col-12">
+            <ul>
+              <li><a class="modal-link" href="#program">Программа</a></li>
+              <li><a class="modal-link" href="#speakers">Спикеры</a></li>
+              <li><a class="modal-link" href="#place">Площадка</a></li>
+              <li><a class="modal-link" href="#companies">Компании</a></li>
+              <li><a class="modal-link" href="#battle">Bel.Biz Battle</a></li>
+            </ul>
+          </div>
+
+          <div class="menu-column mid-column col-sm-6 col-lg-4 col-12">
+            <ul>
+              <li><a class="modal-link" href="#reviews">Отзывы</a></li>
+              <li><a class="modal-link" href="#partners">Партнеры</a></li>
+              <li><a class="modal-link" href="#">Стартапы</a></li>
+              <li><a class="modal-link" href="#gallerys">Фотографии</a></li>
+              <li><a class="modal-link" href="#mentors">Ментор года</a></li>
+            </ul>
+          </div>
+
+          <div class="menu-column col-sm-12 col-lg-4 col-12">
+            <ul>
+              <li><a class="modal-link" href="#">История GEW Беларуси</a></li>
+              <li><a class="modal-link" href="#">Стать волонтером</a></li>
+              <li>
+                <a class="modal-link" href="#">Другие проекты
+                  <span>IMAGURU</span>
+                </a>
+              </li>
+              <li class="modal-links">
+                <div class="modal-buttons">
+                  <a class="button orange" href="#">Купить билет</a>
+                  <a class="button trans" href="#">Выставка</a>
+                </div>
+              </li>
+              <li class="modal-links">
+                <div class="social-list">
+                  <ul>
+                    <li class="facebook social-link"><a href="#"><img src="./src/images/fb.png"></a></li>
+                    <li class="twetter social-link"><a href="#"><img src="./src/images/twitter.png"></a></li>
+                    <li class="youtube social-link"><a href="#"><img src="./src/images/yt.png"></a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </div>

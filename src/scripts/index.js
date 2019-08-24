@@ -1,26 +1,80 @@
 $(document).ready(function () {
-  const modal = document.querySelector('#modal')
+  const modal = document.querySelector('#modal');
 
   $(".popup-menu").click(function () {
     $(".modal").fadeToggle('fast');
   });
   $(".modal").bind("click", function (e) {
     e.preventDefault();
-    if ($(e.target).attr("class") === "modal-container") {
+    if ($(e.target).attr("class") === "modal-container" ||
+        $(e.target).attr('class') === 'close' ||
+        $(e.target).attr('class') === 'modal-link') {
       $(".modal").fadeOut('fast');
     }
   });
+
+  $(window).on('scroll', () => {
+      if (window.pageYOffset >= 100) {
+        $('.navbar')[0].classList.add("sticky");
+      } else {
+        $('.navbar')[0].classList.remove("sticky");
+      }
+  });
+
+  $(".footer-nav").on("click", "a", function (event) {
+    event.preventDefault();
+    var id = $(this).attr('href'),
+      top = $(id).offset().top;
+    $('body,html').animate({
+      scrollTop: top
+    }, 1500);
+  });
+
+  $(".menu-column").on("click", "a", function (event) {
+    event.preventDefault();
+    var id = $(this).attr('href'),
+      top = $(id).offset().top;
+    $('body,html').animate({
+      scrollTop: top
+    }, 1500);
+  });
+
+  $('.callback-form').on('submit', (e) => {
+    e.preventDefault();
+    $('.footer-right__container').html(
+      `
+        <h4>Спасибо за Ваш вопрос!</h4>
+        </p>В ближайшее время мы<br> свяжемся с Вами</p>
+        <img src="./src/images/submit.png" alt="">
+      `);
+  })
+
+  $('.video-cover').on('click', (e) => {
+    $(`#${e.target.classList[1]}`)[0].play();
+    $(`#${e.target.classList[1]}`)[0].setAttribute('controls', 'controls');
+
+    $(`.${$(e.target)[0].classList[1]}`)[0].classList.add('playing');
+  });
+
+  $('.video-source').on('pause', (e) => {
+    $(`.${e.target.id}`)[0].classList.remove('playing');
+    $(`.${e.target.id}`)[1].classList.remove('playing');
+
+    if (e.target.hasAttribute("controls")) {
+      e.target.removeAttribute('controls');
+    }
+  })
 
   let show = true;
   let countbox = ".numbers-container";
 
   $(window).on("scroll load resize", function () {
-    if (!show) return false; // Отменяем показ анимации, если она уже была выполнена
-    var w_top = $(window).scrollTop(); // Количество пикселей на которое была прокручена страница
-    var e_top = $(countbox).offset().top; // Расстояние от блока со счетчиками до верха всего документа
-    var w_height = $(window).height(); // Высота окна браузера
-    var d_height = $(document).height(); // Высота всего документа
-    var e_height = $(countbox).outerHeight(); // Полная высота блока со счетчиками
+    if (!show) return false;
+    var w_top = $(window).scrollTop();
+    var e_top = $(countbox).offset().top;
+    var w_height = $(window).height();
+    var d_height = $(document).height();
+    var e_height = $(countbox).outerHeight();
 
     if (w_top + 500 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height) {
       $('.dial').css('opacity', '1');
