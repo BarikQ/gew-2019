@@ -30,7 +30,7 @@ $(document).ready(function () {
   });
   $(".modal-video").bind("click", function (e) {
     e.preventDefault();
-    if ($(e.target).attr("class") === "modal-container" ||
+    if ($(e.target).attr("class") !== "modal-conent" ||
         $(e.target).attr('class') === 'close') {
           $('.video-modal')[0].pause();
       $(".modal-video").fadeOut('fast');
