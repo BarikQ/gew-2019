@@ -290,14 +290,25 @@ option:hover {
 }
 
 .modal-video .modal-content {
-  width: 60vw;
-  height: auto;
   background: none;
   border: none;
+  width: 60vw;
+  height: 30vw;
+  background: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .video-modal {
   border-radius: 5px;
+  margin: 0 auto;
+}
+
+.video-placeholder {
+  width: 100%;
+  height: 100%;
 }
 
 .close {
@@ -1041,8 +1052,13 @@ option:hover {
 .gallery-line {
   display: flex;
   max-height: 340px;
+  height: 100vh;
   width: 2900px;
   cursor: pointer;
+}
+
+.video-gallery .gallery-line {
+  width: 6200px;
 }
 
 .photos-gallery__container .dragscroll {
@@ -1440,6 +1456,7 @@ option:hover {
 }
 
 .video-cover {
+  display: none;
   width: 100%;
   height: 100%;
   background: #7c59c0;

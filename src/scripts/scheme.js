@@ -51,14 +51,8 @@ $(document).ready(function () {
   }, function() {
     target = null;
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
-      // Take the user to a different screen here.
       removeHover(`.${this.id}_card`);
     }
-    // setTimeout(() => {
-    //   if (target === null) {
-    //     removeHover(`.${this.id}_card`);
-    //   }
-    // }, 1);
   });
 
   function removeHover(hoverTarget) {

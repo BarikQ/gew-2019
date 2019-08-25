@@ -23,19 +23,6 @@ $(document).ready(function () {
       }
   });
 
-  $(".video_svg").click(function () {
-    $(".modal-video").fadeToggle('fast');
-    $('.video-modal')[0].requestFullscreen();
-    $('.video-modal')[0].play();
-  });
-  $(".modal-video").bind("click", function (e) {
-    e.preventDefault();
-    if ($(e.target).attr("class") !== "modal-conent" ||
-        $(e.target).attr('class') === 'close') {
-          $('.video-modal')[0].pause();
-      $(".modal-video").fadeOut('fast');
-    }
-  });
 
   $(".open-photos").click(function () {
     $('.hotel-slider').slick({
@@ -124,22 +111,6 @@ $(document).ready(function () {
         </p>В ближайшее время мы<br> свяжемся с Вами</p>
         <img src="./src/images/submit.png" alt="">
       `);
-  })
-
-  $('.video-cover').on('click', (e) => {
-    $(`#${e.target.classList[1]}`)[0].play();
-    $(`#${e.target.classList[1]}`)[0].setAttribute('controls', 'controls');
-
-    $(`.${$(e.target)[0].classList[1]}`)[0].classList.add('playing');
-  });
-
-  $('.video-source').on('pause', (e) => {
-    $(`.${e.target.id}`)[0].classList.remove('playing');
-    $(`.${e.target.id}`)[1].classList.remove('playing');
-
-    if (e.target.hasAttribute("controls")) {
-      e.target.removeAttribute('controls');
-    }
   })
 
   let show = true;
