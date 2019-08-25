@@ -65,7 +65,7 @@ $(document).ready(function () {
     e.target.requestFullscreen();
   })
 
-  $('.speaker').on('click', function(e) {
+  $('.speaker').not('.mentor').on('click', function(e) {
     let bg = $(this).children('.speaker__content-wrap').children('.speaker__image').css('background-image');
     let name = $(this).children('.speaker__content-wrap').children('.speaker__content').children('.speaker__content__inner').children('.speaker-name').html();
     let position = $(this).children('.speaker__content-wrap').children('.speaker__content').children('.speaker__content__inner').children('.speaker-review').html();

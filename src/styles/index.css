@@ -1117,6 +1117,10 @@ option:hover {
   padding-bottom: 100px;
 }
 
+.mentor {
+  background: url('./../images/logo.png');
+}
+
 .mentors .row {
   align-items: flex-start;
 }
@@ -1146,7 +1150,7 @@ option:hover {
   left: 0;
 }
 
-.ment-1 {
+/* .ment-1 {
   background: url('./../images/year-mentor/Julia_Kaveckaya.png');
 }
 
@@ -1176,7 +1180,7 @@ option:hover {
 
 .ment-8 {
   background: url('./../images/year-mentor/question.png');
-}
+} */
 
 .quest {
   background: #8261cc;
