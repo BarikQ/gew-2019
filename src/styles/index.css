@@ -1039,6 +1039,7 @@ option:hover {
 
 .gallerys {
   padding: 100px 0;
+  margin: 0;
 }
 
 .gallerys-head {
@@ -1058,7 +1059,7 @@ option:hover {
 }
 
 .video-gallery .gallery-line {
-  width: 6200px;
+  width: 1000vw;
 }
 
 .photos-gallery__container .dragscroll {
@@ -1713,6 +1714,10 @@ option:hover {
   .hotel-next {
     right: -30px !important;
   }
+
+  .modal-video .modal-content{
+    height:60vw
+  }
 }
 
 @media (max-width: 768px) {
@@ -1808,6 +1813,10 @@ option:hover {
     height: 100%;
     overflow-y: scroll;
     padding: 15px 0;
+  }
+
+  .modal-video .modal-content{
+    height:50%
   }
 
   .modal-content .container {
