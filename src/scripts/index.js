@@ -262,6 +262,7 @@ $(document).ready(function () {
 
   $('.companies-carousel').slick({
     infinite: true,
+    lazyLoad: 'ondemand',
     autoplay: true,
     autoplaySpeed: 5000,
     slidesToShow: 6,
