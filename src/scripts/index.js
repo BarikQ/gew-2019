@@ -23,34 +23,57 @@ $(document).ready(function () {
       }
   });
 
+  $('.hotel-slider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    pauseOnHover: true,
+    prevArrow: `<button type="button" role="presentation" class="owl-prev hotel-arrow hotel-prev"><img src="./src/images/left-arrow-bl.png"></button>`,
+    nextArrow: `<button type="button" role="presentation" class="owl-next hotel-arrow hotel-next"><img src="./src/images/right-arrow-bl.png"></button>`,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 580,
+        settings: {
+          arrows: false,
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  });
 
   $(".open-photos").click(function () {
-    $('.hotel-slider').slick({
-      centerMode: true,
-      variableWidth: true,
-      centerPadding: '60px',
-      slidesToShow: 3,
-      slidesToScroll: 3,
-      pauseOnHover: true,
-      prevArrow: `<button type="button" role="presentation" class="owl-prev hotel-arrow hotel-prev"><span aria-label="Previous">‹</span></button>`,
-      nextArrow: `<button type="button" role="presentation" class="owl-next hotel-arrow hotel-next"><span aria-label="Next">›</span></button>`
-    });
-
     $(".modal-hotel").fadeToggle('fast');
   });
 
   $(".modal-hotel").bind("click", function (e) {
     e.preventDefault();
     if ($(e.target).attr("class") === "modal-container" ||
-        $(e.target).attr('class') === 'close') {
+        $(e.target).attr('id') === 'close-hotel') {
       $(".modal-hotel").fadeOut('fast');
-      $('.hotel-slider').slick('unslick');
+      $('.big-image').css('display', 'none');
+      $('#close-hotel').css('display', 'unset');
     }
   });
 
   $('.hotel-image').on('click', (e) => {
-    e.target.requestFullscreen();
-  })
+    if ($(window).width() < 768) return;
+    $('.big-image').css('background', `url('${e.target.src}')`);
+    $('.big-image').css('display', 'unset');
+    $('#close-hotel').css({'display': 'none'});
+  });
+
+  $('#close-image').on('click', (e) => {
+    $('.big-image').css('display', 'none');
+    $('#close-hotel').css('display', 'unset');
+  });
 
   $('.speaker').not('.mentor').on('click', function(e) {
     let bg = $(this).children('.speaker__content-wrap').children('.speaker__image').css('background-image');
@@ -61,7 +84,7 @@ $(document).ready(function () {
 
     $('.speaker-image').attr('src', bg);
     $('.speaker-modal-name').html(name);
-    $('speaker-position').html(position);
+    $('.speaker-position').html(position);
     $(".modal-speaker").fadeToggle('fast');
   });
 
@@ -137,22 +160,30 @@ $(document).ready(function () {
 
       $(".dial-1").knob({
         min: '0',
-        max: '200'
+        max: '200',
+        height: 223,
+        width: 223
       });
 
       $(".dial-2").knob({
         min: '0',
-        max: '200'
+        max: '200',
+        height: 223,
+        width: 223
       });
 
       $(".dial-3").knob({
         min: '0',
-        max: '200'
+        max: '200',
+        height: 223,
+        width: 223
       });
 
       $(".dial-4").knob({
         min: '0',
-        max: '200'
+        max: '200',
+        height: 223,
+        width: 223
       });
 
       $({
@@ -225,21 +256,32 @@ $(document).ready(function () {
     URLhashListener: true,
     startPosition: 'URLHash',
     dotsContainer: '.date-day__container',
-    mouseDrag: false
+    mouseDrag: false,
+    navText: ["<img src='./src/images/left-arrow.png'>","<img src='./src/images/right-arrow.png'>"]
   });
 
   $('.companies-carousel').slick({
     infinite: true,
-    autoplay: true,
-    slidesToShow: 5,
-    slidesToScroll: 5,
+    autoplay: false,
+    slidesToShow: 6,
+    slidesToScroll: 6,
     pauseOnHover: true,
+    prevArrow: `<button type="button" role="presentation" class="owl-prev companies-arrow companies-prev"><img src="./src/images/left-arrow-bl.png"></button>`,
+    nextArrow: `<button type="button" role="presentation" class="owl-next companies-arrow companies-next"><img src="./src/images/right-arrow-bl.png"></button>`,
     responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 5,
+          slidesToScroll: 5,
+          infinite: true
+        }
+      },
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToShow: 4,
+          slidesToScroll: 4,
           infinite: true
         }
       },
@@ -265,21 +307,24 @@ $(document).ready(function () {
     slidesToShow: 1,
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 1400,
         settings: {
           arrows: false,
-          centerMode: false,
-          centerPadding: '0px',
+          centerPadding: '20%',
           slidesToShow: 1
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 1160,
         settings: {
-          arrows: false,
-          centerMode: false,
-          centerPadding: '5px',
+          centerPadding: '15%',
           slidesToShow: 1
+        }
+      },
+      {
+        breakpoint: 1000,
+        settings: {
+          centerMode: false
         }
       }
     ]

@@ -4,7 +4,7 @@ function onYouTubeIframeAPIReady() {
   player = new YT.Player('video-placeholder', {
     width: 600,
     height: 400,
-    videoId: 'Xa0Q0J5tOP0',
+    videoId: 'emr_6-W-ymE',
     playerVars: {
       color: 'white',
       playlist: 'taJ60kskkns,FG0fTKAqZ5g'
@@ -17,7 +17,7 @@ function onYouTubeIframeAPIReady() {
   player1 = new YT.Player('video-placeholder-1', {
     width: 572,
     height: 340,
-    videoId: 'Xa0Q0J5tOP0',
+    videoId: 'p7MfW5nYFEE',
     playerVars: {
       color: 'white',
       playlist: 'taJ60kskkns,FG0fTKAqZ5g'
@@ -30,7 +30,7 @@ function onYouTubeIframeAPIReady() {
   player2 = new YT.Player('video-placeholder-2', {
     width: 572,
     height: 340,
-    videoId: 'Xa0Q0J5tOP0',
+    videoId: 'RvHRPZ3Mc6A',
     playerVars: {
       color: 'white',
       playlist: 'taJ60kskkns,FG0fTKAqZ5g'
@@ -43,7 +43,7 @@ function onYouTubeIframeAPIReady() {
   player3 = new YT.Player('video-placeholder-3', {
     width: 572,
     height: 340,
-    videoId: 'Xa0Q0J5tOP0',
+    videoId: 'PrZ4zLLoOs4',
     playerVars: {
       color: 'white',
       playlist: 'taJ60kskkns,FG0fTKAqZ5g'
@@ -56,7 +56,7 @@ function onYouTubeIframeAPIReady() {
   player4 = new YT.Player('video-placeholder-4', {
     width: 572,
     height: 340,
-    videoId: 'Xa0Q0J5tOP0',
+    videoId: 'zmWvH14A6Fg',
     playerVars: {
       color: 'white',
       playlist: 'taJ60kskkns,FG0fTKAqZ5g'
@@ -69,7 +69,7 @@ function onYouTubeIframeAPIReady() {
   player5 = new YT.Player('video-placeholder-5', {
     width: 572,
     height: 340,
-    videoId: 'Xa0Q0J5tOP0',
+    videoId: '_H3yEEYOdmw',
     playerVars: {
       color: 'white',
       playlist: 'taJ60kskkns,FG0fTKAqZ5g'
@@ -82,7 +82,7 @@ function onYouTubeIframeAPIReady() {
   player6 = new YT.Player('video-placeholder-6', {
     width: 572,
     height: 340,
-    videoId: 'Xa0Q0J5tOP0',
+    videoId: 'R-om4VawO4g',
     playerVars: {
       color: 'white',
       playlist: 'taJ60kskkns,FG0fTKAqZ5g'
@@ -95,7 +95,7 @@ function onYouTubeIframeAPIReady() {
   player7 = new YT.Player('video-placeholder-7', {
     width: 572,
     height: 340,
-    videoId: 'Xa0Q0J5tOP0',
+    videoId: 'gtmgIaQ0J2A',
     playerVars: {
       color: 'white',
       playlist: 'taJ60kskkns,FG0fTKAqZ5g'
@@ -108,7 +108,7 @@ function onYouTubeIframeAPIReady() {
   player8 = new YT.Player('video-placeholder-8', {
     width: 572,
     height: 340,
-    videoId: 'Xa0Q0J5tOP0',
+    videoId: 'gHH40ydO1BI',
     playerVars: {
       color: 'white',
       playlist: 'taJ60kskkns,FG0fTKAqZ5g'
@@ -121,7 +121,7 @@ function onYouTubeIframeAPIReady() {
   player9 = new YT.Player('video-placeholder-9', {
     width: 572,
     height: 340,
-    videoId: 'Xa0Q0J5tOP0',
+    videoId: '06PI34Wk1KQ',
     playerVars: {
       color: 'white',
       playlist: 'taJ60kskkns,FG0fTKAqZ5g'
@@ -134,7 +134,7 @@ function onYouTubeIframeAPIReady() {
   player10 = new YT.Player('video-placeholder-10', {
     width: 572,
     height: 340,
-    videoId: 'Xa0Q0J5tOP0',
+    videoId: 'SovcIZpv2P0',
     playerVars: {
       color: 'white',
       playlist: 'taJ60kskkns,FG0fTKAqZ5g'
@@ -146,20 +146,6 @@ function onYouTubeIframeAPIReady() {
 }
 
 function initialize() {
-
-  // Update the controls on load
-  // updateTimerDisplay();
-  // updateProgressBar();
-
-  // Clear any old interval.
-  // clearInterval(time_update_interval);
-
-  // Start interval to update elapsed time display and
-  // the elapsed part of the progress bar every second.
-  // time_update_interval = setInterval(function () {
-  //     updateTimerDisplay();
-  //     updateProgressBar();
-  // }, 1000)
 }
 
 $(".video_svg").click(function () {

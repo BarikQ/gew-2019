@@ -9,12 +9,12 @@ $(document).ready(function () {
       if (elem.classList.contains('active-list')) elem.classList.remove('active-list');
 
       if (elem.classList.contains(activeLabel)) {
-        const speakers = elem.querySelectorAll('.speaker__image');
+        const speakers = $('.speaker__image');
 
-        speakers.forEach((elem, i) => {
-          elem.style.background = `url('${path}${activeLabel}/sp-${i+1}.png')`;
-          elem.style.backgroundSize = 'cover';
+        speakers.each(function() {
+          $(this).css({'background': $(this).attr('data-src'), 'background-size': 'cover'});
         });
+
         elem.classList.add('active-list');
       }
     });

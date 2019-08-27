@@ -6,15 +6,27 @@
 }
 
 .place>.container {
+  position: unset;
   padding-top: 52px;
 }
 
 .place-head {
   text-align: center;
+  word-spacing: -2px;
+  letter-spacing: 1px;
+  position: relative;
+  left: 15px;
+  top: -1px;
+  font-family: 'V-L';
+  font-weight: 200;
 }
 
 .place-head .lines {
   left: 0;
+}
+
+.scheme-content .day-head p {
+  text-transform: none;
 }
 
 .scheme-container {
@@ -25,12 +37,26 @@
 }
 
 .scheme-container h3 {
-  margin: 50px 0;
+  margin: 0;
+  position: relative;
+  top: 36px;
+  left: -1px;
+  letter-spacing: 0.4px;
+  font-family: 'V-L';
+  font-size: 24px;
 }
 
 .date-day__container {
   display: flex;
-  margin: 50px auto;
+  justify-content: center;
+  margin: 11px auto 40px auto;
+  font-weight: 200;
+  font-size: 14px;
+  font-family: 'V-L';
+}
+
+.date-day:nth-child(1) {
+  margin-left: -16px;
 }
 
 .date-day {
@@ -43,6 +69,17 @@
   justify-content: center;
   align-items: center;
   transition: 0.2s ease all;
+}
+
+.date-day span {
+  position: relative;
+  top: -3px;
+  left: 3px;
+  word-spacing: 2px;
+}
+
+.date-day:nth-child(2) span {
+  left: -1px;
 }
 
 .date-day__container>.active {
@@ -64,101 +101,139 @@
   text-decoration: none;
 }
 
+.rooms-column {
+  position: relative;
+}
+
+.rooms-column:nth-child(2) {
+  left: 19px;
+}
+
+.rooms-column:nth-child(3) {
+  left: 26px;
+}
+
+.rooms-column:nth-child(4) {
+  left: 20px;
+}
+
 .rooms-list ul {
   display: grid;
-  grid-template: repeat(3, 1fr) / repeat(4, 1fr);
-  max-width: 600px;
+  grid-template: 1fr / repeat(4, 1fr);
+  max-width: 616px;
+  grid-column-gap: 31px;
   margin: 0 auto;
   text-align: left;
-  grid-row-gap: 10px;
+  font-size: 13px;
+  font-family: 'V-L';
+  font-weight: 200;
 }
 
 .room {
   position: relative;
-  padding: 5px 10px;
+  padding: 6px 0;
+  position: relative;
+  left: 0;
+  top: 2px;
 }
 
-.room::before {
+.room .cube {
   content: "";
   display: block;
-  width: 10px;
-  height: 10px;
-  position: absolute;
-  top: 12px;
-  left: -10px;
+  width: 11px;
+  height: 11px;
+  position: relative;
+  top: 4px;
+  left: 0;
 }
 
-.r-1::before {
+.room span:not(.cube) {
+  text-align: left;
+  width: 100px;
+}
+
+.room {
+  display: flex;
+  justify-content: space-between;
+  letter-spacing: 0.3px;
+}
+
+.r-1 .cube {
   background: #00639d;
 }
 
-.r-2::before {
+.r-2 .cube {
   background: #ffc6c4;
 }
 
-.r-3::before {
+.r-3 .cube {
   background: #0093ba;
 }
 
-.r-4::before {
+.r-4 .cube {
   background: #6bd2db;
 }
 
-.r-5::before {
+.r-5 .cube {
   background: #f9eb06;
 }
 
-.r-6::before {
+.r-6 .cube {
   background: #fd624f;
 }
 
-.r-7::before {
+.r-7 .cube {
   background: #6e93c4;
 }
 
-.r-8::before {
+.r-8 .cube {
   background: #fc2725;
 }
 
-.scheme_19 .r-8::before {
+.scheme_19 .r-8 .cube {
   background: #00909d;
 }
 
-.r-9::before {
+.r-9 .cube {
   background: #b00761;
 }
 
-.r-10::before {
+.r-10 .cube {
   background: #ff961b;
 }
 
-.scheme_19 .r-10::before {
+.scheme_19 .r-10 .cube {
   background: #cadc00;
 }
 
-.r-11::before {
+.r-11 .cube {
   background: #8b79a5;
 }
 
-.r-12::before {
+.r-12 .cube {
   background: #ec5d21;
 }
 
 .owl-prev {
   position: absolute;
-  top: 40%;
-  left: 0vw;
+  top: 28%;
+  left: 7.2vw;
 }
 
 .owl-next {
   position: absolute;
-  top: 40%;
-  right: 0vw;
+  top: 28%;
+  right: 7.2vw;
 }
 
 .owl-next span,
 .owl-prev span {
   font-size: 600%;
+}
+
+.scheme__content__inner {
+  width: 70%;
+  margin: 0 auto;
 }
 
 .scheme__inner {
@@ -189,7 +264,11 @@
   display: none;
   justify-content: flex-start;
   align-items: center;
-  height: 400px;
+  height: 373px;
+}
+
+.place-info__container .day-button-container {
+  margin-top: -5px;
 }
 
 .place-info__inner {
@@ -230,14 +309,17 @@
 }
 
 .all-photos__container {
-  margin: 25px auto;
-  border-bottom: 2px dotted grey;
+  margin: 13px auto 42px auto;
+  padding-bottom: 3px;
+  border-bottom: 1px solid #9578b7;
   cursor: pointer;
   transition: 0.2s ease all;
+  font-family: 'V-L';
+  font-size: 14px;
+  letter-spacing: 0.3px;
 }
 
 .all-photos__container:hover {
-  transform: scale(1.05);
   transition: 0.2s ease all;
   color: #ff981d;
 }

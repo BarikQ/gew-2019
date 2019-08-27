@@ -28,10 +28,17 @@
   font-family: 'V-B';
 }
 
+.benefits__element {
+  position: relative;
+  top: -6px;
+  left: 2px;
+}
+
 .benefits__number__container {
   display: flex;
   justify-content: space-around;
   font-family: 'V-B';
+  height: 78px;
 }
 
 .benefits__element p {
@@ -39,14 +46,29 @@
 }
 
 .benefits__number {
-  font-size: 2.5rem;
+  font-size: 54px;
   font-weight: 700;
+}
+
+.benefits__number__container span {
+  font-size: 56px;
 }
 
 .benefits__title {
   font-size: 1rem;
   font-weight: 200;
   color: white;
+  line-height: 20px;
+  position: relative;
+  top: -2px;
+  left: 0;
+  font-family: 'V-L';
+}
+
+.numbers-container ul li:nth-child(2) .benefits__title {
+  position: relative;
+  top: -8px;
+  left: -2px;
 }
 
 @media (max-width: 1000px) {

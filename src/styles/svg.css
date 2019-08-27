@@ -3,11 +3,21 @@
   padding: 20px 0;
 }
 
+.video>span {
+  position: relative;
+  top: 9px;
+  left: 18px;
+  font-size: 16px;
+}
+
 .video_svg {
   position: relative;
   width: 200px;
   margin: auto;
   cursor: pointer;
+  position: relative;
+  top: 3px;
+  left: 16px;
 }
 
 .video svg {
@@ -47,8 +57,8 @@
 
 .play-icon {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 51%;
+  left: 52%;
   -webkit-transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
