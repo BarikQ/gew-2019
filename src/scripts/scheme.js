@@ -1,19 +1,6 @@
 $(document).ready(function () {
-    // let target = null;
   let Xinner = null;
   let Yinner = null;
-  // let card = null;
-
-  // $('.scheme-container').mousemove(function(e){
-  //   var pos = $(this).offset();
-  //   var elem_left = pos.left;
-  //   var elem_top = pos.top;
-
-  //   Xinner = e.pageX - elem_left;
-  //   Yinner = e.pageY - elem_top;
-
-  //   console.log(Xinner, Yinner);
-  // });
 
   $('.hover-card').hover(function(e) {
     $('.scheme-content').off();
@@ -32,12 +19,11 @@ $(document).ready(function () {
     });
 
     $('.scheme-content').on('mousemove', function(e) {
-      // console.log(e.pageX - $(this).offset().left, e.pageY - $(this).offset().top);
       Xinner = e.pageX - $(this).offset().left;
       Yinner = e.pageY - $(this).offset().top - 340;
     });
 
-    console.log(Xinner, Yinner);
+    // console.log(Xinner, Yinner);
 
     card = $(`.${cardClass}`);
     
@@ -46,6 +32,11 @@ $(document).ready(function () {
     if (!check) {
       card.css('left', Xinner);
       card.css('top', Yinner);
+    }
+
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+      card.css('left', '50%');
+      card.css('top', '10%');
     }
 
 
@@ -68,7 +59,6 @@ $(document).ready(function () {
 
     $(`.${this.id}_card`).addClass( "hover" );
 
-    target = 'card';
     // $(`.${this.id}_card`).hover(function() {
     //   target = 'card';
     // }, function() {
@@ -76,23 +66,24 @@ $(document).ready(function () {
     //   removeHover(this);
     // });
 
-  }, function() {
-    target = null;
+  }, function(e) {
     $(`#${this.id}`).children().css('fill-opacity', 1);
-    console.log(card);
+
     let time = setTimeout(() => {removeHover(card)}, 5000);
 
     $(`.${this.id}_card`).hover(function() {
       clearTimeout(time);
-      target = 'card';
     }, function() {
-      target = null;
-      removeHover(this);
+      if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+        clearTimeout(time);
+        return false;
+      } else removeHover(this);
     });
-    
-    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
-      removeHover(`.${this.id}_card`);
-    }
+
+    // if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+    //   clearTimeout(time);
+    //   removeHover(`.${this.id}_card`);
+    // }
   });
 
   function removeHover(hoverTarget) {
