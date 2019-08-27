@@ -80,10 +80,10 @@ $(document).ready(function () {
       } else removeHover(this);
     });
 
-    // if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
-    //   clearTimeout(time);
-    //   removeHover(`.${this.id}_card`);
-    // }
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+      clearTimeout(time);
+      setTimeout(() => {removeHover(`.${this.id}_card`)}, 100);
+    }
   });
 
   function removeHover(hoverTarget) {

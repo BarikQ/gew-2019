@@ -324,7 +324,8 @@ $(document).ready(function () {
       {
         breakpoint: 1000,
         settings: {
-          centerMode: false
+          centerMode: false,
+          centerPadding: 0
         }
       }
     ]
