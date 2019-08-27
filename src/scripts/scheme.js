@@ -1,7 +1,7 @@
 $(document).ready(function () {
-  // let target = null;
-  // let Xinner = null;
-  // let Yinner = null;
+    // let target = null;
+  let Xinner = null;
+  let Yinner = null;
   // let card = null;
 
   // $('.scheme-container').mousemove(function(e){
@@ -15,17 +15,39 @@ $(document).ready(function () {
   //   console.log(Xinner, Yinner);
   // });
 
-
   $('.hover-card').hover(function(e) {
-    card = $(`.${this.id}_card`);
-    $('.scheme-container');
+    $('.scheme-content').off();
+    let cardClass = `${this.id}_card`;
+    let check = false;
+
+    $('.place-info__container').each(function() {
+
+      if ($(this).hasClass(`${cardClass}`) && $(this).hasClass('hover')) {
+        check = true;
+        return false;
+      } else check = false;
+      if ($(this).hasClass('hover')) {
+        removeHover(this);
+      }
+    });
+
+    $('.scheme-content').on('mousemove', function(e) {
+      // console.log(e.pageX - $(this).offset().left, e.pageY - $(this).offset().top);
+      Xinner = e.pageX - $(this).offset().left;
+      Yinner = e.pageY - $(this).offset().top - 340;
+    });
+
+    console.log(Xinner, Yinner);
+
+    card = $(`.${cardClass}`);
     
     $(`#${this.id}`).children().css('fill-opacity', 0.8);
 
+    if (!check) {
+      card.css('left', Xinner);
+      card.css('top', Yinner);
+    }
 
-    console.log(e.clientX, e.clientY);
-    card.css('top', e.clientY - 300);
-    card.css('left', e.clientX);
 
     $('.place-info__container').each(function(index) {
       if ($(this).hasClass('hover')) {
@@ -47,16 +69,27 @@ $(document).ready(function () {
     $(`.${this.id}_card`).addClass( "hover" );
 
     target = 'card';
+    // $(`.${this.id}_card`).hover(function() {
+    //   target = 'card';
+    // }, function() {
+    //   target = null;
+    //   removeHover(this);
+    // });
+
+  }, function() {
+    target = null;
+    $(`#${this.id}`).children().css('fill-opacity', 1);
+    console.log(card);
+    let time = setTimeout(() => {removeHover(card)}, 5000);
+
     $(`.${this.id}_card`).hover(function() {
+      clearTimeout(time);
       target = 'card';
     }, function() {
       target = null;
       removeHover(this);
     });
-
-  }, function() {
-    target = null;
-    $(`#${this.id}`).children().css('fill-opacity', 1);
+    
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
       removeHover(`.${this.id}_card`);
     }

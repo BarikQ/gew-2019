@@ -25,6 +25,10 @@
   left: 0;
 }
 
+.scheme-content {
+  position: relative;
+}
+
 .scheme-content .day-head p {
   text-transform: none;
 }
@@ -264,7 +268,7 @@
   display: none;
   justify-content: flex-start;
   align-items: center;
-  height: 373px;
+  height: 360px;
 }
 
 .place-info__container .day-button-container {
