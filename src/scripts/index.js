@@ -262,7 +262,8 @@ $(document).ready(function () {
 
   $('.companies-carousel').slick({
     infinite: true,
-    autoplay: false,
+    autoplay: true,
+    autoplaySpeed: 5000,
     slidesToShow: 6,
     slidesToScroll: 6,
     pauseOnHover: true,
@@ -301,7 +302,8 @@ $(document).ready(function () {
 
   $('.reviews-slider').slick({
     dots: true,
-    autoplaySpeed: 4000,
+    autoplay: true,
+    autoplaySpeed: 5000,
     centerMode: true,
     centerPadding: '25%',
     slidesToShow: 1,
