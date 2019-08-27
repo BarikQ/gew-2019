@@ -23,11 +23,11 @@ $(document).ready(function () {
       Yinner = e.pageY - $(this).offset().top - 340;
     });
 
-    // console.log(Xinner, Yinner);
-
     card = $(`.${cardClass}`);
     
-    $(`#${this.id}`).children().css('fill-opacity', 0.8);
+    $(`.${this.id}`).each(function(e) {
+      $(this).children().css('fill-opacity', 0.8);
+    });
 
     if (!check) {
       card.css('left', Xinner);
@@ -39,7 +39,6 @@ $(document).ready(function () {
       card.css('top', '10%');
     }
 
-
     $('.place-info__container').each(function(index) {
       if ($(this).hasClass('hover')) {
         removeHover($(this));
@@ -50,7 +49,7 @@ $(document).ready(function () {
     let button = $(`.${this.id}_card`).children('.place-info__inner').children('.day-button-container');
 
     bgColor.css('background', $(e.target).css('fill'));
-    button.css('border-top', `2px solid ${$(e.target).css('fill')}`);
+    button.css('border-top', `1px solid ${$(e.target).css('fill')}`);
     button.hover(() =>{
       button.css('background', $(e.target).css('fill'));
     }, () => {
@@ -59,17 +58,15 @@ $(document).ready(function () {
 
     $(`.${this.id}_card`).addClass( "hover" );
 
-    // $(`.${this.id}_card`).hover(function() {
-    //   target = 'card';
-    // }, function() {
-    //   target = null;
-    //   removeHover(this);
-    // });
-
   }, function(e) {
-    $(`#${this.id}`).children().css('fill-opacity', 1);
+    $(`.${this.id}`).each(function(e) {
+      $(this).children().css('fill-opacity', 1);
+    });
 
-    let time = setTimeout(() => {removeHover(card)}, 5000);
+    let time = setTimeout(() => {
+      
+      removeHover(card);
+    }, 5000);
 
     $(`.${this.id}_card`).hover(function() {
       clearTimeout(time);
@@ -82,7 +79,9 @@ $(document).ready(function () {
 
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
       clearTimeout(time);
-      setTimeout(() => {removeHover(`.${this.id}_card`)}, 100);
+      setTimeout(() => {
+        removeHover(`.${this.id}_card`);
+      }, 100);
     }
   });
 

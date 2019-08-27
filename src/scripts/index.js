@@ -1,6 +1,8 @@
 $(document).ready(function () {
   const modal = document.querySelector('#modal');
 
+  $('.hotel-slider').find('.hotel-image').css('background', 'red');
+
   $('select').selectric();
 
   $(".popup-menu").click(function () {
@@ -61,18 +63,6 @@ $(document).ready(function () {
       $('.big-image').css('display', 'none');
       $('#close-hotel').css('display', 'unset');
     }
-  });
-
-  $('.hotel-image').on('click', (e) => {
-    if ($(window).width() < 768) return;
-    $('.big-image').css('background', `url('${e.target.src}')`);
-    $('.big-image').css('display', 'unset');
-    $('#close-hotel').css({'display': 'none'});
-  });
-
-  $('#close-image').on('click', (e) => {
-    $('.big-image').css('display', 'none');
-    $('#close-hotel').css('display', 'unset');
   });
 
   $('.speaker').not('.mentor').on('click', function(e) {
