@@ -348,6 +348,16 @@
   background-color: red;
 }
 
+@media (max-width: 1200px) {
+  .rooms-list li {
+    padding: 0;
+  }
+
+  .scheme_19 .r-10 {
+    width: 300px;
+  }
+}
+
 .g52_card .day-button-container {
   border-color: red;
 }
@@ -364,10 +374,6 @@
   .date-day:nth-child(1) {
     margin-left: unset;
   }
-
-  .rooms-list li {
-    padding: 0;
-  }
 }
 
 @media (max-width: 768px) {
@@ -376,11 +382,34 @@
   }
 
   .rooms-list ul {
-    padding: 0 15px;
+    padding: 0 20px;
   }
 
   .scheme_19 .r-10 {
     width: unset;
+  }
+
+  .room {
+    padding: 0;
+    margin: 6px 0;
+  }
+
+  .room::after,
+  .room::before {
+    right: -20px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0 , -50%);
+  }
+
+  .rooms-item:nth-child(2) span,
+  .rooms-item:nth-child(4) span{
+    margin-right: 10px;
+  }
+
+  .rooms-item:nth-child(1) span,
+  .rooms-item:nth-child(3) span{
+    margin-left: 10px;
   }
 
   .rooms-item:nth-child(2) .room::before,

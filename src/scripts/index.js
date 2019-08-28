@@ -1,8 +1,6 @@
 $(document).ready(function () {
   const modal = document.querySelector('#modal');
 
-  $('.hotel-slider').find('.hotel-image').css('background', 'red');
-
   $('select').selectric();
 
   $(".popup-menu").click(function () {
@@ -25,33 +23,32 @@ $(document).ready(function () {
       }
   });
 
-  $('.hotel-slider').slick({
-    slidesToShow: 3,
-    slidesToScroll: 3,
-    pauseOnHover: true,
-    prevArrow: `<button type="button" role="presentation" class="owl-prev hotel-arrow hotel-prev"><img src="./src/images/left-arrow-bl.png"></button>`,
-    nextArrow: `<button type="button" role="presentation" class="owl-next hotel-arrow hotel-next"><img src="./src/images/right-arrow-bl.png"></button>`,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          arrows: false,
-          slidesToShow: 2,
-          slidesToScroll: 2
-        }
-      },
-      {
-        breakpoint: 580,
-        settings: {
-          arrows: false,
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
-  });
-
   $(".open-photos").click(function () {
+    $('.hotel-slider').slick({
+      slidesToShow: 3,
+      slidesToScroll: 3,
+      pauseOnHover: true,
+      prevArrow: `<button type="button" role="presentation" class="owl-prev hotel-arrow hotel-prev"><img src="./src/images/left-arrow-bl.png"></button>`,
+      nextArrow: `<button type="button" role="presentation" class="owl-next hotel-arrow hotel-next"><img src="./src/images/right-arrow-bl.png"></button>`,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: false,
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 580,
+          settings: {
+            arrows: false,
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    });
     $(".modal-hotel").fadeToggle('fast');
   });
 
@@ -60,8 +57,7 @@ $(document).ready(function () {
     if ($(e.target).attr("class") === "modal-container" ||
         $(e.target).attr('id') === 'close-hotel') {
       $(".modal-hotel").fadeOut('fast');
-      $('.big-image').css('display', 'none');
-      $('#close-hotel').css('display', 'unset');
+      $('.hotel-slider').slick('unslick');
     }
   });
 
