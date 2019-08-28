@@ -28,7 +28,6 @@ $(document).ready(function () {
     $(`.${this.id}`).each(function(e) {
       $(this).children().css('fill-opacity', 0.8);
     });
-    console.log($(this.id));
 
     if (!check) {
       if (this.id == 'g44' || this.id == 'g48')  {
@@ -71,7 +70,7 @@ $(document).ready(function () {
     let time = setTimeout(() => {
       
       removeHover(card);
-    }, 5000);
+    }, 4000);
 
     $(`.${this.id}_card`).hover(function() {
       clearTimeout(time);
