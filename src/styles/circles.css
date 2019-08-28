@@ -1,3 +1,8 @@
+.numbers-container li {
+  min-width: 253px;
+  min-height: 229px;
+}
+
 .dial {
   opacity: 0;
   transition: 0.5s ease all;
@@ -71,8 +76,61 @@
   left: -2px;
 }
 
+@media (max-width: 1200px) {
+  .numbers .container {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .numbers-container ul {
+    width: 100%;
+    padding: 0;
+  }
+}
+
 @media (max-width: 1000px) {
-  .numbers {
-    overflow: scroll;
+  .numbers-container {
+    min-width: unset;
+  }
+
+  .numbers-container ul {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .numbers-container li {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    min-width: unset;
+    min-height: unset;
+  }
+}
+
+@media (max-width: 576px) {
+  .benefits__number {
+    font-size: 45px;
+    font-weight: 700;
+  }
+
+  .benefits__number__container span {
+    font-size: 45px;
+  }
+
+  .benefits__title {
+    top: -18px;
+  }
+
+  .numbers-container ul li:nth-child(2) .benefits__title {
+    top: -28px;
+  }
+
+  .numbers-container ul {
+    padding: 0 15px;
+  }
+
+  .numbers-container li {
+    padding: 0;
   }
 }

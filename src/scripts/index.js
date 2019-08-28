@@ -130,6 +130,14 @@ $(document).ready(function () {
   let countbox = ".numbers-container";
 
   $(window).on("scroll load resize", function () {
+    let width = $( window ).width();
+    let height = $( window ).height(); 
+    let circleSize = null;
+  
+    if (width <= 576) {
+      circleSize = 160;
+    } else circleSize = 223;
+    
     if (!show) return false;
     var w_top = $(window).scrollTop();
     var e_top = $(countbox).offset().top;
@@ -151,29 +159,29 @@ $(document).ready(function () {
       $(".dial-1").knob({
         min: '0',
         max: '200',
-        height: 223,
-        width: 223
+        height: circleSize,
+        width: circleSize
       });
 
       $(".dial-2").knob({
         min: '0',
         max: '200',
-        height: 223,
-        width: 223
+        height: circleSize,
+        width: circleSize
       });
 
       $(".dial-3").knob({
         min: '0',
         max: '200',
-        height: 223,
-        width: 223
+        height: circleSize,
+        width: circleSize
       });
 
       $(".dial-4").knob({
         min: '0',
         max: '200',
-        height: 223,
-        width: 223
+        height: circleSize,
+        width: circleSize
       });
 
       $({

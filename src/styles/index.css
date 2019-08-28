@@ -248,6 +248,7 @@ option:hover {
   align-items: center;
   height: 137px;
   max-width: 1071px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 10px;
   background: white;
@@ -1733,7 +1734,6 @@ option:hover {
   position: absolute;
   top: -100px;
   transition: 0.2s ease all;
-
 }
 
 .sticky {
@@ -2174,6 +2174,10 @@ textarea::-webkit-scrollbar {
     max-width: 100%;
   }
 
+  .header-list-item {
+    left: 0 !important;
+  }
+
   .modal-buttons {
     flex-direction: column;
   }
@@ -2195,12 +2199,6 @@ textarea::-webkit-scrollbar {
     position: unset;
   }
 
-  .numbers-container li {
-    margin: 0 10px;
-  }
-}
-
-@media (max-width: 1200px) {
   .speaker:not(.speaker__large) .speaker-review {
     font-size: 12px !important;
   }
@@ -2218,6 +2216,12 @@ textarea::-webkit-scrollbar {
   .container {
     max-width: 100%;
     padding: 0 15px;
+  }
+
+  .header-list-item {
+    display: flex;
+    justify-content: center;
+    padding: 0;
   }
 
   .video>span {
@@ -2250,11 +2254,6 @@ textarea::-webkit-scrollbar {
 
   .header-list ul {
     justify-content: flex-start;
-    overflow: scroll;
-  }
-
-  .header-list-item {
-    margin: 0 25px;
   }
 
   .menu-column:nth-child(3) ul {
@@ -2290,6 +2289,14 @@ textarea::-webkit-scrollbar {
   .reviews-item {
     max-width: 100vw !important;
     margin: 0 50px;
+  }
+
+  .header-list ul {
+    height: 200px;
+  }
+
+  .header-bottom-container {
+    margin-top: 30px;
   }
 
   .review {
@@ -2430,11 +2437,24 @@ textarea::-webkit-scrollbar {
   .footer-right__container {
     left: 0;
   }
+
+  .bg-circle {
+    display: none;
+  }
+
+  .button span {
+    position: relative;
+    top: 0px !important;
+  }
 }
 
 @media (max-width: 576px) {
   .navbar-container {
     align-items: center;
+  }
+
+  .header-top {
+    padding: 10px;
   }
 
   .footer-nav {

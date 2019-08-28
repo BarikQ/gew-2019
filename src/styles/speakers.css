@@ -55,6 +55,10 @@
   display: none;
 }
 
+.speakers-list:not(.all) .speakers-button-container {
+  opacity: 0;
+}
+
 .active-list {
   display: unset;
 }
@@ -238,6 +242,7 @@
   display: flex;
   justify-content: center;
   margin: 34px 0 !important;
+  font-size: 14px;
 }
 
 
