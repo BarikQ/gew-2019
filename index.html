@@ -22,6 +22,8 @@
   <link rel="stylesheet" href="./src/styles/circles.css">
   <link rel="stylesheet" href="./src/styles/speakers.css">
   <link rel="stylesheet" href="./src/styles/scheme.css">
+  <!-- TODO add custom style for modal -->
+  <link rel="stylesheet" href="./src/styles/custom.css">
   <title>GEW.by</title>
 </head>
 
@@ -30,7 +32,7 @@
     <nav class="navbar">
       <div class="container">
         <div class="navbar__inner">
-          <a class="h-b-1 button orange" href="#"><span>Купить билет</span></a>
+          <a class="h-b-1 button orange ticket-buy" href="#"><span>Купить билет</span></a>
           <div class="popup-menu">
             <img src="./src/images/menu.png">
           </div>
@@ -69,9 +71,9 @@
 
             <div class="social-list">
               <ul>
-                <li class="facebook social-link"><a href="#" target=_blank><img src="./src/images/fb.png"></a></li>
+                <li class="facebook social-link"><a href="https://www.facebook.com/gewbelarus/" target=_blank><img src="./src/images/fb.png"></a></li>
                 <li class="twetter social-link"><a href="#" target=_blank><img src="./src/images/twitter.png"></a></li>
-                <li class="youtube social-link"><a href="#" target=_blank><img src="./src/images/yt.png"></a></li>
+                <li class="youtube social-link"><a href="https://www.youtube.com/channel/UCNpvA-UpZTKYCYdZISNgaxQ/" target=_blank><img src="./src/images/yt.png"></a></li>
               </ul>
             </div>
           </div>
@@ -119,7 +121,7 @@
             </div>
 
             <div class="header-buttons">
-              <a class="h-b-1 button orange" href="#"><span>Купить билет</span></a>
+              <a class="h-b-1 button orange ticket-buy" href="#"><span>Купить билет</span></a>
               <a class="h-b-2 button trans" href="#"><span>Выставка</span></a>
             </div>
           </div>
@@ -290,11 +292,6 @@
                   <img src="./src/images/underlines.png" alt="...">
                 </span>
               </h2>
-
-              <p class="head-bt-it txt-it">
-                170+ стран участвуют во Всемирной неделе предпринимательства
-              </p>
-
               <div class="gew-features">
                 <ul>
                   <li>
@@ -302,16 +299,9 @@
                       Мероприятия
                     </span>
                     <span class="gew-text">
-                      Всемирная неделя предпринимательства в Беларуси
-                      - это неделя мероприятий для бизнеса. Они будут
-                      полезными для компаний реального сектора,
-                      стартапов, организаций поддержки и
-                      построения инфраструктуры, а также для нового
-                      поколения предпринимателей. На основной сцене
-                      Отеля Марриотт мы встретим международных спикеров
-                      из глобальных компаний с уникальными кейсами
-                      трансформации бизнеса, развития инновационных
-                      продуктов и масштабирования компаний.
+                      Всемирная неделя предпринимательства - это самое масштабное в Беларуси мероприятие для представителей всех видов бизнеса. Неделя - это независимая платформа для взаимодействия предпринимателей, стартапов, представителей МСП, банков и корпораций, а также международных организаций и государства.
+
+Серия мероприятий в Минске и регионах Беларуси ставит целью рассказать об инновациях в белорусском и международном бизнесе, как на уровне стартапов, так и на уровне больших корпораций. Неделя сфокусирована на практической пользе для участников и посетителей: получить конкретные советы по развитию бизнеса или компании и узнать о кейсах развития инновационных продуктов.
                     </span>
                   </li>
 
@@ -320,14 +310,7 @@
                       Выставка.
                     </span>
                     <span class="gew-text">
-                      Выставка Всемирной недели предпринимательства
-                      в Беларуси - это площадка, которая приветствует
-                      инновационные и прогрессивные компании и презентует
-                      их для международного сообщества и государства на
-                      самом высоком уровне. Высокотехнологичные компании
-                      получают возможность представить свой бренд
-                      и рассказать посетителям, участникам и
-                      потенциальным партнерам о новых продуктах.
+                      Выставка компаний-лидеров, которые хотят презентовать свои инновационные и технологичные решения. Для компаний это возможность презентовать себя потенциальным клиентам и партнерам, инвесторам, а также международному сообществу и государству на самом высоком уровне.
                     </span>
                   </li>
 
@@ -336,13 +319,7 @@
                       Стартапы.
                     </span>
                     <span class="gew-text">
-                      Всемирная неделя предпринимательства в
-                      Беларуси дает возможность стартапам
-                      выступить со стендам на аллее стартапов,
-                      поучаствовать в соревновании стартапов за
-                      возможность поехать в стади-тур в Великобританию,
-                      встретить инвесторов и партнеров в рамках
-                      качественного нетворкинга.
+                      Всемирная неделя предпринимательства в Беларуси – это возможность для лучших стартапов стать заметными, выиграть участие в стади-туре в Великобританию, а также встретить белорусских и международных инвесторов и партнеров в рамках качественного нетворкинга
                     </span>
                   </li>
                 </ul>
@@ -469,20 +446,22 @@
                 <div class="day-info">
                   <ul>
                     <li class="info-item">
-                      <a href="#">Fin Tech day.</a> Конференция про будущее платежных сервисов, банков, криптоэкономики.
+                      FinTech Day. Конференция про будущее платежных сервисов, банков, криптоэкономики. 
                     </li>
+                 
                     <li class="info-item">
-                      <a href="#">Церемония открытия</a> Всемирной недели предпринимательства в Беларуси 2019
+                      Церемония открытия Всемирной недели предпринимательства в Беларуси 2019
                     </li>
+
                     <li class="info-item">
-                      <a href="">Speed-dating для бизнеса. </a> Сессия консультаций от лучших экспертов для развития
-                      компаний
+                      Speed-dating для бизнеса. Сессия консультаций от лучших экспертов для развития компаний
                     </li>
                   </ul>
                 </div>
 
                 <div class="day-button-container">
-                  <a href="#"><span class="day-button">Подробнее</span></a>
+                  <button class="day-button">Подробнее</button>
+                  <!-- <a href="#"><button class="day-button">Подробнее</button></a> -->
                 </div>
               </div>
 
@@ -520,25 +499,26 @@
                   </div>
                 </div>
 
-                <div class="day-info">
+                 <div class="day-info">
                   <ul>
                     <li class="info-item">
-                      <a href="#">IX Международный форум предпринимательства.</a>
-                      Форум лидеров бизнес-сообщества Беларуси
+                     IX Международный форум
+                        предпринимательства. Форум лидеров бизнес-сообщества Беларуси
+                  
                     </li>
                     <li class="info-item">
-                      <a href="#">Investors factory</a> Конференция о том, как стать венчурным инвестором
+                      Investor's Factory. Конференция о том, как стать венчурным инвестором
                     </li>
-
-                    <li class="info-item">
-                      <a href="#">B Venture.</a>Открытая дискуссия о том, как развивать венчурное финансирование в
-                      Беларуси
+ 		    <li class="info-item">
+                      B Venture. Открытая дискуссия о том, как развивать венчурное финансирование в Беларуси
                     </li>
+                 
                   </ul>
                 </div>
 
                 <div class="day-button-container">
-                  <a href="#"><span class="day-button">Подробнее</span></a>
+                  <button class="day-button">Подробнее</button>
+                  <!-- <a href="#"><button class="day-button">Подробнее</button></a> -->
                 </div>
               </div>
 
@@ -579,19 +559,18 @@
                 <div class="day-info">
                   <ul>
                     <li class="info-item">
-                      <a href="">Региональный форум предпринимательства в г. Бресте</a>
-                      Форум для бизнес-сообщества регионов. Лучшие кейсы,
-                      дискуссии о возможностях и барьерах бизнеса в регионах.
+                      Региональный форум
+                        предпринимательства в г. Бресте. Форум для бизнес-сообщества регионов. Лучшие кейсы, дискуссии о возможностях и барьерах бизнеса в регионах.
                     </li>
-
                     <li class="info-item">
-                      <a href="">Мастер-классы и дискуссии</a>
+                     Мастер-классы и дискуссии
                     </li>
                   </ul>
                 </div>
 
                 <div class="day-button-container">
-                  <a href="#"><span class="day-button">Подробнее</span></a>
+                  <button class="day-button">Подробнее</button>
+                  <!-- <a href="#"><button class="day-button">Подробнее</button></a> -->
                 </div>
               </div>
 
@@ -633,23 +612,20 @@
                 <div class="day-info">
                   <ul>
                     <li class="info-item">
-                      <a href="">DevGAMM</a> is the biggest conference
-                      for game industry professionals
-                      in Russia, Ukraine and Belarus.
+                      <a href="https://devgamm.com/minsk2019/ru/">DevGAMM</a>. Крупнейшая конференция гейм индустрии в Беларуси, Украине и России.
                     </li>
                     <li class="info-item">
-                      <a href="#">Конференция для подростков. </a>
-                      GURU будущего
+                      Конференция для подростков. GURU будущего
                     </li>
-
                     <li class="info-item">
-                      <a href="">Круглый стол о развитии стартап-движения Беларуси</a>
+                      Круглый стол о развитии стартап-движения Беларуси
                     </li>
                   </ul>
                 </div>
 
                 <div class="day-button-container">
-                  <a href="#"><span class="day-button">Подробнее</span></a>
+                  <button class="day-button">Подробнее</button>
+                  <!-- <a href="#"><button class="day-button">Подробнее</button></a> -->
                 </div>
               </div>
 
@@ -690,19 +666,17 @@
 
                 <div class="day-info">
                   <ul>
-                    <li class="info-item">
-                      <a href="">DevGAMM</a>
-                      Крупнейшая конференция
-                      гейм индустрии в Беларуси, Украине и России.
+                   <li class="info-item">
+                      <a href="https://devgamm.com/minsk2019/ru/">DevGAMM</a>. Крупнейшая конференция гейм индустрии в Беларуси, Украине и России.
                     </li>
                     <li class="info-item">
-                      <a href="">Церемония Лучший предприниматель Беларуси 2019</a>
+                      Церемония Лучший предприниматель Беларуси 2019
                     </li>
                   </ul>
                 </div>
 
                 <div class="day-button-container">
-                  <a href="#"><span class="day-button">Подробнее</span></a>
+               <button class="day-button">Подробнее</button>
                 </div>
               </div>
 
@@ -742,16 +716,15 @@
 
                 <div class="day-info">
                   <ul>
-                    <li class="info-item">
-                      <a href="">
-                        Мастер-классы и дискуссии
-                      </a>
+                       <li class="info-item">
+                     Мастер-классы и дискуссии
                     </li>
                   </ul>
                 </div>
 
                 <div class="day-button-container">
-                  <a href="#"><span class="day-button">Подробнее</span></a>
+                  <button class="day-button">Подробнее</button>
+                  <!-- <a href="#"><button class="day-button">Подробнее</button></a> -->
                 </div>
               </div>
 
@@ -791,14 +764,15 @@
 
                 <div class="day-info">
                   <ul>
-                    <li class="info-item">
-                      <a href="">Мастер-классы и дискуссии</a>
+                      <li class="info-item">
+                     Мастер-классы и дискуссии
                     </li>
                   </ul>
                 </div>
 
                 <div class="day-button-container">
-                  <a href="#"><span class="day-button">Подробнее</span></a>
+                    <button class="day-button">Подробнее</button>
+                  <!-- <a href="#"><button class="day-button">Подробнее</button></a> -->
                 </div>
               </div>
             </div>
@@ -10316,7 +10290,7 @@
               </li>
               <li class="modal-links">
                 <div class="modal-buttons">
-                  <a class="button orange" href="#">Купить билет</a>
+                  <a class="button orange ticket-buy" href="#">Купить билет</a>
                   <a class="button trans" href="#">Выставка</a>
                 </div>
               </li>
@@ -10550,6 +10524,17 @@
       </div>
     </div>
   </div>
+  <!-- TODO modal -->
+  <div class="modal-market modal">
+    <div class="modal-container modal-container-market">
+      <div class="modal-content modal-content-market col-lg-10 col-xl-8 col-sm-11 col-12 row">
+          <img class="close" id="close_market" src="./src/images/close-black.png">
+          <p class=market-review>
+              Дорогие друзья, продажа билетов стартует 1 сентября 2019 года. 
+          </p>
+      </div>
+    </div>
+  </div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
@@ -10578,6 +10563,8 @@
   <script src="./src/scripts/scheme.js"></script>
   <script src="./src/scripts/video.js"></script>
   <script src="./src/scripts/photo.js"></script>
+  <!-- TODO all cus customs scripts -->
+  <script src="./src/scripts/custom.js"></script>
 </body>
 
 </html>
