@@ -2447,11 +2447,40 @@ textarea::-webkit-scrollbar {
     position: relative;
     top: 0px !important;
   }
+
+  .gallery-line img {
+    max-width: 480px;
+  }
+
+  .gallery-line {
+    max-height: 308px;
+  }
 }
 
 @media (max-width: 576px) {
   .navbar-container {
     align-items: center;
+  }
+
+  .gallery-line img {
+    max-width: 300px;
+  }
+
+  .gallery-line {
+    max-height: 200px;
+    width: 1800px;
+  }
+
+  .video-gallery .gallery-line {
+    width: 6400vw;
+    max-width: 6160px;
+    max-height: 382px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .photos-gallery__container .dragscroll {
+    height: auto;
   }
 
   .header-top {
