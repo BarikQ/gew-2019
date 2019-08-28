@@ -1,8 +1,13 @@
 (function($) {
-  if ($( window ).width() < 1000) {
-    $('.hotel-link').attr({'data-height': Math.floor($( window ).height() * 0.7), 'data-width': Math.floor($( window ).width() * 1)});
+  let width = $( window ).width();
+  let height = $( window ).height(); 
+  
+  if (width < 1000) {
+    $('.hotel-link').attr({'data-height': Math.floor(height * 0.7), 'data-width': Math.floor(width * 1)});
+  } if(width < 576) {
+    $('.hotel-link').attr({'data-height': Math.floor(height * 0.4), 'data-width': Math.floor(width * 1)});
   } else {
-    $('.hotel-link').attr({'data-height': Math.floor($( window ).height() * 0.9), 'data-width': Math.floor($( window ).width() * 0.9)});
+    $('.hotel-link').attr({'data-height': Math.floor(height * 0.9), 'data-width': Math.floor(width * 0.9)});
   }
   
 
@@ -41,23 +46,3 @@
   });
 
 }(jQuery));
-
-// $(document).ready(function() {
-// 	$('.popup-gallery').magnificPopup({
-// 		delegate: 'a',
-// 		type: 'image',
-// 		tLoading: 'Loading image #%curr%...',
-// 		mainClass: 'mfp-img-mobile',
-// 		gallery: {
-// 			enabled: true,
-// 			navigateByImgClick: true,
-// 			preload: [0,1] // Will preload 0 - before current, and 1 after the current image
-// 		},
-// 		image: {
-// 			tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
-// 			titleSrc: function(item) {
-// 				return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
-// 			}
-// 		}
-// 	});
-// });
