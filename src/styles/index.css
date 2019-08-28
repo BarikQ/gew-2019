@@ -460,8 +460,9 @@ option:hover {
 
 .d-t-1 {
   font-size: 34px;
-  line-height: 70%;
   letter-spacing: 0.2px;
+  position: relative;
+  top: -13px;
 }
 
 .d-t-2 {
@@ -476,7 +477,7 @@ option:hover {
   min-width: 228px;
   display: flex;
   margin-left: -7px;
-  margin-top: -3px;
+  margin-top: -30px;
 }
 
 .location-text {
@@ -2446,10 +2447,6 @@ textarea::-webkit-scrollbar {
     position: relative;
     top: 0px !important;
   }
-
-  .location {
-    margin-top: 0;
-  }
 }
 
 @media (max-width: 576px) {
@@ -2477,6 +2474,7 @@ textarea::-webkit-scrollbar {
 
   .location {
     justify-content: center;
+    margin-top: -15px;
   }
 
   .container-fluid {
