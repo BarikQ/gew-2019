@@ -65,6 +65,7 @@
 
 .speakers {
   padding: 0rem 0;
+  padding-bottom: 30px;
   position: relative;
   overflow: hidden;
 }
@@ -255,6 +256,7 @@
 @media only screen and (min-width: 768px) {
   .speakers {
     padding: 0rem 1rem;
+    padding-bottom: 30px;
   }
 
   .speakers .row .col-md-6 {

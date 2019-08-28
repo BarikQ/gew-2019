@@ -2558,3 +2558,18 @@ textarea::-webkit-scrollbar {
     height: 100% !important;
   }
 }
+
+@media (max-width: 400px) {
+  .logo img {
+    width: 50px;
+  }
+
+  .logo-text {
+    font-size: 11px;
+    margin-left: 8px;
+  }  
+
+  .selectric-wrapper {
+    margin-right: 0;
+  }
+}
