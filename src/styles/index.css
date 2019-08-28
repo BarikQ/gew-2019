@@ -2446,6 +2446,10 @@ textarea::-webkit-scrollbar {
     position: relative;
     top: 0px !important;
   }
+
+  .location {
+    margin-top: 0;
+  }
 }
 
 @media (max-width: 576px) {
