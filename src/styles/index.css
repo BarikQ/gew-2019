@@ -668,6 +668,8 @@ option:hover {
 
 .gew-features-bold {
   font-weight: 600;
+  display: flex;
+  justify-content: center;
 }
 
 .gew-features ul>li {
@@ -1175,7 +1177,7 @@ option:hover {
 }
 
 .bg-circle-5 {
-  top: 30%;
+  top: 30vw;
   left: 0;
 }
 
@@ -1693,6 +1695,10 @@ option:hover {
   max-width: 162px;
 }
 
+.finTech .companies-item {
+  margin: 20px auto;
+}
+
 .partners__container>div {
   justify-content: center;
 }
@@ -2068,9 +2074,18 @@ textarea::-webkit-scrollbar {
   align-items: center;
 }
 
+.speaker-image__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .speaker-image {
   width: 100%;
+  width: auto;
+  max-width: 100%;
   height: auto;
+  max-height: 356px;
 }
 
 .speaker-link {
@@ -2280,6 +2295,10 @@ textarea::-webkit-scrollbar {
   .radio-list {
     justify-content: space-around;
   }
+
+  .program-list .row {
+    padding: 0;
+  }
 }
 
 @media (max-width: 768px) {
@@ -2455,6 +2474,14 @@ textarea::-webkit-scrollbar {
   .gallery-line {
     max-height: 308px;
   }
+
+  .speaker-image {
+    width: 100%;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: unset;
+  }
 }
 
 @media (max-width: 576px) {
@@ -2473,14 +2500,18 @@ textarea::-webkit-scrollbar {
 
   .video-gallery .gallery-line {
     width: 6400vw;
-    max-width: 6160px;
+    max-width: 5160px;
     max-height: 382px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   .photos-gallery__container .dragscroll {
     height: auto;
+  }
+
+  .gallery-vid {
+    margin: 0;
   }
 
   .header-top {

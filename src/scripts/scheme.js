@@ -28,9 +28,14 @@ $(document).ready(function () {
     $(`.${this.id}`).each(function(e) {
       $(this).children().css('fill-opacity', 0.8);
     });
+    console.log($(this.id));
 
     if (!check) {
-      card.css('left', Xinner);
+      if (this.id == 'g44' || this.id == 'g48')  {
+        card.css('left', Xinner - $(card).width());
+      } else {
+        card.css('left', Xinner);
+      }
       card.css('top', Yinner);
     }
 

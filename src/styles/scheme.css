@@ -202,7 +202,7 @@
 }
 
 .scheme_19 .r-10::before,
-.scheme-19 .r-10::after {
+.scheme_19 .r-10::after {
   background: #cadc00;
 }
 
@@ -368,7 +368,7 @@
   }
 
   .scheme_19 .r-10 {
-    width: 300px;
+    width: 190px;
   }
 
   .date-day:nth-child(1) {

@@ -1,7 +1,10 @@
 $(document).ready(function () {
   const modal = document.querySelector('#modal');
 
-  $('select').selectric();
+  $('select').selectric({
+    disableOnMobile: false,
+    nativeOnMobile: false
+  });
 
   $(".popup-menu").click(function () {
     $(".modal-menu").fadeToggle('fast');
