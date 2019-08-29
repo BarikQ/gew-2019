@@ -14,10 +14,10 @@ document.getElementById('d').onchange = (e) => {
   console.log(e.target.value);
   switch (e.target.value) {
     case 'EN':
-      window.location = `https://barikq.github.io/gew-2019/index_en.html`;
+      window.location = `http://127.0.0.1:5500/index_en.html`;
       break;
     case 'RU':
-      window.location = `https://barikq.github.io/gew-2019/`;
+      window.location = `http://127.0.0.1:5500/index.html`;
       break;
   }
 };

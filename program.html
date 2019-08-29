@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./src/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="./src/scripts/jquery-ui-1.12.1.custom/jquery-ui.min.css">
+  <link rel="stylesheet" href="./src/styles/selectric.min.css">
+  <link rel="stylesheet" href="./src/scripts/Magnific-Popup-master/dist/magnific-popup.css">
+  <link rel="stylesheet" href="./src/styles/space.css">
+  <!-- <link rel="stylesheet" href="./src/styles/speakers.css"> -->
+  <!-- TODO add custom style for modal -->
+  <link rel="stylesheet" href="./src/styles/custom.css">
+  <title>Всемирная неделя предпринимательства GEW.BY</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar__inner">
+          <!-- TODO handle click -->
+          <a class="h-b-1 button orange ticket-buy" href="#"><span>Купить билет</span></a>
+          <div class="popup-menu">
+            <img src="./src/images/menu.png">
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="header row">
+      <div class="container">
+
+        <div class="header-top row col-12">
+          <div class="navbar-logo col-sm-6 col-6">
+            <div class="logo">
+              <img src="./src/images/logo.png">
+            </div>
+
+            <h4 class="logo-text">
+              Всемирная неделя предпринимательства<br> в Беларуси
+            </h4>
+          </div>
+
+          <div class="navbar-container col-sm-6 col-6">
+            <div class="nav-top">
+              <select class="languages-list" name="" id="d">
+                <option class="language" value="RU">RU</option>
+                <option class="language" value="EN">EN</option>
+              </select>
+
+              <div class="popup-menu">
+                <span>
+                  <span class="m-t">МЕНЮ</span>
+                  <img src="./src/images/menu.png">
+                </span>
+              </div>
+            </div>
+
+            <div class="social-list">
+              <ul>
+                <li class="facebook social-link"><a href="https://www.facebook.com/gewbelarus/" target=_blank><img
+                      src="./src/images/fb.png"></a></li>
+                <li class="twetter social-link"><a href="#" target=_blank><img src="./src/images/twitter.png"></a></li>
+                <li class="youtube social-link"><a href="https://www.youtube.com/channel/UCNpvA-UpZTKYCYdZISNgaxQ/"
+                    target=_blank><img src="./src/images/yt.png"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="header-main row col-12">
+          <div class="col-12 tickets-head__container">
+            <span class="tickets-head">Программа</span>
+          </div>
+          <div class="header-text col-12">
+            <a href="index.html" class="return-link">На главную</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="main row">
+      <div class="main__container container">
+
+        <div class="filter__container col-3">
+
+          <div class="filter-head">
+            <span class="bold-text">Фильтр</span>
+          </div>
+
+          <div class="filter-date">
+            
+            <span class="filter-title">
+              <span class="filter-line"></span>
+              <span class="filter-title-text">По датам</span>
+            </span>
+
+            <div class="filter-item">
+              <input class="date-radio input-radio" type="checkbox" name="date" id="date-18">
+
+              <label class="filter-label date-18" for="date-18">
+
+                <span class="date-box filter-box">
+                  <span></span>
+                </span>
+
+                <span class="filter-text">
+                  18 ноября
+                </span>
+
+              </label>
+            </div>
+
+            <div class="filter-item">
+              <input class="date-radio input-radio" type="checkbox" name="date" id="date-19">
+
+              <label class="filter-label date-19" for="date-19">
+
+                <span class="date-box filter-box">
+                  <span></span>
+                </span>
+
+                <span class="filter-text">
+                  19 ноября
+                </span>
+
+              </label>
+            </div>
+
+            <div class="filter-item">
+              <input class="date-radio input-radio" type="checkbox" name="date" id="date-20">
+
+              <label class="filter-label date-20" for="date-20">
+
+                <span class="date-box filter-box">
+                  <span></span>
+                </span>
+
+                <span class="filter-text">
+                  20 ноября
+                </span>
+
+              </label>
+            </div>
+
+            <div class="filter-item">
+              <input class="date-radio input-radio" type="checkbox" name="date" id="date-21">
+
+              <label class="filter-label date-21" for="date-21">
+
+                <span class="date-box filter-box">
+                  <span></span>
+                </span>
+
+                <span class="filter-text">
+                  21 ноября
+                </span>
+
+              </label>
+            </div>
+
+            <div class="filter-item">
+              <input class="date-radio input-radio" type="checkbox" name="date" id="date-22">
+
+              <label class="filter-label date-22" for="date-22">
+
+                <span class="date-box filter-box">
+                  <span></span>
+                </span>
+
+                <span class="filter-text">
+                  22 ноября
+                </span>
+
+              </label>
+            </div>
+
+            <div class="filter-item">
+              <input class="date-radio input-radio" type="checkbox" name="date" id="date-23">
+
+              <label class="filter-label date-23" for="date-23">
+
+                <span class="date-box filter-box">
+                  <span></span>
+                </span>
+
+                <span class="filter-text">
+                  23 ноября
+                </span>
+
+              </label>
+            </div>
+
+            <div class="filter-item">
+              <input class="date-radio input-radio" type="checkbox" name="date" id="date-24">
+
+              <label class="filter-label date-24" for="date-24">
+
+                <span class="date-box filter-box">
+                  <span></span>
+                </span>
+
+                <span class="filter-text">
+                  24 ноября
+                </span>
+
+              </label>
+            </div>
+
+          </div>
+
+          <div class="filter-event">
+
+            <span class="filter-title">
+              <span class="filter-line"></span>
+              <span class="filter-title-text">По площадкам</span>
+            </span>
+
+            <div class="filter-item fintech">
+              <input class="event-radio input-radio" type="checkbox" name="event" id="fintech">
+
+              <label class="filter-label" for="fintech">
+
+                <span class="date-box filter-box">
+                  <span></span>
+                </span>
+
+                <span class="filter-text">
+                  FinTech Day
+                </span>
+
+              </label>
+            </div>
+
+            <div class="filter-item investors">
+              <input class="event-radio input-radio" type="checkbox" name="event" id="investors">
+
+              <label class="filter-label " for="investors">
+
+                <span class="date-box filter-box">
+                  <span></span>
+                </span>
+
+                <span class="filter-text">
+                  Investor's Factory
+                </span>
+
+              </label>
+            </div>
+
+            <div class="filter-item conference">
+              <input class="event-radio input-radio" type="checkbox" name="event" id="conference">
+
+              <label class="filter-label " for="conference">
+
+                <span class="date-box filter-box">
+                  <span></span>
+                </span>
+
+                <span class="filter-text">
+                  Конференция по агротуризму
+                </span>
+
+              </label>
+            </div>
+
+            <div class="filter-item forum">
+              <input class="event-radio input-radio" type="checkbox" name="event" id="forum">
+
+              <label class="filter-label" for="forum">
+
+                <span class="date-box filter-box">
+                  <span></span>
+                </span>
+
+                <span class="filter-text">
+                  IX Международный<br /> форум предпринимательства
+                </span>
+
+              </label>
+            </div>
+
+            <div class="filter-item startup">
+              <input class="event-radio input-radio" type="checkbox" name="event" id="startup">
+
+              <label class="filter-label" for="startup">
+
+                <span class="date-box filter-box">
+                  <span></span>
+                </span>
+
+                <span class="filter-text">
+                  Startup аллея
+                </span>
+
+              </label>
+            </div>
+
+            <div class="filter-item master-cls-1">
+              <input class="event-radio input-radio" type="checkbox" name="event" id="master-cls-1">
+
+              <label class="filter-label" for="master-cls-1">
+
+                <span class="date-box filter-box">
+                  <span></span>
+                </span>
+
+                <span class="filter-text">
+                  Мастер-классы
+                </span>
+
+              </label>
+            </div>
+
+            <div class="filter-item gewBel">
+              <input class="event-radio input-radio" type="checkbox" name="event" id="gewBel">
+
+              <label class="filter-label" for="gewBel">
+
+                <span class="date-box filter-box">
+                  <span></span>
+                </span>
+
+                <span class="filter-text">
+                  Выставка GEW Belarus
+                </span>
+
+              </label>
+            </div>
+
+            <div class="filter-item networking">
+              <input class="event-radio input-radio" type="checkbox" name="event" id="networking">
+
+              <label class="filter-label" for="networking">
+
+                <span class="date-box filter-box">
+                  <span></span>
+                </span>
+
+                <span class="filter-text">
+                  Зона Нетворкинга
+                </span>
+
+              </label>
+            </div>
+
+            <div class="filter-item pressa">
+              <input class="event-radio input-radio" type="checkbox" name="event" id="pressa">
+
+              <label class="filter-label" for="pressa">
+
+                <span class="date-box filter-box">
+                  <span></span>
+                </span>
+
+                <span class="filter-text">
+                  Комната для прессы
+                </span>
+
+              </label>
+            </div>
+
+            <div class="filter-item speakers">
+              <input class="event-radio input-radio" type="checkbox" name="event" id="speakers">
+
+              <label class="filter-label" for="speakers">
+
+                <span class="date-box filter-box">
+                  <span></span>
+                </span>
+
+                <span class="filter-text">
+                  Комната для спикеров
+                </span>
+
+              </label>
+            </div>
+
+            <div class="filter-item business">
+              <input class="event-radio input-radio" type="checkbox" name="event" id="business">
+
+              <label class="filter-label" for="business">
+
+                <span class="date-box filter-box">
+                  <span></span>
+                </span>
+
+                <span class="filter-text">
+                  Консультации для бизнеса
+                </span>
+
+              </label>
+            </div>
+
+            <div class="filter-item master-cls-2">
+              <input class="event-radio input-radio" type="checkbox" name="event" id="master-cls-2">
+
+              <label class="filter-label" for="master-cls-2">
+
+                <span class="date-box filter-box">
+                  <span></span>
+                </span>
+
+                <span class="filter-text">
+                  Мастер-классы
+                </span>
+
+              </label>
+            </div>
+
+            <div class="filter-item master-cls-3">
+              <input class="event-radio input-radio" type="checkbox" name="event" id="master-cls-3">
+
+              <label class="filter-label" for="master-cls-3">
+
+                <span class="date-box filter-box">
+                  <span></span>
+                </span>
+
+                <span class="filter-text">
+                  Мастер-классы
+                </span>
+
+              </label>
+            </div>
+
+            <div class="filter-item master-cls-4">
+              <input class="event-radio input-radio" type="checkbox" name="event" id="master-cls-4">
+
+              <label class="filter-label" for="master-cls-4">
+
+                <span class="date-box filter-box">
+                  <span></span>
+                </span>
+
+                <span class="filter-text">
+                  Мастер-классы
+                </span>
+
+              </label>
+            </div>
+
+            <div class="filter-item imaguru-data">
+              <input class="event-radio input-radio" type="checkbox" name="event" id="imaguru-data">
+
+              <label class="filter-label" for="imaguru-data">
+
+                <span class="date-box filter-box">
+                  <span></span>
+                </span>
+
+                <span class="filter-text">
+                  Имагуру
+                </span>
+
+              </label>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="cards__container col-9">
+
+          <div class="event-info">
+
+            <span class="event-date bold-text">18 ноября</span>
+            <span> – </span>
+            <span class="event-title">Fintech Day</span>
+
+            <a href="./tickets.html" class="button orange">Купить билет</a>
+
+          </div>
+
+          <div class="card-item">
+
+            <div class="card-time__container">
+              <span class="card-time">
+                9.00
+              </span>
+            </div>
+
+            <div class="card__inner">
+
+              <div class="card-text">
+
+                <span class="event-title"></span>
+                <span class="event-location"></span>
+
+                <span class="event-details">
+                  <label for="card-checkbox">Показать детали</label>
+                  <input type="checkbox" name="details" id="card-checkbox">
+                </span>
+
+              </div>
+
+              <div class="card-photos">
+
+
+
+              </div>
+
+            </div>
+
+            <div class="card-adjacent">
+              <p class="adjacent-text">
+                1. sfd;hkdsfhkdsfhfsdhfdsh. 2. sdahg;psjhs'jphf'dshdsfh 3. s;jgpsajg;asjgsdfgsdfg.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <footer class="footer row">
+      <div class="container row">
+        <div class="footer-left__container col-md-4 col-12">
+          <div class="footer-logo">
+            <div class="navbar-logo col-6">
+              <div class="logo">
+                <img src="./src/images/footer-logo.png">
+              </div>
+
+              <h4 class="logo-text">
+                Всемирная неделя предпринимательства в Беларуси
+              </h4>
+            </div>
+          </div>
+
+          <div class="footer-text">
+            <p>
+              ООО ЦЕНТР ДЕЛОВЫХ КОММУНИКАЦИЙ BELBIZ,
+              ОФИЦИАЛЬНЫЙ ОРГАНИЗАТОР GLOBAL
+              ENTERPRENEURSHIP WEEK В БЕЛАРУСИ,ЗАНИМАЕТСЯ
+              ПОДДЕРЖКОЙ БИЗНЕСА БОЛЕЕ 13 ЛЕТ
+            </p>
+          </div>
+
+          <div class="footer-links">
+            <div class="social-list">
+              <ul>
+                <li class="facebook social-link"><a href="https://www.facebook.com/gewbelarus/" target="_blank"><img
+                      src="./src/images/fb.png"></a></li>
+                <li class="twetter social-link"><a href="#" target="_blank"><img src="./src/images/twitter.png"></a>
+                </li>
+                <li class="youtube social-link"><a href="https://www.youtube.com/channel/UCNpvA-UpZTKYCYdZISNgaxQ/"
+                    target="_blank"><img src="./src/images/yt.png"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-mid__container col-md-4 col-12">
+          <ul class="footer-nav">
+            <li><a href="#program">Программа</a></li>
+            <li><a href="#reviews">Отзывы</a></li>
+            <li><a href="#speakers">Спикеры</a></li>
+            <li><a href="#partners">Партнеры</a></li>
+            <li><a href="#place">Площадка</a></li>
+            <li><a href="#">Стартапы</a></li>
+            <li><a href="#companies">Компании</a></li>
+            <li><a href="#">История GEW Беларуси</a></li>
+            <li><a href="#battle">Bel.Biz Battle</a></li>
+            <li><a href="#">Стать волонтером</a></li>
+            <li><a href="#gallerys">Фотографии</a></li>
+            <li class="imaguru">
+              <a href="#">Другие проекты<br>
+                <span><img src="./src/images/imaguru-small.png" alt=""></span>
+              </a>
+            </li>
+            <li><a href="#mentors">Ментор года</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-right__container col-md-4 col-12">
+          <h4>Остались вопросы?</h4>
+          <p>Напишите нам!</p>
+          <form action="#" class="callback-form">
+            <input type="text" name="name" placeholder="Имя" id="nameAttr" required autocomplete="off">
+            <input type="text" name="mail" placeholder="E-mail" id="mailAttr" required>
+            <textarea rows="18" name="comment" placeholder="Сообщение" id="commentAttr"></textarea>
+            <input type="submit" value="Отправить" class="button trans submit" id="sendButton" formaction="#">
+          </form>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <div class="modal-menu modal">
+    <div class="modal-container">
+      <div class="modal-content">
+        <div class="container row">
+          <div class="col-6">
+            <div class="navbar-logo">
+              <div class="logo">
+                <img src="./src/images/logo.png">
+              </div>
+
+              <h4 class="logo-text">
+                Всемирная неделя предпринимательства в Беларуси
+              </h4>
+            </div>
+          </div>
+
+          <div class="col-6">
+            <img class="close" src="./src/images/close.png">
+          </div>
+        </div>
+
+        <div class="container row">
+          <div class="menu-column col-sm-6 col-lg-4 col-12">
+            <ul>
+              <li><a class="modal-link" href="#program">Программа</a></li>
+              <li><a class="modal-link" href="#speakers">Спикеры</a></li>
+              <li><a class="modal-link" href="#place">Площадка</a></li>
+              <li><a class="modal-link" href="#companies">Компании</a></li>
+              <li><a class="modal-link" href="#battle">Bel.Biz Battle</a></li>
+            </ul>
+          </div>
+
+          <div class="menu-column mid-column col-sm-6 col-lg-4 col-12">
+            <ul>
+              <li><a class="modal-link" href="#reviews">Отзывы</a></li>
+              <li><a class="modal-link" href="#partners">Партнеры</a></li>
+              <li><a class="modal-link" href="#">Стартапы</a></li>
+              <li><a class="modal-link" href="#gallerys">Фотографии</a></li>
+              <li><a class="modal-link" href="#mentors">Ментор года</a></li>
+            </ul>
+          </div>
+
+          <div class="menu-column col-sm-12 col-lg-4 col-12">
+            <ul>
+              <li><a class="modal-link" href="#">История GEW Беларуси</a></li>
+              <li><a class="modal-link" href="#">Стать волонтером</a></li>
+              <li>
+                <a class="modal-link" href="#">Другие проекты
+                  <span>IMAGURU</span>
+                </a>
+              </li>
+              <li class="modal-links">
+                <div class="modal-buttons">
+                  <a class="button orange ticket-buy" href="#">Купить билет</a>
+                  <a class="button trans" href="#">Выставка</a>
+                </div>
+              </li>
+              <li class="modal-links">
+                <div class="social-list">
+                  <ul>
+                    <li class="facebook social-link">
+                      <a href="https://www.facebook.com/gewbelarus/" target="_blank"><img src="./src/images/fb.png">
+                      </a>
+                    </li>
+                    <li class="twetter social-link">
+                      <a href="#" target="_blank"><img src="./src/images/twitter.png">
+                      </a>
+                    </li>
+                    <li class="youtube social-link">
+                      <a href="https://www.youtube.com/channel/UCNpvA-UpZTKYCYdZISNgaxQ/" target="_blank"><img
+                          src="./src/images/yt.png">
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TODO modal -->
+  <div class="modal-market modal">
+    <div class="modal-container modal-container-market">
+      <div class="modal-content modal-content-market col-lg-10 col-xl-8 col-sm-11 col-12 row">
+        <img class="close" id="close_market" src="./src/images/close-black.png">
+        <p class=market-review>
+          Дорогие друзья, продажа билетов стартует 1 сентября 2019 года.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <script src='./src/scripts/jquery-3.4.1.min.js'></script>
+  <script src='./src/bootstrap-4.3.1-dist/js/bootstrap.min.js'></script>
+  <script src="./src/scripts/lcdsantos-jQuery-Selectric-0b92c26/public/jquery.selectric.min.js"></script>
+  <!-- <script src='./src/scripts/tickets.js'></script> -->
+  <script src='./src/scripts/program.js'></script>
+  <!-- TODO all cus customs scripts -->
+  <script src="./src/scripts/custom.js"></script>
+</body>
+<!-- 
+
+  
+  fintech  — FINTECH DAY
+  investors — INVESTOR'S FACTORY
+  conference — КОНФЕРЕНЦИЯ ПО АГРОТУРИЗМУ(НУ ИЛИ ЧТО ТАМ БУДЕТ СТОЯТЬ)
+  forum — ФОРУМ
+  startup — СТАРТАП АЛЛЕЯ
+  gewBel — ВЫСТАВКА GEW BELARUS
+  networking — ЗОНА НЕТВОРКИНГА
+  pressa — КОМНАТА ДЛЯ ПРЕССЫ
+  speakers — КОМНАТА ДЛЯ СПИКЕРОВ
+  business — КОНСУЛЬТАЦИИ ДЛЯ БИЗНЕСА
+  master-cls-1 — МАСТЕР КЛАСС ( 1 )  ЧТО-ТО ТИПО ГОЛУБОГО НО ПОТЕМНЕЕ. (НА СКРИНЕ ЧТО МНЕ КИДАЛИ ОН В НАЧАЛЕ)
+  master-cls-2 — МАСТЕР КЛАСС ( 2 )  РОЗОВЫЙ
+  master-cls-3 — МАСТЕР КЛАСС ( 2 )  ЖЁЛТЫЙ
+  master-cls-4 — МАСТЕР КЛАСС ( 2 )  СВЕТЛО-ГОЛУБОЙ
+  imaguru-data — ИМАГУРУ
+
+
+  ЕСЛИ ЧТО В ЛС НАПИШЕШЬ
+-->

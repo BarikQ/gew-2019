@@ -1093,6 +1093,8 @@ textarea::-webkit-scrollbar {
   }
 }
 
+
+
 @media (max-width: 576px) {
   .navbar-container {
     align-items: center;

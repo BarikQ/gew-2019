@@ -1,3 +1,31 @@
+window.onload = function() {
+
+  let inputsDate = document.querySelectorAll('.date-radio');
+  let inputsEvent = document.querySelectorAll('.event-radio');
+
+  inputsDate.forEach((elem) => {
+    elem.addEventListener('click', (e) => {
+      
+      inputsDate.forEach(element => {
+        if (element !== e.target) {
+          element.checked = false;
+        }
+      });
+    });
+  });
+
+  inputsEvent.forEach((elem) => {
+    elem.addEventListener('click', (e) => {
+      
+      inputsEvent.forEach(element => {
+        if (element !== e.target) {
+          element.checked = false;
+        }
+      });
+    });
+  });
+}
+
 $(window).ready(function() {
   $('select').selectric({
     disableOnMobile: false,
@@ -33,16 +61,4 @@ $(window).ready(function() {
       scrollTop: top
     }, 1500);
   });
-
-  if ($(window).width() < 1124) {
-    $('.ticket-title').each(function() {
-      let len = $(this).html().length;
-
-      let str = $(this).html().slice(0, len);
-      let strMas = str.split(' ');
-      
-      $(this).html(`${strMas[0]} ${strMas[1]}<br />${strMas[2]}`);
-      $(this).css('margin', 0);
-    });
-  }
 });
