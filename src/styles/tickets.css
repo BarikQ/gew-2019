@@ -652,9 +652,13 @@ textarea::-webkit-scrollbar {
   right: 0;
 }
 
+.main {
+  padding-bottom: 100px;
+}
+
 .main .container {
   padding: 0 7.6vw;
-  padding-top: 126px;
+  padding-top: 121px;
 }
 
 .tickets__container {
@@ -707,8 +711,8 @@ textarea::-webkit-scrollbar {
 }
 
 .ticket-head {
-  padding-top: 71px;
-  height: 514px;
+  padding-top: 77px;
+  height: 519px;
   justify-content: flex-start;
 }
 
@@ -740,8 +744,6 @@ textarea::-webkit-scrollbar {
 .ticket-item img {
   position: absolute;
   top: -60px;
-  width: 110px;
-  height: 110px;
 }
 
 .day-title {
@@ -890,6 +892,27 @@ textarea::-webkit-scrollbar {
   cursor: pointer;
 }
 
+.price-info {
+  margin-top: 50px;
+  margin-left: 3px;
+  letter-spacing: 0.6px;
+  word-spacing: 0px;
+}
+
+.bold-text {
+  font-weight: 800;
+  font-family: 'V-B';
+}
+
+.text-row-2 {
+  position: relative;
+  top: -5px;
+}
+
+.mobile-price {
+  display: none;
+}
+
 @media only screen and (min-width: 768px) {
   .mentors .row .col-md-6 {
     padding: 0;
@@ -920,6 +943,41 @@ textarea::-webkit-scrollbar {
   .menu-column ul {
     align-items: center;
   }
+
+  .main .container {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: unset;
+  }
+
+  .tickets__container {
+    left: 0;
+    max-width: 100%;
+    margin: 0;
+    justify-content: center;
+  }
+
+  .ticket-feature {
+    left: 0;
+  }
+
+  .price {
+    max-width: 25%;
+  }
+
+  .price-item {
+    max-width: unset;
+    width: 100%;
+  }
+
+  .ticket-item {
+    padding-left: 20px;
+    padding-right: 20px
+  }
+
+  .ticket-head {
+    height: 540px;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -945,6 +1003,37 @@ textarea::-webkit-scrollbar {
 
   .menu-column:nth-child(1)::after {
     right: 0;
+  }
+
+  .ticket-item:not(.ticket-head) {
+    padding: 0 10px;
+  }
+
+  .price {
+    max-width: 25%;
+  }
+
+  .ticket-head {
+    height: 540px;
+  }
+
+  .ticket-item {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  
+  .price-item {
+    width: 100%;
+    max-width: unset;
+  }
+
+  .tickets__container {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .ticket-features {
+    grid-gap: 5px;
   }
 }
 
@@ -988,6 +1077,23 @@ textarea::-webkit-scrollbar {
   .button span {
     position: relative;
     top: 0px !important;
+  }
+
+  .ticket-head {
+    height: 640px;
+  }
+
+  .buy-button {
+    width: 130px;
+  }
+
+  .tickets-head__container {
+    text-align: center;
+  }
+
+  .tickets-head {
+    left: 0;
+    top: 0;
   }
 }
 
@@ -1046,6 +1152,37 @@ textarea::-webkit-scrollbar {
 
   .menu-column:nth-child(1)::after {
     content: none;
+  }
+
+  .mobile-price {
+    display: flex;
+  }
+
+  .ticket-column {
+    max-width: 50%;
+  }
+
+  .ticket-head {
+    height: unset;
+  }
+
+  .ticket-item {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .business,
+  .vip {
+    margin-top: 90px;
+  }
+
+  .row {
+    margin: 0;
+  }
+
+  .header .container {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
