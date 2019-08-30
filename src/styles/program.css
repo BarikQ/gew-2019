@@ -1345,6 +1345,132 @@ textarea::-webkit-scrollbar {
   margin: 0;
 }
 
+.modal-speaker .close,
+.modal-event .close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.close {
+  cursor: pointer;
+  transition: 0.2s ease all;
+}
+
+.close:hover {
+  transform: scale(1.05);
+  transition: 0.2s ease all;
+}
+
+.modal-speaker,
+.modal-event {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.modal-speaker .modal-content,
+.modal-event .modal-content {
+  display: flex;
+  background: white;
+  color: black;
+  border-radius: 0;
+  max-height: 444px;
+  max-width: 960px;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-event .modal-content {
+  max-height: unset;
+  height: unset;
+  align-items: flex-start;
+  padding: 35px 60px;
+  font-size: 14px;
+}
+
+.speaker-image__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.speaker-image {
+  width: 100%;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 356px;
+}
+
+.speaker-link {
+  color: #00909d;
+  transition: 0.2s ease all;
+}
+
+.speaker-link:hover {
+  font-size: 102%;
+  transition: 0.2s ease all;
+}
+
+.speaker-position {
+  font-size: 1.2rem;
+}
+
+.speaker-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+.speaker-image__container {
+  margin: 0 auto;
+}
+
+.modal-event-item {
+  margin-left: 19px;
+  position: relative;
+}
+
+.modal-event-item::before {
+  content: '';
+  display: block;
+  height: 6px;
+  width: 6px;
+  position: absolute;
+  top: 8px;
+  left: -19px;
+  background: #8261cc;
+}
+
+.modal-event-title {
+  font-size: 28px;
+}
+
+.modal-event-text-paragraph {
+  margin: 0;
+}
+
+.modal-event-text-paragraph .bold-text {
+  font-size: 15px;
+}
+
+.modal-event-button__container {
+  align-self: center;
+  margin-top: 10px;
+}
+
+.adjacent-show {
+  position: relative;
+  top: 0;
+  display: block;
+  opacity: 1;
+  transition: 0.5s ease all;
+}
+
+.card-checkbox {
+  cursor: pointer;
+}
+
 @media (max-width: 1200px) {
   .header .container {
     padding: 0 2vw;
@@ -1537,126 +1663,4 @@ textarea::-webkit-scrollbar {
   .selectric-wrapper {
     margin-right: 0;
   }
-}
-
-.modal-speaker .close,
-.modal-event .close {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-}
-
-.close {
-  cursor: pointer;
-  transition: 0.2s ease all;
-}
-
-.close:hover {
-  transform: scale(1.05);
-  transition: 0.2s ease all;
-}
-
-.modal-speaker,
-.modal-event {
-  background: rgba(255, 255, 255, 0.5);
-}
-
-.modal-speaker .modal-content,
-.modal-event .modal-content {
-  display: flex;
-  background: white;
-  color: black;
-  border-radius: 0;
-  max-height: 444px;
-  max-width: 960px;
-  justify-content: center;
-  align-items: center;
-}
-
-.modal-event .modal-content {
-  max-height: unset;
-  height: unset;
-  align-items: flex-start;
-  padding: 35px 60px;
-  font-size: 14px;
-}
-
-.speaker-image__container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.speaker-image {
-  width: 100%;
-  width: auto;
-  max-width: 100%;
-  height: auto;
-  max-height: 356px;
-}
-
-.speaker-link {
-  color: #00909d;
-  transition: 0.2s ease all;
-}
-
-.speaker-link:hover {
-  font-size: 102%;
-  transition: 0.2s ease all;
-}
-
-.speaker-position {
-  font-size: 1.2rem;
-}
-
-.speaker-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  height: 100%;
-}
-
-.speaker-image__container {
-  margin: 0 auto;
-}
-
-.modal-event-item {
-  margin-left: 19px;
-  position: relative;
-}
-
-.modal-event-item::before {
-  content: '';
-  display: block;
-  height: 6px;
-  width: 6px;
-  position: absolute;
-  top: 8px;
-  left: -19px;
-  background: #8261cc;
-}
-
-.modal-event-title {
-  font-size: 28px;
-}
-
-.modal-event-text-paragraph {
-  margin: 0;
-}
-
-.modal-event-text-paragraph .bold-text {
-  font-size: 15px;
-}
-
-.modal-event-button__container {
-  align-self: center;
-  margin-top: 10px;
-}
-
-.adjacent-show {
-  position: relative;
-  top: 0;
-  display: block;
-  opacity: 1;
-  transition: 0.5s ease all;
 }
