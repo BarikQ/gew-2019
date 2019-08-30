@@ -699,7 +699,6 @@ textarea::-webkit-scrollbar {
 }
 
 .button:hover {
-  background: transparent;
   color: #525252;
   transition: 0.2s ease all;
 }

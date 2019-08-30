@@ -713,7 +713,7 @@ textarea::-webkit-scrollbar {
 
 .ticket-head {
   padding-top: 77px;
-  height: 519px;
+  height: 600px;
   justify-content: flex-start;
 }
 
@@ -810,9 +810,12 @@ textarea::-webkit-scrollbar {
 }
 
 .button:hover {
-  background: transparent;
   color: #525252;
   transition: 0.2s ease all;
+}
+
+.buy-button:hover {
+  background: transparent;
 }
 
 .navbar .button:hover {
@@ -978,7 +981,7 @@ textarea::-webkit-scrollbar {
   }
 
   .ticket-head {
-    height: 540px;
+    height: 600px;
   }
 }
 
@@ -1013,7 +1016,7 @@ textarea::-webkit-scrollbar {
   }
 
   .ticket-head {
-    height: 540px;
+    height: 640px;
   }
 
   .ticket-item {
@@ -1079,7 +1082,7 @@ textarea::-webkit-scrollbar {
   }
 
   .ticket-head {
-    height: 640px;
+    height: 740px;
   }
 
   .buy-button {
