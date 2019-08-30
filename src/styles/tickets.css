@@ -878,7 +878,7 @@ textarea::-webkit-scrollbar {
   background-position: center;
   position: absolute;
   left: -20px;
-  top: 3px;
+  top: 2px;
   transition: 0.2s ease all;
   cursor: pointer;
 }
