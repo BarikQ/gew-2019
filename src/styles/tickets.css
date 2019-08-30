@@ -1094,7 +1094,6 @@ textarea::-webkit-scrollbar {
 }
 
 
-
 @media (max-width: 576px) {
   .navbar-container {
     align-items: center;
@@ -1162,6 +1161,7 @@ textarea::-webkit-scrollbar {
 
   .ticket-column {
     max-width: 50%;
+    box-shadow: 0 12px 14px -18px rgba(0, 0, 0, .5);
   }
 
   .ticket-head {
@@ -1183,7 +1183,7 @@ textarea::-webkit-scrollbar {
 
   .business,
   .vip {
-    margin-top: 90px;
+    margin-top: 130px;
   }
 
   .row {
@@ -1193,6 +1193,15 @@ textarea::-webkit-scrollbar {
   .header .container {
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .return-link {
+    left: 20px;
+  }
+
+  .return-link::before {
+    left: -20px;
+    top: 2px;
   }
 }
 
