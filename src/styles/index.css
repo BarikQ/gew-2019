@@ -1291,7 +1291,7 @@ option:hover {
 .video-gallery .gallery-line {
   width: 6400vw;
   max-width: 6160px;
-  max-height: 382px;
+  height: 382px;
 }
 
 .photos-gallery__container .dragscroll {
@@ -1926,7 +1926,9 @@ textarea::-webkit-scrollbar {
   transition: 0.5s ease all;
 }
 
-.video-gallery {}
+.video-gallery {
+  height: 382px;
+}
 
 .video-cover {
   display: none;
