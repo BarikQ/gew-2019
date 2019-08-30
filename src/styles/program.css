@@ -1645,6 +1645,10 @@ textarea::-webkit-scrollbar {
     margin: 55px 0;
   }
 
+  .header-main {
+    padding: 25px;
+  }
+
   .header-bottom-logo {
     justify-content: center;
     top: 0;
