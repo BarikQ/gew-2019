@@ -11,7 +11,8 @@
   <link rel="stylesheet" href="./src/scripts/jquery-ui-1.12.1.custom/jquery-ui.min.css">
   <link rel="stylesheet" href="./src/styles/selectric.min.css">
   <link rel="stylesheet" href="./src/scripts/Magnific-Popup-master/dist/magnific-popup.css">
-  <link rel="stylesheet" href="./src/styles/space.css">
+  <link rel="stylesheet" href="./src/styles/speakers.css">
+  <link rel="stylesheet" href="./src/styles/program.css">
   <!-- <link rel="stylesheet" href="./src/styles/speakers.css"> -->
   <!-- TODO add custom style for modal -->
   <link rel="stylesheet" href="./src/styles/custom.css">
@@ -95,7 +96,7 @@
           </div>
 
           <div class="filter-date">
-            
+
             <span class="filter-title">
               <span class="filter-line"></span>
               <span class="filter-title-text">По датам</span>
@@ -366,10 +367,10 @@
               </label>
             </div>
 
-            <div class="filter-item speakers">
-              <input class="event-radio input-radio" type="checkbox" name="event" id="speakers">
+            <div class="filter-item speakers-data">
+              <input class="event-radio input-radio" type="checkbox" name="event" id="speakers-data">
 
-              <label class="filter-label" for="speakers">
+              <label class="filter-label" for="speakers-data">
 
                 <span class="date-box filter-box">
                   <span></span>
@@ -470,48 +471,736 @@
 
           <div class="event-info">
 
-            <span class="event-date bold-text">18 ноября</span>
-            <span> – </span>
-            <span class="event-title">Fintech Day</span>
+            <div class="event-info__inner">
+              <span class="event-date bold-text">18 ноября</span>
+              <span> – </span>
+              <span class="cards-title" id="event-name">Fintech Day</span>
+            </div>
 
-            <a href="./tickets.html" class="button orange">Купить билет</a>
+            <a href="./tickets.html" class="button orange event-button">Купить билет</a>
 
           </div>
 
-          <div class="card-item">
+          <div class="cards__column">
 
-            <div class="card-time__container">
-              <span class="card-time">
-                9.00
-              </span>
-            </div>
+            <div class="card-item row fintech">
 
-            <div class="card__inner">
-
-              <div class="card-text">
-
-                <span class="event-title"></span>
-                <span class="event-location"></span>
-
-                <span class="event-details">
-                  <label for="card-checkbox">Показать детали</label>
-                  <input type="checkbox" name="details" id="card-checkbox">
+              <div class="card-time__container col-md-2">
+                <span class="card-time">
+                  9.00
                 </span>
+              </div>
+
+              <div class="card__inner col-md-10 row">
+
+                <div class="card-text col-md-6">
+
+                  <span class="event-title">Старт регистрации</span>
+
+                  <span class="event-location">
+                    <span class="location">Marriott Hotel - </span>
+                    <span class="event-name underline" id="event-name">FinTech Day</span>
+                  </span>
+
+                  <span class="event-details">
+                    <label class="card-checkbox underline" for="card-checkbox">Показать детали <img
+                        src="./src/images/card-checkbox-bottom.png"></label>
+                    <input type="checkbox" name="details" id="card-checkbox">
+                  </span>
+
+                  <span class="event-duration__container">
+                    <span class="event-duration">45 минут</span>
+                  </span>
+
+                </div>
+
+                <div class="card-photos few-photos col-md-6">
+                  <div class="speaker-photo-md photo-1">
+                    <img src="./src/images/speakers/JosephWei.jpg" alt="">
+                  </div>
+                  <div class="speaker-photo-md photo-2">
+                    <img src="./src/images/speakers/JosephWei.jpg" alt="">
+                  </div>
+                  <div class="speaker-photo-md photo-3">
+                    <img src="./src/images/speakers/JosephWei.jpg" alt="">
+                  </div>
+                </div>
 
               </div>
 
-              <div class="card-photos">
-
-
-
+              <div class="card-adjacent col-12">
+                <p class="adjacent-text">
+                  1. Ключевые системные проблемы развития стартап-движения на современном этапе: что мешает
+                  стартап-движению
+                  превратиться в драйвер экономического роста. 2. Потенциал и структура стартап-движения: ключевые
+                  стейкхолдеры.
+                  3. Тенденции и перспективы развития стартап-движения. 4. Роль государства в обеспечении качественной
+                  трансформации стартап-движения в цифровую эпоху.
+                </p>
               </div>
 
             </div>
 
-            <div class="card-adjacent">
-              <p class="adjacent-text">
-                1. sfd;hkdsfhkdsfhfsdhfdsh. 2. sdahg;psjhs'jphf'dshdsfh 3. s;jgpsajg;asjgsdfgsdfg.
-              </p>
+            <div class="card-item row forum">
+
+              <div class="card-time__container col-md-2">
+                <span class="card-time">
+                  9.00
+                </span>
+              </div>
+
+              <div class="card__inner col-md-10 row">
+
+                <div class="card-text col-md-6">
+
+                  <span class="event-title">Старт регистрации</span>
+
+                  <span class="event-location">
+                    <span class="location">Marriott Hotel - </span>
+                    <span class="event-name underline" id="event-name">FinTech Day</span>
+                  </span>
+
+                  <span class="event-details">
+                    <label class="card-checkbox underline" for="card-checkbox">Показать детали <img
+                        src="./src/images/card-checkbox-bottom.png" </label> <input type="checkbox" name="details"
+                        id="card-checkbox">
+                  </span>
+
+                  <span class="event-duration__container">
+                    <span class="event-duration">45 минут</span>
+                  </span>
+
+                </div>
+
+                <div class="card-photos many-photos col-md-6">
+                  <div class="speaker-photo-md photo-1">
+                    <img src="./src/images/speakers/JosephWei.jpg" alt="">
+                  </div>
+                  <div class="speaker-photo-md photo-2">
+                    <img src="./src/images/speakers/JosephWei.jpg" alt="">
+                  </div>
+                  <div class="speaker-photo-md photo-3">
+                    <img src="./src/images/speakers/JosephWei.jpg" alt="">
+                  </div>
+                  <div class="speaker-photo-md photo-4">
+                    <img src="./src/images/speakers/JosephWei.jpg" alt="">
+                  </div>
+                  <div class="speaker-photo-md photo-5">
+                    <img src="./src/images/speakers/JosephWei.jpg" alt="">
+                  </div>
+                  <div class="speaker-photo-md photo-6">
+                    <img src="./src/images/speakers/JosephWei.jpg" alt="">
+                  </div>
+                  <div class="speaker-photo-md photo-7">
+                    <img src="./src/images/speakers/JosephWei.jpg" alt="">
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="card-adjacent col-12">
+                <p class="adjacent-text">
+                  1. Ключевые системные проблемы развития стартап-движения на современном этапе: что мешает
+                  стартап-движению
+                  превратиться в драйвер экономического роста. 2. Потенциал и структура стартап-движения: ключевые
+                  стейкхолдеры.
+                  3. Тенденции и перспективы развития стартап-движения. 4. Роль государства в обеспечении качественной
+                  трансформации стартап-движения в цифровую эпоху.
+                </p>
+              </div>
+
+            </div>
+
+            <div class="card-item row master-cls-2">
+
+              <div class="card-time__container col-md-2">
+                <span class="card-time">
+                  9.00
+                </span>
+              </div>
+
+              <div class="card__inner col-md-10 row">
+
+                <div class="card-text col-md-6">
+
+                  <span class="event-title">Старт регистрации</span>
+
+                  <span class="event-location">
+                    <span class="location">Marriott Hotel - </span>
+                    <span class="event-name underline" id="event-name">FinTech Day</span>
+                  </span>
+
+                  <span class="event-details">
+                    <label class="card-checkbox underline" for="card-checkbox">Показать детали <img
+                        src="./src/images/card-checkbox-bottom.png" </label> <input type="checkbox" name="details"
+                        id="card-checkbox">
+                  </span>
+
+                  <span class="event-duration__container">
+                    <span class="event-duration">45 минут</span>
+                  </span>
+
+                </div>
+
+                <div class="card-photos few-photos col-md-6">
+                  <div class="speaker-photo-md photo-1">
+                    <img src="./src/images/speakers/JosephWei.jpg" alt="">
+                  </div>
+                  <div class="speaker-photo-md photo-2">
+                    <img src="./src/images/speakers/JosephWei.jpg" alt="">
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="card-adjacent col-12">
+                <p class="adjacent-text">
+                  1. Ключевые системные проблемы развития стартап-движения на современном этапе: что мешает
+                  стартап-движению
+                  превратиться в драйвер экономического роста. 2. Потенциал и структура стартап-движения: ключевые
+                  стейкхолдеры.
+                  3. Тенденции и перспективы развития стартап-движения. 4. Роль государства в обеспечении качественной
+                  трансформации стартап-движения в цифровую эпоху.
+                </p>
+              </div>
+
+            </div>
+
+            <div class="card-item row investors">
+
+              <div class="card-time__container col-md-2">
+                <span class="card-time">
+                  9.00
+                </span>
+              </div>
+
+              <div class="card__inner col-md-10 row">
+
+                <div class="card-text col-md-6">
+
+                  <span class="event-title">Старт регистрации</span>
+
+                  <span class="event-location">
+                    <span class="location">Marriott Hotel - </span>
+                    <span class="event-name underline" id="event-name">FinTech Day</span>
+                  </span>
+
+                  <span class="event-details">
+                    <label class="card-checkbox underline" for="card-checkbox">Показать детали <img
+                        src="./src/images/card-checkbox-bottom.png" </label> <input type="checkbox" name="details"
+                        id="card-checkbox">
+                  </span>
+
+                  <span class="event-duration__container">
+                    <span class="event-duration">45 минут</span>
+                  </span>
+
+                </div>
+
+                <div class="card-photos few-photos col-md-6">
+                  <div class="speaker-photo-md photo-1">
+                    <img src="./src/images/speakers/JosephWei.jpg" alt="">
+                  </div>
+                  <div class="speaker-photo-md photo-2">
+                    <img src="./src/images/speakers/JosephWei.jpg" alt="">
+                  </div>
+                  <div class="speaker-photo-md photo-3">
+                    <img src="./src/images/speakers/JosephWei.jpg" alt="">
+                  </div>
+                  <div class="speaker-photo-md photo-4">
+                    <img src="./src/images/speakers/JosephWei.jpg" alt="">
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="card-adjacent col-12">
+                <p class="adjacent-text">
+                  1. Ключевые системные проблемы развития стартап-движения на современном этапе: что мешает
+                  стартап-движению
+                  превратиться в драйвер экономического роста. 2. Потенциал и структура стартап-движения: ключевые
+                  стейкхолдеры.
+                  3. Тенденции и перспективы развития стартап-движения. 4. Роль государства в обеспечении качественной
+                  трансформации стартап-движения в цифровую эпоху.
+                </p>
+              </div>
+
+            </div>
+
+            <div class="card-item row startup">
+
+              <div class="card-time__container col-md-2">
+                <span class="card-time">
+                  9.00
+                </span>
+              </div>
+
+              <div class="card__inner col-md-10 row">
+
+                <div class="card-text col-md-6">
+
+                  <span class="event-title">Старт регистрации</span>
+
+                  <span class="event-location">
+                    <span class="location">Marriott Hotel - </span>
+                    <span class="event-name underline" id="event-name">FinTech Day</span>
+                  </span>
+
+                  <span class="event-details">
+                    <label class="card-checkbox underline" for="card-checkbox">Показать детали <img
+                        src="./src/images/card-checkbox-bottom.png" </label> <input type="checkbox" name="details"
+                        id="card-checkbox">
+                  </span>
+
+                  <span class="event-duration__container">
+                    <span class="event-duration">45 минут</span>
+                  </span>
+
+                </div>
+
+                <div class="card-photos many-photos col-md-6">
+                  <div class="speaker-photo-md photo-1">
+                    <img src="./src/images/speakers/JosephWei.jpg" alt="">
+                  </div>
+                  <div class="speaker-photo-md photo-2">
+                    <img src="./src/images/speakers/JosephWei.jpg" alt="">
+                  </div>
+                  <div class="speaker-photo-md photo-3">
+                    <img src="./src/images/speakers/JosephWei.jpg" alt="">
+                  </div>
+                  <div class="speaker-photo-md photo-4">
+                    <img src="./src/images/speakers/JosephWei.jpg" alt="">
+                  </div>
+                  <div class="speaker-photo-md photo-5">
+                    <img src="./src/images/speakers/JosephWei.jpg" alt="">
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="card-adjacent col-12">
+                <p class="adjacent-text">
+                  1. Ключевые системные проблемы развития стартап-движения на современном этапе: что мешает
+                  стартап-движению
+                  превратиться в драйвер экономического роста. 2. Потенциал и структура стартап-движения: ключевые
+                  стейкхолдеры.
+                  3. Тенденции и перспективы развития стартап-движения. 4. Роль государства в обеспечении качественной
+                  трансформации стартап-движения в цифровую эпоху.
+                </p>
+              </div>
+
+            </div>
+
+            <div class="card-item row master-cls-1">
+
+              <div class="card-time__container col-md-2">
+                <span class="card-time">
+                  9.00
+                </span>
+              </div>
+
+              <div class="card__inner col-md-10 row">
+
+                <div class="card-text col-md-6">
+
+                  <span class="event-title">Старт регистрации</span>
+
+                  <span class="event-location">
+                    <span class="location">Marriott Hotel - </span>
+                    <span class="event-name underline" id="event-name">FinTech Day</span>
+                  </span>
+
+                  <span class="event-details">
+                    <label class="card-checkbox underline" for="card-checkbox">Показать детали <img
+                        src="./src/images/card-checkbox-bottom.png" </label> <input type="checkbox" name="details"
+                        id="card-checkbox">
+                  </span>
+
+                  <span class="event-duration__container">
+                    <span class="event-duration">45 минут</span>
+                  </span>
+
+                </div>
+
+                <div class="card-photos single-photo col-md-6">
+                  <div class="speaker-photo-md photo-1">
+                    <img src="./src/images/speakers/JosephWei.jpg" alt="">
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="card-adjacent col-12">
+                <p class="adjacent-text">
+                  1. Ключевые системные проблемы развития стартап-движения на современном этапе: что мешает
+                  стартап-движению
+                  превратиться в драйвер экономического роста. 2. Потенциал и структура стартап-движения: ключевые
+                  стейкхолдеры.
+                  3. Тенденции и перспективы развития стартап-движения. 4. Роль государства в обеспечении качественной
+                  трансформации стартап-движения в цифровую эпоху.
+                </p>
+              </div>
+
+            </div>
+
+            <div class="card-item row pressa">
+
+              <div class="card-time__container col-md-2">
+                <span class="card-time">
+                  9.00
+                </span>
+              </div>
+
+              <div class="card__inner col-md-10 row">
+
+                <div class="card-text col-md-6">
+
+                  <span class="event-title">Старт регистрации</span>
+
+                  <span class="event-location">
+                    <span class="location">Marriott Hotel - </span>
+                    <span class="event-name underline" id="event-name">FinTech Day</span>
+                  </span>
+
+                  <span class="event-details">
+                    <label class="card-checkbox underline" for="card-checkbox">Показать детали <img
+                        src="./src/images/card-checkbox-bottom.png" </label> <input type="checkbox" name="details"
+                        id="card-checkbox">
+                  </span>
+
+                  <span class="event-duration__container">
+                    <span class="event-duration">45 минут</span>
+                  </span>
+
+                </div>
+
+                <div class="card-photos few-photos col-md-6">
+                  <div class="speaker-photo-md photo-1">
+                    <img src="./src/images/speakers/JosephWei.jpg" alt="">
+                  </div>
+                  <div class="speaker-photo-md photo-2">
+                    <img src="./src/images/speakers/JosephWei.jpg" alt="">
+                  </div>
+                  <div class="speaker-photo-md photo-3">
+                    <img src="./src/images/speakers/JosephWei.jpg" alt="">
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="card-adjacent col-12">
+                <p class="adjacent-text">
+                  1. Ключевые системные проблемы развития стартап-движения на современном этапе: что мешает
+                  стартап-движению
+                  превратиться в драйвер экономического роста. 2. Потенциал и структура стартап-движения: ключевые
+                  стейкхолдеры.
+                  3. Тенденции и перспективы развития стартап-движения. 4. Роль государства в обеспечении качественной
+                  трансформации стартап-движения в цифровую эпоху.
+                </p>
+              </div>
+
+            </div>
+
+            <div class="card-item row speakers-data">
+
+              <div class="card-time__container col-md-2">
+                <span class="card-time">
+                  9.00
+                </span>
+              </div>
+
+              <div class="card__inner col-md-10 row">
+
+                <div class="card-text col-md-6">
+
+                  <span class="event-title">Старт регистрации</span>
+
+                  <span class="event-location">
+                    <span class="location">Marriott Hotel - </span>
+                    <span class="event-name underline" id="event-name">FinTech Day</span>
+                  </span>
+
+                  <span class="event-details">
+                    <label class="card-checkbox underline" for="card-checkbox">Показать детали <img
+                        src="./src/images/card-checkbox-bottom.png" </label> <input type="checkbox" name="details"
+                        id="card-checkbox">
+                  </span>
+
+                  <span class="event-duration__container">
+                    <span class="event-duration">45 минут</span>
+                  </span>
+
+                </div>
+
+                <div class="card-photos many-photos col-md-6">
+                  <div class="speaker-photo-md photo-1">
+                    <img src="./src/images/speakers/JosephWei.jpg" alt="">
+                  </div>
+                  <div class="speaker-photo-md photo-2">
+                    <img src="./src/images/speakers/JosephWei.jpg" alt="">
+                  </div>
+                  <div class="speaker-photo-md photo-3">
+                    <img src="./src/images/speakers/JosephWei.jpg" alt="">
+                  </div>
+                  <div class="speaker-photo-md photo-4">
+                    <img src="./src/images/speakers/JosephWei.jpg" alt="">
+                  </div>
+                  <div class="speaker-photo-md photo-5">
+                    <img src="./src/images/speakers/JosephWei.jpg" alt="">
+                  </div>
+                  <div class="speaker-photo-md photo-6">
+                    <img src="./src/images/speakers/JosephWei.jpg" alt="">
+                  </div>
+                  <div class="speaker-photo-md photo-7">
+                    <img src="./src/images/speakers/JosephWei.jpg" alt="">
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="card-adjacent col-12">
+                <p class="adjacent-text">
+                  1. Ключевые системные проблемы развития стартап-движения на современном этапе: что мешает
+                  стартап-движению
+                  превратиться в драйвер экономического роста. 2. Потенциал и структура стартап-движения: ключевые
+                  стейкхолдеры.
+                  3. Тенденции и перспективы развития стартап-движения. 4. Роль государства в обеспечении качественной
+                  трансформации стартап-движения в цифровую эпоху.
+                </p>
+              </div>
+
+            </div>
+
+            <div class="card-item row master-cls-3">
+
+              <div class="card-time__container col-md-2">
+                <span class="card-time">
+                  9.00
+                </span>
+              </div>
+
+              <div class="card__inner col-md-10 row">
+
+                <div class="card-text col-md-6">
+
+                  <span class="event-title">Старт регистрации</span>
+
+                  <span class="event-location">
+                    <span class="location">Marriott Hotel - </span>
+                    <span class="event-name underline" id="event-name">FinTech Day</span>
+                  </span>
+
+                  <span class="event-details">
+                    <label class="card-checkbox underline" for="card-checkbox">Показать детали <img
+                        src="./src/images/card-checkbox-bottom.png" </label> <input type="checkbox" name="details"
+                        id="card-checkbox">
+                  </span>
+
+                  <span class="event-duration__container">
+                    <span class="event-duration">45 минут</span>
+                  </span>
+
+                </div>
+
+                <div class="card-photos single-photo col-md-6">
+                  <div class="speaker-photo-md photo-1">
+                    <img src="./src/images/speakers/JosephWei.jpg" alt="">
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="card-adjacent col-12">
+                <p class="adjacent-text">
+                  1. Ключевые системные проблемы развития стартап-движения на современном этапе: что мешает
+                  стартап-движению
+                  превратиться в драйвер экономического роста. 2. Потенциал и структура стартап-движения: ключевые
+                  стейкхолдеры.
+                  3. Тенденции и перспективы развития стартап-движения. 4. Роль государства в обеспечении качественной
+                  трансформации стартап-движения в цифровую эпоху.
+                </p>
+              </div>
+
+            </div>
+
+            <div class="card-item row business">
+
+              <div class="card-time__container col-md-2">
+                <span class="card-time">
+                  9.00
+                </span>
+              </div>
+
+              <div class="card__inner col-md-10 row">
+
+                <div class="card-text col-md-6">
+
+                  <span class="event-title">Старт регистрации</span>
+
+                  <span class="event-location">
+                    <span class="location">Marriott Hotel - </span>
+                    <span class="event-name underline" id="event-name">FinTech Day</span>
+                  </span>
+
+                  <span class="event-details">
+                    <label class="card-checkbox underline" for="card-checkbox">Показать детали <img
+                        src="./src/images/card-checkbox-bottom.png" </label> <input type="checkbox" name="details"
+                        id="card-checkbox">
+                  </span>
+
+                  <span class="event-duration__container">
+                    <span class="event-duration">45 минут</span>
+                  </span>
+
+                </div>
+
+                <div class="card-photos few-photos col-md-6">
+                  <div class="speaker-photo-md photo-1">
+                    <img src="./src/images/speakers/JosephWei.jpg" alt="">
+                  </div>
+                  <div class="speaker-photo-md photo-2">
+                    <img src="./src/images/speakers/JosephWei.jpg" alt="">
+                  </div>
+                  <div class="speaker-photo-md photo-3">
+                    <img src="./src/images/speakers/JosephWei.jpg" alt="">
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="card-adjacent col-12">
+                <p class="adjacent-text">
+                  1. Ключевые системные проблемы развития стартап-движения на современном этапе: что мешает
+                  стартап-движению
+                  превратиться в драйвер экономического роста. 2. Потенциал и структура стартап-движения: ключевые
+                  стейкхолдеры.
+                  3. Тенденции и перспективы развития стартап-движения. 4. Роль государства в обеспечении качественной
+                  трансформации стартап-движения в цифровую эпоху.
+                </p>
+              </div>
+
+            </div>
+
+            <div class="card-item row imaguru-data">
+
+              <div class="card-time__container col-md-2">
+                <span class="card-time">
+                  9.00
+                </span>
+              </div>
+
+              <div class="card__inner col-md-10 row">
+
+                <div class="card-text col-md-6">
+
+                  <span class="event-title">Старт регистрации</span>
+
+                  <span class="event-location">
+                    <span class="location">Marriott Hotel - </span>
+                    <span class="event-name underline" id="event-name">FinTech Day</span>
+                  </span>
+
+                  <span class="event-details">
+                    <label class="card-checkbox underline" for="card-checkbox">Показать детали <img
+                        src="./src/images/card-checkbox-bottom.png" </label> <input type="checkbox" name="details"
+                        id="card-checkbox">
+                  </span>
+
+                  <span class="event-duration__container">
+                    <span class="event-duration">45 минут</span>
+                  </span>
+
+                </div>
+
+                <div class="card-photos many-photos col-md-6">
+                  <div class="speaker-photo-md photo-1">
+                    <img src="./src/images/speakers/JosephWei.jpg" alt="">
+                  </div>
+                  <div class="speaker-photo-md photo-2">
+                    <img src="./src/images/speakers/JosephWei.jpg" alt="">
+                  </div>
+                  <div class="speaker-photo-md photo-3">
+                    <img src="./src/images/speakers/JosephWei.jpg" alt="">
+                  </div>
+                  <div class="speaker-photo-md photo-4">
+                    <img src="./src/images/speakers/JosephWei.jpg" alt="">
+                  </div>
+                  <div class="speaker-photo-md photo-5">
+                    <img src="./src/images/speakers/JosephWei.jpg" alt="">
+                  </div>
+                  <div class="speaker-photo-md photo-6">
+                    <img src="./src/images/speakers/JosephWei.jpg" alt="">
+                  </div>
+                  <div class="speaker-photo-md photo-7">
+                    <img src="./src/images/speakers/JosephWei.jpg" alt="">
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="card-adjacent col-12">
+                <p class="adjacent-text">
+                  1. Ключевые системные проблемы развития стартап-движения на современном этапе: что мешает
+                  стартап-движению
+                  превратиться в драйвер экономического роста. 2. Потенциал и структура стартап-движения: ключевые
+                  стейкхолдеры.
+                  3. Тенденции и перспективы развития стартап-движения. 4. Роль государства в обеспечении качественной
+                  трансформации стартап-движения в цифровую эпоху.
+                </p>
+              </div>
+
+            </div>
+
+            <div class="card-item row master-cls-4">
+
+              <div class="card-time__container col-md-2">
+                <span class="card-time">
+                  9.00
+                </span>
+              </div>
+
+              <div class="card__inner col-md-10 row">
+
+                <div class="card-text col-md-6">
+
+                  <span class="event-title">Старт регистрации</span>
+
+                  <span class="event-location">
+                    <span class="location">Marriott Hotel - </span>
+                    <span class="event-name underline" id="event-name">FinTech Day</span>
+                  </span>
+
+                  <span class="event-details">
+                    <label class="card-checkbox underline" for="card-checkbox">Показать детали <img
+                        src="./src/images/card-checkbox-bottom.png" </label> <input type="checkbox" name="details"
+                        id="card-checkbox">
+                  </span>
+
+                  <span class="event-duration__container">
+                    <span class="event-duration">45 минут</span>
+                  </span>
+
+                </div>
+
+                <div class="card-photos single-photo col-md-6">
+                  <div class="speaker-photo-md photo-1">
+                    <img src="./src/images/speakers/JosephWei.jpg" alt="">
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="card-adjacent col-12">
+                <p class="adjacent-text">
+                  1. Ключевые системные проблемы развития стартап-движения на современном этапе: что мешает
+                  стартап-движению
+                  превратиться в драйвер экономического роста. 2. Потенциал и структура стартап-движения: ключевые
+                  стейкхолдеры.
+                  3. Тенденции и перспективы развития стартап-движения. 4. Роль государства в обеспечении качественной
+                  трансформации стартап-движения в цифровую эпоху.
+                </p>
+              </div>
+
             </div>
 
           </div>
@@ -709,6 +1398,11 @@
 </body>
 <!-- 
 
+  Я ПОДКЛЮЧИЛ ТОТ СКРИПТ ЧТО ЮЗАЛСЯ НА СТРАНИЦЕ ПОКУПКИ БИЛЕТОВ ДЛЯ МЕНЮ/ФУТЕРА И ВСЁ ТАКОЕ, + ТАМ ХУЙНЯ ДЛЯ СТИЛЕЙ ВЫБОРА ЯЗЫКОВ
+
+
+                                                          ▼▼▼▼▼▼▼
+  КЛАССЫ НАВЕШИВАТЬ НА КАРТОЧКУ <DIV CLASS="card-item row FINTECH"> ... </DIV>
   
   fintech  — FINTECH DAY
   investors — INVESTOR'S FACTORY
@@ -718,7 +1412,7 @@
   gewBel — ВЫСТАВКА GEW BELARUS
   networking — ЗОНА НЕТВОРКИНГА
   pressa — КОМНАТА ДЛЯ ПРЕССЫ
-  speakers — КОМНАТА ДЛЯ СПИКЕРОВ
+  speakers-data — КОМНАТА ДЛЯ СПИКЕРОВ
   business — КОНСУЛЬТАЦИИ ДЛЯ БИЗНЕСА
   master-cls-1 — МАСТЕР КЛАСС ( 1 )  ЧТО-ТО ТИПО ГОЛУБОГО НО ПОТЕМНЕЕ. (НА СКРИНЕ ЧТО МНЕ КИДАЛИ ОН В НАЧАЛЕ)
   master-cls-2 — МАСТЕР КЛАСС ( 2 )  РОЗОВЫЙ
@@ -726,6 +1420,14 @@
   master-cls-4 — МАСТЕР КЛАСС ( 2 )  СВЕТЛО-ГОЛУБОЙ
   imaguru-data — ИМАГУРУ
 
+
+    КАРТИНКИ ВСТАВЛЯЮТСЯ В ЭТОТ БЛОК 
+            ▼▼
+    <div class="card-photos many-photos col-md-6"></div>
+    
+    ЕСЛИ КАРТИНОК 5-7 - НАДО ПРИСВАИВАТЬ КЛАСС many-photos,
+    ЕСЛИ 2-4, ТО - few-photos, ЕСЛИ ОДНА, ТО - single-photo
+    + У КАЖДОЙ ФОТКИ КЛАСС С ЕЁ НОМЕРОМ PHOTO-1, PHOTO-2 И Т.Д.
 
   ЕСЛИ ЧТО В ЛС НАПИШЕШЬ
 -->
