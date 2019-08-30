@@ -274,6 +274,7 @@ option:hover {
 }
 
 .modal-menu .modal-content {
+  background-color: #7c59c0;
   background: url('./../images/menu-bg.png');
   background-size: cover;
   background-position: center;
