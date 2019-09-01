@@ -274,6 +274,7 @@ option:hover {
 }
 
 .modal-menu .modal-content {
+  background-color: #7c59c0;
   background: url('./../images/menu-bg.png');
   background-size: cover;
   background-position: center;
@@ -698,7 +699,6 @@ textarea::-webkit-scrollbar {
 }
 
 .button:hover {
-  background: transparent;
   color: #525252;
   transition: 0.2s ease all;
 }
@@ -729,7 +729,7 @@ textarea::-webkit-scrollbar {
   background-position: center;
   position: absolute;
   left: -20px;
-  top: 3px;
+  top: 2px;
   transition: 0.2s ease all;
   cursor: pointer;
 }
@@ -746,8 +746,8 @@ textarea::-webkit-scrollbar {
   font-family: 'V-B';
 }
 
-.underline {
-  text-decoration: underline rgba(0, 0, 0, .2) dashed;
+.underline span {
+  border-bottom: 1px dashed rgba(0, 0, 0, .2);
 }
 
 .main input {
@@ -756,6 +756,7 @@ textarea::-webkit-scrollbar {
 
 .main__container {
   display: flex;
+  margin: 0 auto;
 }
 
 .filter__container {
@@ -781,6 +782,7 @@ textarea::-webkit-scrollbar {
 .filter-date {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .filter-title {
@@ -873,6 +875,10 @@ textarea::-webkit-scrollbar {
 .event-title {
   font-size: 14px;
   cursor: pointer;
+  line-height: 125%;
+  display: flex;
+  align-items: center;
+  grid-area: 1/1/2/3;
 }
 
 .event-location {
@@ -880,6 +886,8 @@ textarea::-webkit-scrollbar {
   cursor: pointer;
   grid-area: 2/1/3/2;
   padding-left: 18px;
+  display: flex;
+  align-items: center;
 }
 
 .location {
@@ -910,6 +918,8 @@ textarea::-webkit-scrollbar {
 }
 
 .event-details {
+  display: flex;
+  align-items: center;
   grid-area: 3/1/4/2;
 }
 
@@ -951,7 +961,7 @@ textarea::-webkit-scrollbar {
   grid-template: 1fr 1fr 1fr / 3fr 1fr;
   grid-row-gap: 6px;
   letter-spacing: 0.4px;
-  padding: 22px 8px 10px 0;
+  padding: 22px 0 10px 0;
 }
 
 .card-photos {
@@ -1022,7 +1032,7 @@ textarea::-webkit-scrollbar {
 }
 
 .speaker-photo-md {
-  background: url('./../images/speakers/JosephWei.jpg');
+  /* background: url('./../images/speakers/JosephWei.jpg'); */
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -1047,7 +1057,6 @@ textarea::-webkit-scrollbar {
 }
 
 .speaker-photo-md img {
-  opacity: 0;
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -1064,6 +1073,7 @@ textarea::-webkit-scrollbar {
 .adjacent-text {
   border-top: 2px solid #e8e8e8;
   padding: 20px 90px;
+  font-size: 12px;
 }
 
 .fintech .filter-box,
@@ -1293,7 +1303,6 @@ textarea::-webkit-scrollbar {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 125px;
   font-size: 18px;
   position: relative;
   max-width: 88px;
@@ -1304,9 +1313,9 @@ textarea::-webkit-scrollbar {
   display: block;
   position: absolute;
   right: 0;
-  top: 16px;
+  top: 13%;
   width: 2px;
-  height: 93px;
+  height: 74%;
 }
 
 .cards__column {
@@ -1406,8 +1415,11 @@ textarea::-webkit-scrollbar {
   transition: 0.2s ease all;
 }
 
+.speaker-link span {
+  border-bottom: dashed 1px gray;
+}
+
 .speaker-link:hover {
-  font-size: 102%;
   transition: 0.2s ease all;
 }
 
@@ -1534,6 +1546,80 @@ textarea::-webkit-scrollbar {
     text-align: center;
     margin: 0 auto;
   }
+
+  .many-photos {
+    grid-template: repeat(2, 54px) / repeat(4, 54px);
+    grid-column-gap: 2%;
+  }
+
+  .many-photos .photo-2,
+  .many-photos .photo-4,
+  .many-photos .photo-6 {
+    right: 50%;
+  }
+
+  .card-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .event-title {
+    grid-area: 1/1/2/3;
+    margin: 5px 0;
+    min-width: 220px;
+  }
+
+  .event-location {
+    min-width: 220px;
+    grid-area: 2/1/3/3;
+    margin: 5px 0;
+  }
+
+  .event-details {
+    grid-area: 4/1/5/3;
+    margin: 5px 0;
+    line-height: 100%;
+  }
+
+  .event-duration__container {
+    grid-area: 3/1/4/3;
+    justify-content: flex-start;
+    padding-left: 20px;
+    margin: 5px 0;
+  }
+
+  .event-duration {
+    left: 0;
+    top: 0;
+  }
+
+  .event-duration::before {
+    left: -20px;
+  }
+
+  .few-photos .photo-2 {
+    left: 30%;
+  }
+
+  .few-photos .photo-3 {
+    left: 60%;
+  }
+
+  .few-photos .photo-4 {
+    left: 90%;
+  }
+
+  .few-photos {
+    grid-template: 1fr / repeat(4, 74px);
+  }
+
+  .filter__container {
+    max-width: 25%;
+  }
+
+  .card__inner {
+    padding: 0 15px 0 15px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1559,6 +1645,10 @@ textarea::-webkit-scrollbar {
     margin: 55px 0;
   }
 
+  .header-main {
+    padding: 25px;
+  }
+
   .header-bottom-logo {
     justify-content: center;
     top: 0;
@@ -1576,6 +1666,70 @@ textarea::-webkit-scrollbar {
   .button span {
     position: relative;
     top: 0px !important;
+  }
+
+  .dropdown-trigger {
+    cursor: pointer;
+  }
+
+  .dropdown {
+    display: none;
+  }
+
+  .active {
+    display: unset;
+  }
+
+  .filter__container {
+    max-width: 100%;
+    padding-bottom: 15px;
+  }
+
+  .cards__container {
+    left: 0;
+  }
+
+  .filter-event {
+    padding: 0;
+  }
+
+  .filter-title {
+    position: relative;
+  }
+
+  .filter-title::after {
+    content: '';
+    display: block;
+    height: 12px;
+    width: 12px;
+    background: url('./../images/card-checkbox-bottom.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    right: 15px;
+    top: 0;
+    transform: rotate(-90deg);
+  }
+
+  .triggered::after {
+    transform: rotate(0);
+  }
+
+  .card__inner {
+    padding-right: 15px;
+  }
+
+  .modal-event .modal-content {
+    padding: 35px 20px;
+  }
+
+  .adjacent-text {
+    padding: 20px;
+  }
+
+  .modal-content {
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -1647,6 +1801,60 @@ textarea::-webkit-scrollbar {
 
   .tickets-head {
     left: 0;
+  }
+
+  .card-photos {
+    justify-content: flex-start;
+  }
+
+  .speaker-photo-md {
+    left: 0 !important;
+    right: 0 !important;
+    grid-area: unset !important;  
+    margin: 0;
+  }
+
+  .cards__container {
+    padding: 0;
+  }
+
+  .event-info {
+    margin: 25px 0; 
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .event-button {
+    top: 0;
+    left: 0;
+  }
+
+  .few-photos {
+    grid-template: 74px / repeat(4, 74px);
+    grid-gap: 8px;
+  }
+
+  .many-photos {
+    grid-template: 54px / repeat(4, 54px);
+    grid-gap: 8px;
+  }
+
+  .card__inner {
+    padding-bottom: 15px;
+  }
+
+  .cards__column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-item {
+    margin: 15px 0 !important;
+    padding: 15px;
+  }
+
+  .card__inner {
+    padding: 0;
   }
 }
 

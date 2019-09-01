@@ -63,7 +63,7 @@ window.onload = function() {
                       in Finance по версии Thomson Reuters и в 2018-2019
                       гг. в Топ 100 Influencers in Identity по версии OWI (1WorldIdentity).
                 </p>
-                <a class="speaker-link" href="#" target="_blank">FinTech Day / Forum</a>
+                <a class="speaker-link" href="#" target="_blank"><span>FinTech Day / Forum</span></a>
               </div>
       
               <img class="close" id="close-speaker" src="./src/images/close-black.png">
@@ -190,18 +190,20 @@ window.onload = function() {
     const triggersList = document.querySelectorAll('.card-checkbox');
 
     triggersList.forEach(elem => {
-      elem.addEventListener('click', (e) => {
+      elem.addEventListener('click', function(e) {
         let els = [];
         while (elem) {
           if (elem.classList.contains('card-item')) {
             if (elem.querySelector('.card-adjacent').classList.contains('adjacent-show')) {
-              e.target.innerHTML = 'Показать детали <img src="./src/images/card-checkbox-bottom.png">';
+
+              this.innerHTML = '<span>Показать детали</span> <img src="./src/images/card-checkbox-bottom.png">';
               elem.querySelector('.card-adjacent').classList.remove('adjacent-show');
+
               return ;
             }
 
             elem.querySelector('.card-adjacent').classList.add('adjacent-show');
-            e.target.innerHTML = 'Скрыть детали <img src="./src/images/card-checkbox-top.png">';
+            this.innerHTML = '<span>Скрыть детали</span> <img src="./src/images/card-checkbox-top.png">';
 
             return ;
         }
@@ -213,10 +215,35 @@ window.onload = function() {
     });
   }
 
+  function dropDown() {
+    let width = window.innerWidth;
+
+    if (width > 768) return;
+    const triggers = document.querySelectorAll('.dropdown-trigger');
+
+    triggers.forEach(elem => {
+      elem.addEventListener('click', function(e) {
+        let list = this.parentNode.querySelector('.dropdown');
+
+        if (list.classList.contains('active')) {
+          elem.classList.remove('triggered');
+          list.classList.remove('active');
+          return ;
+        }
+
+        elem.classList.add('triggered');
+        list.classList.add('active');
+      });
+    });
+  }
+
   inputs();
   photosEffects();
   eventModal();
   showAdjacent();
+  dropDown();
+
+  window.onresize = () => dropDown();
 }
 
 $(window).ready(function() {
