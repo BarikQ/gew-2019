@@ -14,10 +14,18 @@ document.getElementById('d').onchange = (e) => {
   console.log(e.target.value);
   switch (e.target.value) {
     case 'EN':
-      window.location = `http://127.0.0.1:5500/index_en.html`;
+      window.location = `http://gew.by/index_en.html`;
       break;
     case 'RU':
-      window.location = `http://127.0.0.1:5500/index.html`;
+      window.location = `http://gew.by/index.html`;
       break;
   }
 };
+
+document.querySelectorAll('.button-buy__container').forEach(
+  (elem) =>
+    (elem.onclick = (e) => {
+      e.preventDefault();
+      window.location = `https://buy.ticketforevent.com/script/redirectForm.php?alias=gew2019&types[1]=${e.currentTarget.id}`;
+    })
+);
