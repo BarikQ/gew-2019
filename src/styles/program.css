@@ -716,6 +716,7 @@ textarea::-webkit-scrollbar {
   left: 7px;
   top: -11px;
   letter-spacing: 0.5px;
+  display: block;
 }
 
 .return-link::before {
