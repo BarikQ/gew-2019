@@ -1924,6 +1924,16 @@ textarea::-webkit-scrollbar {
   .return-link::before {
     top: 0px;
   }
+
+  .modal-event .modal-content {
+    max-height: 100%;
+    display: unset;
+    overflow: scroll;
+  }
+
+  .modal-event-button {
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 400px) {

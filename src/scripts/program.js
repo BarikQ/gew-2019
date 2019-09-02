@@ -113,57 +113,61 @@ window.onload = function() {
           <div class="modal-event modal">
             <div class="modal-container">
               <div class="modal-content col-lg-10 col-xl-8 col-sm-11 col-12 row">   
-                <h2 class="modal-event-title">${this.textContent}</h2> 
-                <p class="modal-event-text-paragraph">
-                  <span class="bold-text">${this.textContent}</span> 
-                  — это новая технологичная индустрия экономики.  
-                  Это — компании, которые предоставляют технологии, позволяющие 
-                  совершать финансовые сделки гораздо быстрее и проще.
-                   Взаимное кредитование, небанковские кредиты, вклады, 
-                  бухгалтерия, личные финансы, индивидуальные инвестиции,
-                   краудфандинг, платежи, финансовые исследования, 
-                  криптовалюта – все это включает в себя FinTech.
-                <p>
+                <div class="col-12">
+                  <h2 class="modal-event-title">${this.textContent}</h2> 
+                  <p class="modal-event-text-paragraph">
+                    <span class="bold-text">${this.textContent}</span> 
+                    — это новая технологичная индустрия экономики.  
+                    Это — компании, которые предоставляют технологии, позволяющие 
+                    совершать финансовые сделки гораздо быстрее и проще.
+                    Взаимное кредитование, небанковские кредиты, вклады, 
+                    бухгалтерия, личные финансы, индивидуальные инвестиции,
+                    краудфандинг, платежи, финансовые исследования, 
+                    криптовалюта – все это включает в себя FinTech.
+                  </p>
+                </div>
 
-                <p class="bold-text modal-event-text-paragraph">
-                Кому будет интересно: 
-                </p>
-                <ul>
+                <div class="col-12">
+                  <p class="bold-text modal-event-text-paragraph">
+                  Кому будет интересно: 
+                  </p>
+                  <ul>
 
-                  <li class="modal-event-item">
-                    Представителям компаний, которые используют fintech решения в своем бизнесе
-                  </li>
+                    <li class="modal-event-item">
+                      Представителям компаний, которые используют fintech решения в своем бизнесе
+                    </li>
 
-                  <li class="modal-event-item">
-                    Представителям малого и среднего бизнеса, которые 
-                    хотят разобраться в самой прорывной сфере 
-                    развития технологий и использовать fintech решения, 
-                    чтобы улучшить собственный бизнес.
-                  </li>
+                    <li class="modal-event-item">
+                      Представителям малого и среднего бизнеса, которые 
+                      хотят разобраться в самой прорывной сфере 
+                      развития технологий и использовать fintech решения, 
+                      чтобы улучшить собственный бизнес.
+                    </li>
 
-                  <li class="modal-event-item">
-                    Всем, у кого есть биткойны либо другая криптовалюта.
-                  </li>
+                    <li class="modal-event-item">
+                      Всем, у кого есть биткойны либо другая криптовалюта.
+                    </li>
 
-                </ul>        
-              
-                <p class="bold-text modal-event-text-paragraph">
-                Кому быть обязательно:
-                </p>
-                <ul>
+                  </ul>        
+                
+                  <p class="bold-text modal-event-text-paragraph">
+                  Кому быть обязательно:
+                  </p>
+                  <ul>
 
-                  <li class="modal-event-item">
-                  Представителям компаний, которые работают в области fintech;
-                  </li>
+                    <li class="modal-event-item">
+                    Представителям компаний, которые работают в области fintech;
+                    </li>
 
-                  <li class="modal-event-item">
-                  Представителям банков (для вас будет много новой и очень важной информации).
-                  </li>
+                    <li class="modal-event-item">
+                    Представителям банков (для вас будет много новой и очень важной информации).
+                    </li>
 
-                </ul>
-                               
-                <div class="modal-event-button__container">
-                  <a class="button orange modal-event-button" href="./tickets.html">Купить билет</a>
+                  </ul>
+                                
+                  <div class="modal-event-button__container">
+                    <a class="button orange modal-event-button" href="./tickets.html">Купить билет</a>
+                  </div>
                 </div>
 
                 <img class="close" id="close-event" src="./src/images/close-black.png">
