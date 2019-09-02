@@ -722,14 +722,14 @@ textarea::-webkit-scrollbar {
   content: "";
   display: block;
   width: 8px;
-  height: 12px;
+  height: 100%;
   background: url('./../images/left-arrow.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
   left: -20px;
-  top: 2px;
+  top: 0px;
   transition: 0.2s ease all;
   cursor: pointer;
 }
@@ -1653,7 +1653,7 @@ textarea::-webkit-scrollbar {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .footer-nav li {
     justify-content: center;
   }
@@ -1948,10 +1948,6 @@ textarea::-webkit-scrollbar {
 
   .event-button {
     display: none;
-  }
-
-  .return-link::before {
-    top: -1px;
   }
 
   .modal-event .modal-content {

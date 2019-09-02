@@ -877,14 +877,14 @@ textarea::-webkit-scrollbar {
   content: "";
   display: block;
   width: 8px;
-  height: 12px;
+  height: 100%;
   background: url('./../images/left-arrow.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
   left: -20px;
-  top: 2px;
+  top: 0px;
   transition: 0.2s ease all;
   cursor: pointer;
 }
@@ -1205,7 +1205,6 @@ textarea::-webkit-scrollbar {
 
   .return-link::before {
     left: -20px;
-    top: -1px;
   }
 }
 
