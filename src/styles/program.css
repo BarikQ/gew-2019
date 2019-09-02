@@ -1969,6 +1969,10 @@ textarea::-webkit-scrollbar {
     width: 54px;
     height: 54px;
   }
+
+  .return-link::before {
+    top: -1px;
+  }
 }
 
 @media (max-width: 400px) {
