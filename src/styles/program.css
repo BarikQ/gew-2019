@@ -1971,7 +1971,6 @@ textarea::-webkit-scrollbar {
   }
 
   .return-link::before {
-    top: -2px;
   }
 }
 
