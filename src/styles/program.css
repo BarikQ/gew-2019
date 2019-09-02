@@ -1922,7 +1922,7 @@ textarea::-webkit-scrollbar {
   }
 
   .return-link::before {
-    top: -1px;
+    top: -2px;
   }
 
   .modal-event .modal-content {
