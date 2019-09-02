@@ -1202,7 +1202,7 @@ textarea::-webkit-scrollbar {
 
   .return-link::before {
     left: -20px;
-    top: 2px;
+    top: 0px;
   }
 }
 
