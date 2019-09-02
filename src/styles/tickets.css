@@ -884,7 +884,8 @@ textarea::-webkit-scrollbar {
   background-position: center;
   position: absolute;
   left: -20px;
-  top: 0px;
+  top: 50%;
+  transform: translate(0, -50%);
   transition: 0.2s ease all;
   cursor: pointer;
 }
@@ -1205,11 +1206,6 @@ textarea::-webkit-scrollbar {
 
   .return-link::before {
     left: -20px;
-  }
-
-  .return-link span {
-    position: relative;
-    top: 1px;
   }
 }
 
