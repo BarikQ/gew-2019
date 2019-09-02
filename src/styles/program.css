@@ -1970,7 +1970,9 @@ textarea::-webkit-scrollbar {
     height: 54px;
   }
 
-  .return-link::before {
+  .return-link span {
+    position: relative;
+    top: 1px;
   }
 }
 

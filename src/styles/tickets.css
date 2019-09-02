@@ -1206,6 +1206,11 @@ textarea::-webkit-scrollbar {
   .return-link::before {
     left: -20px;
   }
+
+  .return-link span {
+    position: relative;
+    top: 1px;
+  }
 }
 
 @media (max-width: 400px) {
