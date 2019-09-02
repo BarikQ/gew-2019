@@ -91,6 +91,8 @@ window.onload = function() {
           <div class="speaker-modal-sm">
             <h3 class="speaker-name">Sanya Sanya</h3>
             <p class="speaker-review">Radiofizik</p>
+            <div class="triangle">
+            </div>
           </div>
         `);
       });
