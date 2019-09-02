@@ -2166,18 +2166,8 @@ textarea::-webkit-scrollbar {
   content: none;
 }
 
-/* .pswp__zoom-wrap {
-  transform: translateX(0) !important;
-  width: 90% !important;
-  height: 90%;
-}
 
-.pswp img {
-  width: 100% !important;
-  height: 100% !important;
-} */
-
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 767px) {
   .mentors .row .col-md-6 {
     padding: 0;
     justify-content: flex-start;
@@ -2307,7 +2297,7 @@ textarea::-webkit-scrollbar {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .reviews .slick-active {
     transform: unset;
   }

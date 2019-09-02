@@ -1044,7 +1044,7 @@ textarea::-webkit-scrollbar {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .footer-nav li {
     justify-content: center;
   }
