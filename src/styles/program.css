@@ -1972,7 +1972,7 @@ textarea::-webkit-scrollbar {
 
   .return-link span {
     position: relative;
-    top: 1px;
+    top: 3px;
   }
 }
 
