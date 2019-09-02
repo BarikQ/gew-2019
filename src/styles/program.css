@@ -1922,7 +1922,7 @@ textarea::-webkit-scrollbar {
   }
 
   .return-link::before {
-    top: 0px;
+    top: -1px;
   }
 
   .modal-event .modal-content {
@@ -1933,6 +1933,16 @@ textarea::-webkit-scrollbar {
 
   .modal-event-button {
     margin: 0 auto;
+  }
+
+  .few-photos {
+    grid-template: 1fr / repeat(4, 54px);
+  }
+
+  .few-photos .speaker-photo-md,
+  .single-photo .speaker-photo-md {
+    width: 54px;
+    height: 54px;
   }
 }
 
