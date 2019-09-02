@@ -1951,7 +1951,7 @@ textarea::-webkit-scrollbar {
   }
 
   .return-link::before {
-    top: -2px;
+    top: -1px;
   }
 
   .modal-event .modal-content {

@@ -748,7 +748,6 @@ textarea::-webkit-scrollbar {
   position: relative;
   top: 11px;
   left: 1px;
-  text-decoration: underline rgba(0, 0, 0, .2) dashed;
   cursor: pointer;
   line-height: 150%;
 }
@@ -761,7 +760,11 @@ textarea::-webkit-scrollbar {
   top: 7px;
 }
 
-.underline {
+.underline p {
+  margin: 0;
+}
+
+.underline p span{
   border-bottom: 1px solid #ddd4f1;
 }
 

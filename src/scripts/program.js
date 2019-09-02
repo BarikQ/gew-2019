@@ -209,7 +209,12 @@ window.onload = function() {
             }
 
             elem.querySelector('.card-adjacent').classList.add('adjacent-show');
-            this.innerHTML = '<span>Скрыть детали</span> <img src="./src/images/card-checkbox-top.png">';
+            let details = null;
+
+            if (document.querySelector('.language').value === 'RU') details = 'Скрыть детали';
+            else details = 'Hide details';
+
+            this.innerHTML = `<span>${details}</span> <img src="./src/images/card-checkbox-top.png">`;
 
             return ;
         }
