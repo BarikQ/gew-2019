@@ -2527,7 +2527,7 @@ textarea::-webkit-scrollbar {
     max-width: 300px;
   }
 
-  .gallery-line {
+  .photos-gallery__container .gallery-line {
     max-height: 200px;
     width: 1800px;
   }
@@ -2535,7 +2535,6 @@ textarea::-webkit-scrollbar {
   .video-gallery .gallery-line {
     width: 6400vw;
     max-width: 5160px;
-    max-height: 382px;
     display: flex;
     justify-content: space-between;
   }
