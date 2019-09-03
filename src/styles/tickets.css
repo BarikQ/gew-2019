@@ -764,7 +764,8 @@ textarea::-webkit-scrollbar {
   margin: 0;
 }
 
-.underline p span{
+.underline p span,
+.ticket-head .underline {
   border-bottom: 1px solid #ddd4f1;
 }
 

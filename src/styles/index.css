@@ -1,21 +1,18 @@
 @font-face {
   font-family: 'V';
-  src: url('./../fonts/VAG\ Rounded\ Pro\ Cyrillic\ Light\ [TheFontsMaster.com].otf')
-    format('truetype');
+  src: url('./../fonts/VAG\ Rounded\ Pro\ Cyrillic\ Light\ [TheFontsMaster.com].otf') format('truetype');
   font-style: normal;
 }
 
 @font-face {
   font-family: 'V-B';
-  src: url('./../fonts/VAG\ Rounded\ Pro\ Cyrillic\ Bold\ [TheFontsMaster.com].otf')
-    format('truetype');
+  src: url('./../fonts/VAG\ Rounded\ Pro\ Cyrillic\ Bold\ [TheFontsMaster.com].otf') format('truetype');
   font-style: normal;
 }
 
 @font-face {
   font-family: 'V-L';
-  src: url('./../fonts/VAG\ Rounded\ Pro\ Cyrillic\ Thin\ [TheFontsMaster.com].otf')
-    format('truetype');
+  src: url('./../fonts/VAG\ Rounded\ Pro\ Cyrillic\ Thin\ [TheFontsMaster.com].otf') format('truetype');
   font-style: normal;
   font-weight: 200;
 }
@@ -67,7 +64,7 @@ ul {
   color: #ff981d;
 }
 
-.header > .container {
+.header>.container {
   padding: 0 6.8vw;
   padding-top: 31px;
 }
@@ -247,7 +244,7 @@ option:hover {
 
 .header-list ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   height: 137px;
   max-width: 1071px;
@@ -256,37 +253,40 @@ option:hover {
   padding: 0 10px;
   background: white;
 }
+
 .embassy img {
   height: 65px !important;
 }
+
 .header-list-item {
   margin: 0 0;
   position: relative;
-  top: -2px;
+  top: -10px;
+  padding: 0;
 }
 
 .header-list-item:nth-child(1) {
-  left: 3px;
+  left: 0;
 }
 
 .header-list-item:nth-child(2) {
-  left: 22px;
+  left: 0;
 }
 
 .header-list-item:nth-child(3) {
-  left: 40px;
+  left: -20px;
 }
 
 .header-list-item:nth-child(4) {
-  left: 33px;
+  left: -10px;
 }
 
 .header-list-item:nth-child(5) {
-  left: 13px;
+  left: -10px;
 }
 
 .header-list-item:nth-child(6) {
-  left: -1px;
+  left: 0;
 }
 
 .numbers {
@@ -296,7 +296,7 @@ option:hover {
   min-height: 342px;
 }
 
-.popup-menu > span {
+.popup-menu>span {
   font-family: 'V-L';
   display: block;
   width: 100%;
@@ -395,14 +395,14 @@ option:hover {
   margin: 10px;
 }
 
-.menu-column li > a {
+.menu-column li>a {
   color: #ff981d;
   position: relative;
   transition: 0.5s ease all;
   left: 0;
 }
 
-.menu-column > ul > li > a:hover {
+.menu-column>ul>li>a:hover {
   left: 5px;
   color: white;
   transition: 0.5s ease all;
@@ -428,7 +428,7 @@ option:hover {
   margin: 0 !important;
 }
 
-.popup-menu > span:hover {
+.popup-menu>span:hover {
   cursor: pointer;
 }
 
@@ -609,8 +609,7 @@ option:hover {
   left: -40px;
 }
 
-.header-bottom-logo img {
-}
+.header-bottom-logo img {}
 
 .header-bottom-container {
   max-width: 1072px;
@@ -638,6 +637,7 @@ option:hover {
   top: 2px;
   left: -1px;
   word-spacing: 1.8px;
+  text-align: right;
 }
 
 .section-head {
@@ -679,7 +679,7 @@ option:hover {
   justify-content: center;
 }
 
-.gew-features ul > li {
+.gew-features ul>li {
   margin: 15px 0;
 }
 
@@ -1003,7 +1003,7 @@ option:hover {
   cursor: pointer;
 }
 
-.radio:checked + .radio-label {
+.radio:checked+.radio-label {
   box-shadow: 0 0 10px -6px black;
   color: white;
 }
@@ -1013,7 +1013,7 @@ option:hover {
 }
 
 .all:hover,
-#all:checked + .all {
+#all:checked+.all {
   background: #ec5d21;
 }
 
@@ -1022,7 +1022,7 @@ option:hover {
 }
 
 .open:hover,
-#open:checked + .open {
+#open:checked+.open {
   background: #6bd2db;
 }
 
@@ -1031,7 +1031,7 @@ option:hover {
 }
 
 .fintech:hover,
-#fintech:checked + .fintech {
+#fintech:checked+.fintech {
   background: #ff981d;
 }
 
@@ -1040,7 +1040,7 @@ option:hover {
 }
 
 .invDay:hover,
-#invDay:checked + .invDay {
+#invDay:checked+.invDay {
   background: #0093ba;
 }
 
@@ -1049,7 +1049,7 @@ option:hover {
 }
 
 .forum:hover,
-#forum:checked + .forum {
+#forum:checked+.forum {
   background: #cadc00;
 }
 
@@ -1058,7 +1058,7 @@ option:hover {
 }
 
 .agro:hover,
-#agro:checked + .agro {
+#agro:checked+.agro {
   background: #fc2725;
 }
 
@@ -1067,7 +1067,7 @@ option:hover {
 }
 
 .dating:hover,
-#dating:checked + .dating {
+#dating:checked+.dating {
   background: #f9eb06;
 }
 
@@ -1270,7 +1270,7 @@ option:hover {
   margin: 0;
 }
 
-.gallerys > .container {
+.gallerys>.container {
   height: 58px;
 }
 
@@ -1521,8 +1521,7 @@ option:hover {
   padding: 0;
 }
 
-.reviews {
-}
+.reviews {}
 
 .reviews-item:not(.slick-active) {
   margin-top: 10px;
@@ -1705,7 +1704,7 @@ option:hover {
   margin: 20px auto;
 }
 
-.partners__container > div {
+.partners__container>div {
   justify-content: center;
 }
 
@@ -1723,18 +1722,18 @@ option:hover {
   justify-content: center;
 }
 
-.finInvDay > div {
+.finInvDay>div {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.finInvDay > div:nth-child(1) {
+.finInvDay>div:nth-child(1) {
   padding: 0;
   margin: 0px 15px 0 0;
 }
 
-.finInvDay > div:nth-child(2) {
+.finInvDay>div:nth-child(2) {
   padding: 0;
   margin: 0px 0 0 15px;
 }
@@ -2191,9 +2190,7 @@ textarea::-webkit-scrollbar {
     max-width: 100%;
   }
 
-  .header-list-item {
-    left: 0 !important;
-  }
+  .header-list-item {}
 
   .modal-buttons {
     flex-direction: column;
@@ -2229,7 +2226,7 @@ textarea::-webkit-scrollbar {
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 992px) {
   .container {
     max-width: 100%;
     padding: 0 15px;
@@ -2239,9 +2236,11 @@ textarea::-webkit-scrollbar {
     display: flex;
     justify-content: center;
     padding: 0;
+    left: 0;
+    top: 15px;
   }
 
-  .video > span {
+  .video>span {
     left: 0 !important;
   }
 
@@ -2270,7 +2269,11 @@ textarea::-webkit-scrollbar {
   }
 
   .header-list ul {
-    justify-content: flex-start;
+    justify-content: center;
+  }
+
+  .header-bottom-container {
+    margin-top: 30px;
   }
 
   .menu-column:nth-child(3) ul {
@@ -2619,6 +2622,42 @@ textarea::-webkit-scrollbar {
   .scheme__inner svg {
     width: 100% !important;
     height: 100% !important;
+  }
+
+  .header-list-item:nth-child(1) {
+    left: -10px;
+  }
+
+  .header-list-item:nth-child(2) {
+    left: -10px;
+  }
+
+  .header-list-item:nth-child(3) {
+    left: -10px;
+  }
+
+  .header-list-item:nth-child(4) {
+    left: 10px;
+  }
+
+  .header-list-item:nth-child(5) {
+    left: 0px;
+  }
+
+  .header-list-item:nth-child(6) {
+    left: 10px;
+  }
+
+  .header-list-item:nth-child(7) {
+    left: 10px;
+  }
+
+  .header-bottom .container {
+    padding: 0;
+  }
+
+  .header-bottom-text {
+    padding: 0 10px;
   }
 }
 
