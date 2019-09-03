@@ -2180,27 +2180,25 @@ textarea::-webkit-scrollbar {
 
 .speaker-modal-text__inner {
   overflow-y: scroll;
+  padding-right: 10px;
 }
 
-/* .speaker-modal-text__inner::-webkit-scrollbar {
+.speaker-modal-text__inner::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+
+.speaker-modal-text__inner::-webkit-scrollbar {
   display: none;
-} */
-
-.speaker-modal-text__inner::-webkit-scrollbar-track
-{
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.15);
-	background-color: #F5F5F5;
+  width: 2px;
+  background-color: #F5F5F5;
 }
 
-.speaker-modal-text__inner::-webkit-scrollbar
-{
-	width: 6px;
-	background-color: #F5F5F5;
-}
-
-.speaker-modal-text__inner::-webkit-scrollbar-thumb
-{
-	background-color: #000000;
+.speaker-modal-text__inner::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+  background-color: #555;
 }
 
 @media only screen and (min-width: 767px) {
