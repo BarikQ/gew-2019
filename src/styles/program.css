@@ -1,18 +1,18 @@
 @font-face {
   font-family: 'V';
-  src: url('./../fonts/VAG\ Rounded\ Pro\ Cyrillic\ Light\ [TheFontsMaster.com].otf') format('truetype');
+  src: url('./../fonts/VAG_Rounded_Pro_Cyrillic_Light_[TheFontsMaster.com].otf') format('truetype');
   font-style: normal;
 }
 
 @font-face {
   font-family: 'V-B';
-  src: url('./../fonts/VAG\ Rounded\ Pro\ Cyrillic\ Bold\ [TheFontsMaster.com].otf') format('truetype');
+  src: url('./../fonts/VAG_Rounded_Pro_Cyrillic_Bold_[TheFontsMaster.com].otf') format('truetype');
   font-style: normal;
 }
 
 @font-face {
   font-family: 'V-L';
-  src: url('./../fonts/VAG\ Rounded\ Pro\ Cyrillic\ Thin\ [TheFontsMaster.com].otf') format('truetype');
+  src: url('./../fonts/VAG_Rounded_Pro_Cyrillic_Thin_[TheFontsMaster.com].otf') format('truetype');
   font-style: normal;
   font-weight: 200;
 }
@@ -811,11 +811,12 @@ textarea::-webkit-scrollbar {
 }
 
 .filter-label {
-  margin-bottom: 12.6px;
+  margin-bottom: 13px;
   margin-left: 25px;
   display: flex;
   align-items: flex-start;
   cursor: pointer;
+  position: relative;
 }
 
 .filter-box {
@@ -827,6 +828,10 @@ textarea::-webkit-scrollbar {
   height: 11px;
   min-height: 11px;
   border: 1px solid #7c59c0;
+  position: absolute;
+  left: -12px;
+  top: 50%;
+  transform: translate(0, -50%);
 }
 
 .filter-box span {
@@ -847,7 +852,6 @@ textarea::-webkit-scrollbar {
 .filter-text {
   position: relative;
   left: 9px;
-  top: -4px;
   line-height: 125%;
 }
 
@@ -1243,7 +1247,7 @@ textarea::-webkit-scrollbar {
   color: #f9eb06;
 }
 
-.master-cls-4 input:checked~.filter-label .filter-box span,
+.master-cls-4 .filter-box,
 .master-cls-4 .event-title,
 .master-cls-4 .event-name {
   color: #6bd2db;

@@ -106,6 +106,11 @@ window.onload = function() {
 
   function eventModal() {
 
+    let buttonInner = null;
+
+    if (document.querySelector('.language').value === 'RU') buttonInner = 'Купить билет';
+    else buttonInner = 'Buy ticket';
+
     const triggersList = document.querySelectorAll('#event-name');
 
     triggersList.forEach(elem => {
@@ -168,7 +173,7 @@ window.onload = function() {
                   </ul>
                                 
                   <div class="modal-event-button__container">
-                    <a class="button orange modal-event-button" href="./tickets.html">Купить билет</a>
+                    <a class="button orange modal-event-button" href="./tickets.html">${buttonInner}</a>
                   </div>
                 </div>
 
@@ -200,16 +205,20 @@ window.onload = function() {
         let els = [];
         while (elem) {
           if (elem.classList.contains('card-item')) {
+            let details = null;
+
             if (elem.querySelector('.card-adjacent').classList.contains('adjacent-show')) {
 
-              this.innerHTML = '<span>Показать детали</span> <img src="./src/images/card-checkbox-bottom.png">';
+              if (document.querySelector('.language').value === 'RU') details = 'Показать детали';
+              else details = 'Show details';
+
+              this.innerHTML = `<span>${details}</span> <img src="./src/images/card-checkbox-bottom.png">`;
               elem.querySelector('.card-adjacent').classList.remove('adjacent-show');
 
               return ;
             }
 
             elem.querySelector('.card-adjacent').classList.add('adjacent-show');
-            let details = null;
 
             if (document.querySelector('.language').value === 'RU') details = 'Скрыть детали';
             else details = 'Hide details';

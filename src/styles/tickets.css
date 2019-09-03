@@ -1,18 +1,18 @@
 @font-face {
   font-family: 'V';
-  src: url('./../fonts/VAG\ Rounded\ Pro\ Cyrillic\ Light\ [TheFontsMaster.com].otf') format('truetype');
+  src: url('./../fonts/VAG_Rounded_Pro_Cyrillic_Light_[TheFontsMaster.com].otf') format('truetype');
   font-style: normal;
 }
 
 @font-face {
   font-family: 'V-B';
-  src: url('./../fonts/VAG\ Rounded\ Pro\ Cyrillic\ Bold\ [TheFontsMaster.com].otf') format('truetype');
+  src: url('./../fonts/VAG_Rounded_Pro_Cyrillic_Bold_[TheFontsMaster.com].otf') format('truetype');
   font-style: normal;
 }
 
 @font-face {
   font-family: 'V-L';
-  src: url('./../fonts/VAG\ Rounded\ Pro\ Cyrillic\ Thin\ [TheFontsMaster.com].otf') format('truetype');
+  src: url('./../fonts/VAG_Rounded_Pro_Cyrillic_Thin_[TheFontsMaster.com].otf') format('truetype');
   font-style: normal;
   font-weight: 200;
 }
