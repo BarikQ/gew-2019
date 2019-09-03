@@ -1,18 +1,21 @@
 @font-face {
   font-family: 'V';
-  src: url('./../fonts/VAG\ Rounded\ Pro\ Cyrillic\ Light\ [TheFontsMaster.com].otf') format('truetype');
+  src: url('./../fonts/VAG\ Rounded\ Pro\ Cyrillic\ Light\ [TheFontsMaster.com].otf')
+    format('truetype');
   font-style: normal;
 }
 
 @font-face {
   font-family: 'V-B';
-  src: url('./../fonts/VAG\ Rounded\ Pro\ Cyrillic\ Bold\ [TheFontsMaster.com].otf') format('truetype');
+  src: url('./../fonts/VAG\ Rounded\ Pro\ Cyrillic\ Bold\ [TheFontsMaster.com].otf')
+    format('truetype');
   font-style: normal;
 }
 
 @font-face {
   font-family: 'V-L';
-  src: url('./../fonts/VAG\ Rounded\ Pro\ Cyrillic\ Thin\ [TheFontsMaster.com].otf') format('truetype');
+  src: url('./../fonts/VAG\ Rounded\ Pro\ Cyrillic\ Thin\ [TheFontsMaster.com].otf')
+    format('truetype');
   font-style: normal;
   font-weight: 200;
 }
@@ -64,7 +67,7 @@ ul {
   color: #ff981d;
 }
 
-.header>.container {
+.header > .container {
   padding: 0 6.8vw;
   padding-top: 31px;
 }
@@ -184,7 +187,7 @@ ul {
 
 .selectric-items:before,
 .selectric-items:after {
-  content: "";
+  content: '';
   position: absolute;
   top: -9px;
   left: 12px;
@@ -253,7 +256,9 @@ option:hover {
   padding: 0 10px;
   background: white;
 }
-
+.embassy img {
+  height: 65px !important;
+}
 .header-list-item {
   margin: 0 0;
   position: relative;
@@ -291,7 +296,7 @@ option:hover {
   min-height: 342px;
 }
 
-.popup-menu>span {
+.popup-menu > span {
   font-family: 'V-L';
   display: block;
   width: 100%;
@@ -390,14 +395,14 @@ option:hover {
   margin: 10px;
 }
 
-.menu-column li>a {
+.menu-column li > a {
   color: #ff981d;
   position: relative;
   transition: 0.5s ease all;
   left: 0;
 }
 
-.menu-column>ul>li>a:hover {
+.menu-column > ul > li > a:hover {
   left: 5px;
   color: white;
   transition: 0.5s ease all;
@@ -423,7 +428,7 @@ option:hover {
   margin: 0 !important;
 }
 
-.popup-menu>span:hover {
+.popup-menu > span:hover {
   cursor: pointer;
 }
 
@@ -525,7 +530,7 @@ option:hover {
   border: 2px solid #ff981d;
 }
 
-.orange:hover{
+.orange:hover {
   transition: 0.2s ease all;
   border: 2px solid #ff981d;
   background: transparent;
@@ -604,7 +609,8 @@ option:hover {
   left: -40px;
 }
 
-.header-bottom-logo img {}
+.header-bottom-logo img {
+}
 
 .header-bottom-container {
   max-width: 1072px;
@@ -673,7 +679,7 @@ option:hover {
   justify-content: center;
 }
 
-.gew-features ul>li {
+.gew-features ul > li {
   margin: 15px 0;
 }
 
@@ -751,12 +757,12 @@ option:hover {
   color: white;
   margin: 22px;
   padding: 0;
-  box-shadow: 0 0px 34px 0px rgba(0, 0, 0, .15);
+  box-shadow: 0 0px 34px 0px rgba(0, 0, 0, 0.15);
   transition: 0.2s ease all;
 }
 
 .program-item:hover {
-  box-shadow: 0 10px 18px 0px rgba(0, 0, 0, .3);
+  box-shadow: 0 10px 18px 0px rgba(0, 0, 0, 0.3);
   transition: 0.2s ease all;
 }
 
@@ -987,17 +993,17 @@ option:hover {
   cursor: pointer;
   transition: 0.2s ease all;
   text-align: center;
-  box-shadow: 0 0px 14px -2px rgba(0, 0, 0, .1);
+  box-shadow: 0 0px 14px -2px rgba(0, 0, 0, 0.1);
 }
 
 .radio-label:hover {
   color: white;
-  box-shadow: 0 0 14px -2px rgba(0, 0, 0, .15);
+  box-shadow: 0 0 14px -2px rgba(0, 0, 0, 0.15);
   transition: 0.2s ease all;
   cursor: pointer;
 }
 
-.radio:checked+.radio-label {
+.radio:checked + .radio-label {
   box-shadow: 0 0 10px -6px black;
   color: white;
 }
@@ -1007,7 +1013,7 @@ option:hover {
 }
 
 .all:hover,
-#all:checked+.all {
+#all:checked + .all {
   background: #ec5d21;
 }
 
@@ -1016,7 +1022,7 @@ option:hover {
 }
 
 .open:hover,
-#open:checked+.open {
+#open:checked + .open {
   background: #6bd2db;
 }
 
@@ -1025,7 +1031,7 @@ option:hover {
 }
 
 .fintech:hover,
-#fintech:checked+.fintech {
+#fintech:checked + .fintech {
   background: #ff981d;
 }
 
@@ -1034,7 +1040,7 @@ option:hover {
 }
 
 .invDay:hover,
-#invDay:checked+.invDay {
+#invDay:checked + .invDay {
   background: #0093ba;
 }
 
@@ -1043,7 +1049,7 @@ option:hover {
 }
 
 .forum:hover,
-#forum:checked+.forum {
+#forum:checked + .forum {
   background: #cadc00;
 }
 
@@ -1052,7 +1058,7 @@ option:hover {
 }
 
 .agro:hover,
-#agro:checked+.agro {
+#agro:checked + .agro {
   background: #fc2725;
 }
 
@@ -1061,7 +1067,7 @@ option:hover {
 }
 
 .dating:hover,
-#dating:checked+.dating {
+#dating:checked + .dating {
   background: #f9eb06;
 }
 
@@ -1127,7 +1133,7 @@ option:hover {
 .companies-item {
   width: 162px;
   height: 94px;
-  box-shadow: 0 0px 14px -2px rgba(0, 0, 0, .1);
+  box-shadow: 0 0px 14px -2px rgba(0, 0, 0, 0.1);
   display: flex !important;
   justify-content: center;
   align-items: center;
@@ -1139,7 +1145,7 @@ option:hover {
 
 .companies-item:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 14px -2px rgba(0, 0, 0, .15);
+  box-shadow: 0 0 14px -2px rgba(0, 0, 0, 0.15);
   transition: 0.2s ease all;
   cursor: pointer;
 }
@@ -1264,7 +1270,7 @@ option:hover {
   margin: 0;
 }
 
-.gallerys>.container {
+.gallerys > .container {
   height: 58px;
 }
 
@@ -1343,7 +1349,6 @@ option:hover {
     opacity: 0;
     left: -90px;
   }
-
 }
 
 .slick-dots li button {
@@ -1536,7 +1541,7 @@ option:hover {
   justify-content: center;
   text-align: center;
   cursor: pointer;
-  box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, .1);
+  box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.1);
   position: relative;
   margin: 0 auto !important;
   padding: 28px 0;
@@ -1550,7 +1555,7 @@ option:hover {
 }
 
 .slick-active .review {
-  box-shadow: 0px 0px 14px -4px rgba(0, 0, 0, .1);
+  box-shadow: 0px 0px 14px -4px rgba(0, 0, 0, 0.1);
   max-height: 456px;
   max-width: 678px;
 }
@@ -1700,7 +1705,7 @@ option:hover {
   margin: 20px auto;
 }
 
-.partners__container>div {
+.partners__container > div {
   justify-content: center;
 }
 
@@ -1718,18 +1723,18 @@ option:hover {
   justify-content: center;
 }
 
-.finInvDay>div {
+.finInvDay > div {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.finInvDay>div:nth-child(1) {
+.finInvDay > div:nth-child(1) {
   padding: 0;
   margin: 0px 15px 0 0;
 }
 
-.finInvDay>div:nth-child(2) {
+.finInvDay > div:nth-child(2) {
   padding: 0;
   margin: 0px 0 0 15px;
 }
@@ -1803,7 +1808,7 @@ option:hover {
   font-size: 12px;
 }
 
-.callback-form input[type=text],
+.callback-form input[type='text'],
 .callback-form textarea {
   width: 100%;
   background: none;
@@ -2045,7 +2050,7 @@ textarea::-webkit-scrollbar {
 
 .menu-column:nth-child(3)::before,
 .menu-column:nth-child(1)::after {
-  content: "";
+  content: '';
   display: block;
   width: 1px;
   height: 100%;
@@ -2246,7 +2251,7 @@ textarea::-webkit-scrollbar {
     padding: 0;
   }
 
-  .video>span {
+  .video > span {
     left: 0 !important;
   }
 
@@ -2291,7 +2296,7 @@ textarea::-webkit-scrollbar {
   }
 
   .modal-video .modal-content {
-    height: 60vw
+    height: 60vw;
   }
 
   .video_svg {
@@ -2335,7 +2340,7 @@ textarea::-webkit-scrollbar {
   }
 
   .place-info__container {
-    transform: translate(0, -50%) !important; 
+    transform: translate(0, -50%) !important;
   }
 
   .review-text {
@@ -2555,7 +2560,7 @@ textarea::-webkit-scrollbar {
   }
 
   .modal-video .modal-content {
-    height: 50%
+    height: 50%;
   }
 
   .modal-content .container {
@@ -2579,7 +2584,7 @@ textarea::-webkit-scrollbar {
     text-align: right;
   }
 
-  .footer-nav li:nth-child(2n+1) {
+  .footer-nav li:nth-child(2n + 1) {
     justify-content: flex-start;
     text-align: left;
   }
@@ -2635,7 +2640,7 @@ textarea::-webkit-scrollbar {
   .logo-text {
     font-size: 11px;
     margin-left: 8px;
-  }  
+  }
 
   .selectric-wrapper {
     margin-right: 0;
