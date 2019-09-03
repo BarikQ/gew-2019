@@ -1,13 +1,13 @@
 //handle modal
-$('.modal-market').modal('hide');
-$('.ticket-buy').bind('click', function(e) {
-  e.preventDefault();
-  $('.modal-market').modal('show');
-});
-$('#close_market').bind('click', function(e) {
-  e.preventDefault();
-  $('.modal-market').modal('hide');
-});
+// $('.modal-market').modal('hide');
+// $('.ticket-buy').bind('click', function(e) {
+//   e.preventDefault();
+//   $('.modal-market').modal('show');
+// });
+// $('#close_market').bind('click', function(e) {
+//   e.preventDefault();
+//   $('.modal-market').modal('hide');
+// });
 //switch language
 document.getElementById('d').onchange = (e) => {
   e.preventDefault();
