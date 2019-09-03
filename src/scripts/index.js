@@ -67,12 +67,14 @@ $(document).ready(function () {
     let bg = $(this).children('.speaker__content-wrap').children('.speaker__image').css('background-image');
     let name = $(this).children('.speaker__content-wrap').children('.speaker__content').children('.speaker__content__inner').children('.speaker-name').html();
     let position = $(this).children('.speaker__content-wrap').children('.speaker__content').children('.speaker__content__inner').children('.speaker-review').html();
+    let review = $(this).children('.speaker__content-wrap').children('.speaker__content').children('.speaker__content__inner').children('.speaker-text__inner').html();
 
     bg = bg.replace('url(','').replace(')','').replace(/\"/gi, "");
 
     $('.speaker-image').attr('src', bg);
     $('.speaker-modal-name').html(name);
     $('.speaker-position').html(position);
+    $('.speaker-modal-text__inner').html(review);
     $(".modal-speaker").fadeToggle('fast');
   });
 
