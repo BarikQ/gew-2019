@@ -1,4 +1,4 @@
-window.onload = function() {
+
 
   function inputs() {
 
@@ -255,7 +255,6 @@ window.onload = function() {
   dropDown();
 
   window.onresize = () => dropDown();
-}
 
 $(window).ready(function() {
   $('select').selectric({
