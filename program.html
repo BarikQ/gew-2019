@@ -665,8 +665,8 @@
                 <div class="event-info__inner">
                   <span class="event-date bold-text">19 ноября</span>
                   <span> – </span>
-                  <span class="cards-title" id="event-name">
-                    Fintech Day
+                  <span class="cards-title-nb">
+                    Все мероприятия
                   </span>
                 </div>
               </div>
@@ -1595,5 +1595,34 @@
     ЕСЛИ 2-4, ТО - few-photos, ЕСЛИ ОДНА, ТО - single-photo
     + У КАЖДОЙ ФОТКИ КЛАСС С ЕЁ НОМЕРОМ PHOTO-1, PHOTO-2 И Т.Д.
 
+
+    ЕСЛИ НА НАЗВАНИИ ИВЕНТА НЕ НУЖНО ПОДЧЁРКИВАНИЕ И,
+    СООТВЕСТВЕННО, КЛИК — ТО УБИРАЙ АЙДИШНИК И КЛАСС 
+    CARDS-TITLE МЕНЯЙ НА CARDS-TITLE-NB
+
+    БЕЗ ПОДЧЁРКИВАНИЯ
+    ▼▼▼
+    <div class="event-info">
+      <div class="event-info__inner">
+        <span class="event-date bold-text">19 ноября</span>
+        <span> – </span>
+        <span class="cards-title-nb" id="event-name">
+          Все мероприятия
+        </span>
+      </div>
+    </div>
+
+    С ПОДЧЁРКИВАНИЕМ
+    ▼▼▼
+    <div class="event-info">
+      <div class="event-info__inner">
+        <span class="event-date bold-text">18 ноября</span>
+        <span> – </span>
+        <span class="cards-title" id="event-name">
+          Fintech Day
+        </span>
+      </div>
+    </div>
+    
   ЕСЛИ ЧТО В ЛС НАПИШЕШЬ
 -->

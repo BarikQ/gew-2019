@@ -1078,6 +1078,10 @@ textarea::-webkit-scrollbar {
   border-bottom: 1px dashed rgba(0, 0, 0, .2);
 }
 
+.cards-title-nb {
+  border-bottom: none;
+}
+
 .fintech .filter-box,
 .fintech .event-title,
 .fintech .event-name {
