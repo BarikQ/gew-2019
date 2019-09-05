@@ -1320,9 +1320,14 @@ textarea::-webkit-scrollbar {
   height: 74%;
 }
 
-.cards__column {
+.cards__column,
+.events-list {
   display: grid;
   grid-gap: 21px;
+}
+
+.events-list {
+  margin-bottom: 21px;
 }
 
 .card__inner {
