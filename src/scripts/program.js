@@ -272,6 +272,16 @@ $(window).ready(function() {
     nativeOnMobile: false
   });
 
+  $('.callback-form').on('submit', (e) => {
+    e.preventDefault();
+    $('.footer-right__container').html(
+      `
+        <h4>Спасибо за Ваш вопрос!</h4>
+        </p>В ближайшее время мы<br> свяжемся с Вами</p>
+        <img src="./src/images/submit.png" alt="">
+      `);
+  });
+
   $(".popup-menu").click(function () {
     $(".modal-menu").fadeToggle('fast');
   });

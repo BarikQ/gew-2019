@@ -27,4 +27,14 @@ $(window).ready(function() {
       $(this).css('margin', 0);
     });
   }
+
+  $('.callback-form').on('submit', (e) => {
+    e.preventDefault();
+    $('.footer-right__container').html(
+      `
+        <h4>Спасибо за Ваш вопрос!</h4>
+        </p>В ближайшее время мы<br> свяжемся с Вами</p>
+        <img src="./src/images/submit.png" alt="">
+      `);
+  });
 });
