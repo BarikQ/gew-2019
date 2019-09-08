@@ -2703,4 +2703,8 @@ textarea::-webkit-scrollbar {
   .selectric-wrapper {
     margin-right: 0;
   }
+
+  .header-video {
+    display: none;
+  }
 }
