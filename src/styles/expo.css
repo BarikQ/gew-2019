@@ -1001,12 +1001,12 @@ textarea::-webkit-scrollbar {
 .part-card {
   max-width: 48.6%;
   margin-bottom: 31px !important;
-  box-shadow: 0 0px 14px -2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0px 34px 0px rgba(0, 0, 0, 0.15);
   transition: 0.2s ease all;
 }
 
 .part-card:hover {
-  box-shadow: 0 0 14px -2px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 18px 0px rgba(0, 0, 0, 0.3);
   transition: 0.2s ease all;
 }
 
@@ -1120,13 +1120,12 @@ textarea::-webkit-scrollbar {
   margin: 0;
   width: 100%;
   margin-top: 120px;
-  height: 382px;
+  min-height: 382px;
 }
 
 .step-2__inner {
   margin: 0 auto;
   flex-direction: unset !important;
-  padding-bottom: 27px !important;
 }
 
 .callback__container {
@@ -1162,7 +1161,7 @@ textarea::-webkit-scrollbar {
 
 .alex-photo img {
   position: absolute;
-  bottom: -27px;
+  bottom: 0;
 }
 
 .callback__inner {
@@ -1171,7 +1170,7 @@ textarea::-webkit-scrollbar {
   justify-content: center;
   align-items: center;
   position: relative;
-  top: -13px;
+  top: -27px;
   left: 28px;
 }
 
@@ -1331,6 +1330,10 @@ textarea::-webkit-scrollbar {
     padding: 0 15px;
   }
 
+  .companies-slider .container {
+    padding: 0 35px;
+  }
+
   .menu-column:nth-child(3) ul {
     align-items: center;
   }
@@ -1347,6 +1350,7 @@ textarea::-webkit-scrollbar {
 @media (max-width: 767px) {
   .footer-nav li {
     justify-content: center;
+    text-align: center;
   }
 
   .footer-left__container {
@@ -1496,6 +1500,42 @@ textarea::-webkit-scrollbar {
   .return-link span {
     position: relative;
     top: 1px;
+  }
+
+  .alex-photo {
+    display: none;
+  }
+
+  .callback__inner,
+  .callback__inner .callback-form,
+  .callback__container h4 span {
+    left: 0;
+  }
+
+  .callback__container {
+    justify-content: center;
+  }
+
+  .p-t-2::after {
+    content: none;
+    /* margin: 0 10px;
+    position: absolute;
+    bottom: -23px;
+    transform: rotate(90deg);
+    top: unset;
+    right: 45px; */
+  }
+
+  .step-2 {
+    margin-top: 120px;
+  }
+
+  .part-button {
+    position: absolute;
+    top: unset;
+    bottom: -90px;
+    left: 50%;
+    transform: translate(-50%, 0);
   }
 }
 
