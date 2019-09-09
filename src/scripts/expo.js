@@ -58,16 +58,14 @@ $(document).ready(function () {
         breakpoint: 600,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2,
-          arrows: false
+          slidesToScroll: 2
         }
       },
       {
         breakpoint: 330,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1,
-          arrows: false
+          slidesToScroll: 1
         }
       }
     ]
