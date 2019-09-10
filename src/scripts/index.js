@@ -25,6 +25,23 @@ $(document).ready(function () {
       }
   });
 
+  console.log($(".card-radio"));
+  $(".card-radio").on('change', function(e) {
+    $(".for-text").each(function() {
+      if ($(this).hasClass('active-text')) $(this).removeClass('active-text');
+    });
+
+    let choosen = this.id;
+
+    choosen += '-text';
+
+    // if ($(`.${choosen}`).hasClass('active-text')) {
+    //   console.log(true);
+    // }
+
+    $(`.${choosen}`)[0].classList.add('active-text');
+  })
+
   $(".open-photos").click(function () {
     $('.hotel-slider').slick({
       slidesToShow: 3,
