@@ -2206,6 +2206,15 @@ textarea::-webkit-scrollbar {
   background-color: #555;
 }
 
+.for {
+  padding-bottom: 80px;
+}
+
+.for-head {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
 .for-card {
   border-bottom: 2px solid #8261cc;
   margin: 40px 0;
@@ -2218,6 +2227,7 @@ textarea::-webkit-scrollbar {
   box-shadow: 0 0px 17px -6px rgba(0, 0, 0, 0.15);
   cursor: pointer;
   background: white;
+  overflow: hidden;
 }
 
 .for-card:hover {
@@ -2249,15 +2259,21 @@ textarea::-webkit-scrollbar {
   display: none;
 }
 
+.white-image {
+  display: none;
+}
+
 .card-radio:checked+label {
-  
   background: rgba(130, 97, 204, 1);
   color: white;
 }
 
-.for-card:checked {
-  background: rgba(130, 97, 204, 1);
-  color: white;
+.card-radio:checked+label .white-image {
+  display: unset;
+}
+
+.card-radio:checked+label .purple-image {
+  display: none;
 }
 
 .for-cards {
@@ -2274,7 +2290,7 @@ textarea::-webkit-scrollbar {
   border-bottom: 2px solid #8261cc;
   background-repeat: no-repeat;
   background-position: right bottom;
-  background-size: 20%;
+  background-size: 25%;
   display: none;
 }
 
@@ -2297,6 +2313,12 @@ textarea::-webkit-scrollbar {
   background: #8261cc;
 }
 
+.for-card__inner img {
+  max-width: 65px;
+  max-height: 65px;
+  z-index: 10;
+}
+
 .for-text-head {
   color: black;
   font-weight: 600;
@@ -2304,22 +2326,6 @@ textarea::-webkit-scrollbar {
 
 .for-text__inner {
   padding-right: 20%;
-}
-
-.card-1 .for-card__inner {
-  background-image: url('./../images/for/corporationBG-W.png');
-}
-
-.card-2 .for-card__inner {
-  background-image: url('./../images/for/groupBG-P.png');
-}
-
-.card-3 .for-card__inner {
-  background-image: url('./../images/for/goalBG-P.png');
-}
-
-.card-4 .for-card__inner {
-  background-image: url('./../images/for/startupBG-P.png');
 }
 
 .card-1-text {
@@ -2336,6 +2342,35 @@ textarea::-webkit-scrollbar {
 
 .card-4-text {
   background-image: url('./../images/for/startupBG-P.png');
+}
+
+.bg-image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  max-width: unset !important;
+  max-height: unset !important;
+  opacity: 0.3;
+  z-index: 5;
+}
+
+.card-1 .bg-image {
+  right: -10px;
+}
+
+.card-2 .bg-image {
+  right: -25px;
+  bottom: -20px;
+}
+
+.card-3 .bg-image {
+  bottom: 0;
+}
+
+.card-4 .bg-image {
+  right: 10px;
+  bottom: -20px;
 }
 
 @media only screen and (min-width: 767px) {
@@ -2676,6 +2711,15 @@ textarea::-webkit-scrollbar {
 
   .for-text__inner {
     padding: 0;
+  }
+
+  .for-text {
+    background-size: 50%;
+  }
+
+  .bg-image {
+    bottom: 0 !important;
+    right: 0 !important;
   }
 }
 
