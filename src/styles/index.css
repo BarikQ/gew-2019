@@ -2251,7 +2251,7 @@ textarea::-webkit-scrollbar {
   font-size: 20px;
   font-weight: 200;
   position: relative;
-  top: 20px;
+  top: 16px;
   text-align: center;
 }
 
@@ -2280,6 +2280,7 @@ textarea::-webkit-scrollbar {
   max-width: 1200px;
   margin: 0 auto;
   justify-content: space-between;
+  position: relative;
 }
 
 .for-text {
@@ -2292,6 +2293,29 @@ textarea::-webkit-scrollbar {
   background-position: right bottom;
   background-size: 25%;
   display: none;
+  position: relative;
+}
+
+.triangle-with-shadow {
+  width: 100px;
+  height: 35px;
+  position: absolute;
+  overflow: hidden;
+  box-shadow: 0 16px 10px -17px rgba(0, 0, 0, 0.2);
+  top: -35px;
+  transform: rotate(180deg) translate(50%, 0);
+}
+
+.triangle-with-shadow:after {
+  content: "";
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  background: #fff;
+  transform: rotate(45deg);
+  top: -25px;
+  left: 25px;
+  box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.2);
 }
 
 .active-text {
@@ -2304,19 +2328,22 @@ textarea::-webkit-scrollbar {
 
 .for-item-text::before {
   content: '';
-  display: block;
+  display: inline-block;
   height: 6px;
   width: 6px;
-  position: absolute;
-  top: 8px;
-  left: -19px;
+  position: relative;
+  top: -2px;
+  left: 0px;
   background: #8261cc;
+  margin-right: 10px;
 }
 
 .for-card__inner img {
-  max-width: 65px;
-  max-height: 65px;
+  max-width: 74px;
+  max-height: 74px;
   z-index: 10;
+  position: relative;
+  top: -9px;
 }
 
 .for-text-head {
@@ -2345,32 +2372,40 @@ textarea::-webkit-scrollbar {
 }
 
 .bg-image {
-  position: absolute;
+  position: absolute !important;
+  top: unset !important;
   bottom: 0;
   right: 0;
   width: 50%;
   max-width: unset !important;
   max-height: unset !important;
-  opacity: 0.3;
+  opacity: 0.1;
   z-index: 5;
 }
 
 .card-1 .bg-image {
-  right: -10px;
+  right: -34px;
+  bottom: -11px;
+}
+
+.card-2 img {
+  top: 3px;
 }
 
 .card-2 .bg-image {
-  right: -25px;
-  bottom: -20px;
+  right: -28px;
+  bottom: -27px;
 }
 
 .card-3 .bg-image {
-  bottom: 0;
+  bottom: -4px;
+  right: 2px;
 }
 
 .card-4 .bg-image {
-  right: 10px;
-  bottom: -20px;
+  right: 3px;
+  bottom: -46px;
+  width: 66%;
 }
 
 @media only screen and (min-width: 767px) {
@@ -2721,6 +2756,15 @@ textarea::-webkit-scrollbar {
     bottom: 0 !important;
     right: 0 !important;
   }
+
+  .for-card__inner img {
+    top: 0px;
+  }
+
+  .for-text {
+    margin-top: 40px;
+  }
+
 }
 
 @media (max-width: 576px) {

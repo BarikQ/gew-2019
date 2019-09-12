@@ -25,7 +25,6 @@ $(document).ready(function () {
       }
   });
 
-  console.log($(".card-radio"));
   $(".card-radio").on('change', function(e) {
     $(".for-text").each(function() {
       if ($(this).hasClass('active-text')) $(this).removeClass('active-text');
@@ -34,10 +33,6 @@ $(document).ready(function () {
     let choosen = this.id;
 
     choosen += '-text';
-
-    // if ($(`.${choosen}`).hasClass('active-text')) {
-    //   console.log(true);
-    // }
 
     $(`.${choosen}`)[0].classList.add('active-text');
   })
@@ -334,4 +329,18 @@ $(document).ready(function () {
   $(function() {
     $('.lazy').Lazy();
   });
+
+  function Triangles() {
+    const cards = document.querySelectorAll('.for-card');
+    const triangles = document.querySelectorAll('.triangle-with-shadow');
+
+    cards.forEach((elem, index) => {
+      const left = elem.offsetLeft + Math.floor(elem.offsetWidth / 2);
+
+      triangles[index].style.left = `${left}px`;
+    });
+  }
+
+  Triangles();
+  window.addEventListener('resize', Triangles);
 });
