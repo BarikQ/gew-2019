@@ -233,7 +233,7 @@
   z-index: 1;
 }
 
-.speaker:hover .speaker__image {
+.speaker__content-wrap:hover .speaker__image {
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
 }
