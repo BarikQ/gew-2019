@@ -12,7 +12,11 @@
 }
 
 .button {
-  width: 177px;
+  width: 175px;
+}
+
+.step-button {
+  border: 2px solid #ff981d;
 }
 
 .orange:hover {
@@ -61,7 +65,7 @@
   background: url('./../images/mentors/arrow.png');
   position: absolute;
   right: -50%;
-  top: -50%;
+  top: -70%;
 }
 
 .step-button span {
@@ -376,6 +380,17 @@
   .alex-photo {
     padding: 0;
   }
+
+  .battle-item {
+    background-size: cover !important;
+    background-position: center !important;
+    height: 437px;
+  }
+
+  .header-text {
+    display: unset !important;
+    text-align: unset !important;
+  }
 }
 
 @media (max-width: 767px) {
@@ -436,5 +451,18 @@
 @media (max-width: 576px) {
   .modal-speaker .modal-content {
     max-height: 100%;
+    align-items: center;
+  }
+
+  .step-button::after {
+    right: -40%;
+  }
+
+  .callback__inner {
+    left: 0;
+  }
+
+  .speaker-text {
+    margin-top: 0;
   }
 }

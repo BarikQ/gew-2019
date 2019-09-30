@@ -1348,6 +1348,10 @@ textarea::-webkit-scrollbar {
 }
 
 @media (max-width: 767px) {
+  .expo-head {
+    left: 0;
+  }
+
   .footer-nav li {
     justify-content: center;
     text-align: center;
