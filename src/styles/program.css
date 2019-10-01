@@ -1669,6 +1669,8 @@ textarea::-webkit-scrollbar {
 }
 
 @media (max-width: 767px) {
+
+
   .footer-nav li {
     justify-content: center;
   }
@@ -1691,14 +1693,14 @@ textarea::-webkit-scrollbar {
     margin: 55px 0;
   }
 
-  .header-main {
-    padding: 25px;
-  }
-
   .header-bottom-logo {
     justify-content: center;
     top: 0;
     left: 0;
+  }
+
+  .return-link {
+    left: 20px;
   }
 
   .footer-right__container {

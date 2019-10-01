@@ -1352,6 +1352,10 @@ textarea::-webkit-scrollbar {
     left: 0;
   }
 
+  .return-link {
+    left: 20px;
+  }
+
   .footer-nav li {
     justify-content: center;
     text-align: center;
@@ -1373,10 +1377,6 @@ textarea::-webkit-scrollbar {
 
   .footer-right__container {
     margin: 55px 0;
-  }
-
-  .header-main {
-    padding: 25px;
   }
 
   .header-bottom-logo {
