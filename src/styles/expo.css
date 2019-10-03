@@ -741,7 +741,7 @@ textarea::-webkit-scrollbar {
 .main__container {
   display: flex;
   margin: 0 auto;
-  padding-bottom: 120px;
+  padding-bottom: 120px !important;
 }
 
 .modal-speaker .close,
