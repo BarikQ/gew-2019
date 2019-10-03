@@ -741,6 +741,7 @@ textarea::-webkit-scrollbar {
 .main__container {
   display: flex;
   margin: 0 auto;
+  padding-bottom: 120px;
 }
 
 .modal-speaker .close,
@@ -1119,7 +1120,6 @@ textarea::-webkit-scrollbar {
   color: white;
   margin: 0;
   width: 100%;
-  margin-top: 120px;
   min-height: 382px;
 }
 
@@ -1530,10 +1530,6 @@ textarea::-webkit-scrollbar {
     right: 45px; */
   }
 
-  .step-2 {
-    margin-top: 120px;
-  }
-
   .part-button {
     position: absolute;
     top: unset;
@@ -1556,4 +1552,9 @@ textarea::-webkit-scrollbar {
   .selectric-wrapper {
     margin-right: 0;
   }
+}
+
+.row::after,.row::before {
+  height: 0;
+  width: 0;
 }
