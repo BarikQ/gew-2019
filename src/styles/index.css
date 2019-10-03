@@ -2973,3 +2973,7 @@ textarea::-webkit-scrollbar {
     display: none;
   }
 }
+
+.mfp-arrow::before, .row::after {
+  display: none !important;
+}
