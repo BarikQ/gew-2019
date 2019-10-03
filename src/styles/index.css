@@ -2974,6 +2974,7 @@ textarea::-webkit-scrollbar {
   }
 }
 
-.mfp-arrow::before, .row::after {
-  display: none !important;
+.row::before, .row::after {
+  width: 0 !important;
+  height: 0 !important;
 }
