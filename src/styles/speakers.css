@@ -267,7 +267,7 @@
   .speaker {
     padding: 0 1rem 1rem 0;
     height: auto;
-    margin-bottom: .4rem;
+    margin-bottom: .4rem !important;
   }
 
   .speaker.speaker__large {
