@@ -42,8 +42,11 @@
   left: unset;
 }
 
+.main__container {
+  padding-bottom: 50px !important;
+}
+
 .step-2 {
-  margin-top: 45px;
   min-height: 360px;
 }
 
@@ -243,7 +246,7 @@
 .speaker-text {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   height: auto;
   min-height: auto;
 }
@@ -283,7 +286,7 @@
 
 .modal-vote .modal-content {
   max-height: 501px;
-  justify-content: flex-end;
+  justify-content: flex-start;
   padding: 15px;
 }
 
@@ -351,6 +354,11 @@
   min-height: auto;
 }
 
+.modal-vote .speaker-image__container,
+.modal-vote .speaker-text {
+  margin-top: 100px;
+}
+
 .speaker-text br,
 .fb-link br {
   display: none;
@@ -413,8 +421,13 @@
     padding: 30px 15px !important;
   }
 
+  .modal-text__container {
+    position: relative;
+    top: 0;
+  }
+
   .modal-speaker .modal-content {
-    max-height: 80%;
+    max-height: 100%;
     align-items: baseline;
   }
 
@@ -440,8 +453,13 @@
   }
 
   .modal-vote .speaker-image__container {
-    margin-top: 100px;
+    margin-top: 30px;
   }
+
+  .modal-vote .speaker-image__container,
+  .modal-vote .speaker-text {
+  margin-top: 30px;
+}
 
   .modal-logo {
     display: none;
