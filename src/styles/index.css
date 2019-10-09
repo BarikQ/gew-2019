@@ -3196,10 +3196,6 @@ textarea::-webkit-scrollbar {
     padding: 0;
   }
 
-  .speaker {
-    margin-bottom: 52px !important;
-  }
-
   .mentors>.container {
     padding: 0 5px;
   }
