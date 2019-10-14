@@ -572,9 +572,35 @@ textarea::-webkit-scrollbar {
   top: -13px;
 }
 
+.footer-call {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 22px;
+}
+
+.footer-call a {
+  transform: scale(1) translate(0);
+  transition: 0.2s linear all;
+  cursor: pointer;
+}
+
+.footer-call a:hover{
+  transform: scale(1.05) translate(3px);
+  transition: 0.2s linear all;
+  cursor: pointer;
+}
+
+.phone-number {
+  color: #ff981d;
+  font-size: 13px;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
 .footer-text {
   font-size: 12px;
-  margin-top: 41px;
+  margin-top: 20px;
   letter-spacing: 0.2px;
   line-height: 14px;
   word-spacing: 1px;
