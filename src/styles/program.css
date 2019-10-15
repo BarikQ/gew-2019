@@ -580,19 +580,18 @@ textarea::-webkit-scrollbar {
 }
 
 .footer-call a {
-  transform: scale(1) translate(0);
-  transition: 0.2s linear all;
+  transition: 0.1s linear all;
   cursor: pointer;
+  color: #ff981d;
 }
 
 .footer-call a:hover{
-  transform: scale(1.05) translate(3px);
-  transition: 0.2s linear all;
+  transition: 0.1s linear all;
   cursor: pointer;
+  color: white;
 }
 
 .phone-number {
-  color: #ff981d;
   font-size: 13px;
   cursor: pointer;
   margin-left: 8px;
