@@ -1149,8 +1149,7 @@ option:hover {
 }
 
 .companies-item:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 14px -2px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 14px -2px rgba(0, 0, 0, 0.18);
   transition: 0.2s ease all;
   cursor: pointer;
 }
