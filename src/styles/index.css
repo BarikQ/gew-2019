@@ -1144,14 +1144,12 @@ option:hover {
   align-items: center;
   margin: 0 11px;
   transition: 0.2s ease all;
-  cursor: pointer;
   background: white;
 }
 
 .companies-item:hover {
   box-shadow: 0 0 14px -2px rgba(0, 0, 0, 0.18);
   transition: 0.2s ease all;
-  cursor: pointer;
 }
 
 .companies-prev {
