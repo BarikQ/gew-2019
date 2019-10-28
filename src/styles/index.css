@@ -261,7 +261,7 @@ option:hover {
 .header-list-item {
   margin: 0 0;
   position: relative;
-  top: -10px;
+  top: 10px;
   padding: 0;
 }
 
@@ -270,7 +270,7 @@ option:hover {
 }
 
 .header-list-item:nth-child(2) {
-  left: 0;
+  left: 20px;
 }
 
 .header-list-item:nth-child(3) {
@@ -291,6 +291,11 @@ option:hover {
 
 .header-list-item:nth-child(7) {
   left: -20px;
+}
+
+.header-list-item:nth-child(8) img {
+  position: relative;
+  left: 30px;
 }
 
 .numbers {
@@ -1457,38 +1462,6 @@ option:hover {
   left: 0;
 }
 
-/* .ment-1 {
-  background: url('./../images/year-mentor/Julia_Kaveckaya.png');
-}
-
-.ment-2 {
-  background: url('./../images/year-mentor/Dmity_Matveev_s.png');
-}
-
-.ment-3 {
-  background: url('./../images/year-mentor/Yuri_Gurski.png');
-}
-
-.ment-4 {
-  background: url('./../images/year-mentor/Aleksandr_Knyrovich.png');
-}
-
-.ment-5 {
-  background: url('./../images/year-mentor/Aleksandr_Chekan.png');
-}
-
-.ment-6 {
-  background: url('./../images/year-mentor/Vadim_Nareyko.png');
-}
-
-.ment-7 {
-  background: url('./../images/year-mentor/Yuri_Ziccer.png');
-}
-
-.ment-8 {
-  background: url('./../images/year-mentor/question.png');
-} */
-
 .quest {
   background: #8261cc;
 }
@@ -1531,18 +1504,10 @@ option:hover {
   padding: 0;
 }
 
-/* .reviews-item:not(.slick-active) {
-  margin-top: 10px;
-} */
-
 .reviews-slider .slick-list {
   padding-top: 50px !important;
   padding-bottom: 50px !important;
 }
-
-/* .reviews .slick-active {
-  transform: scale(1.1);
-} */
 
 .review {
   justify-content: center;
@@ -1560,17 +1525,6 @@ option:hover {
 .review::-webkit-scrollbar {
   display: none;
 }
-
-/* .slick-active .review {
-  box-shadow: 0px 0px 14px -4px rgba(0, 0, 0, 0.1);
-  max-height: 456px;
-  max-width: 678px;
-}
-
-.slick-active .review-image {
-  max-width: 128px;
-  max-height: 130px;
-} */
 
 .reviews .slick-dots {
   bottom: -31px;
@@ -1614,28 +1568,6 @@ option:hover {
 .slick-center .review {
   transform: scale(1.1);
 }
-
-/* .slick-active p {
-  font-size: 15.2px;
-  position: relative;
-  word-spacing: 2px;
-  letter-spacing: 0.2px;
-  top: 2px;
-} */
-
-/* .slick-active .review-text {
-  text-align: left;
-  position: relative;
-  top: -16px;
-  left: 2px;
-  letter-spacing: 0.1px;
-  line-height: 28px;
-  word-spacing: 1px;
-  max-width: 565px;
-  font-family: 'V-L';
-  font-weight: 200;
-  font-size: 14px;
-} */
 
 .review-text {
   text-align: left;
@@ -1888,7 +1820,6 @@ textarea::-webkit-scrollbar {
 .footer-left__container {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
 }
 
 .footer .social-list {
@@ -2637,16 +2568,64 @@ textarea::-webkit-scrollbar {
     grid-template: unset !important;
   }
 
-  .for-cards {
-    justify-content: center;
-  }
-
   .for-card {
     margin: 20px;
   }
 
   .for-text {
     margin-top: 20px;
+  }
+
+  .header-list-item:nth-child(1) {
+    left: -10px;
+  }
+
+  .header-list-item:nth-child(2) {
+    left: 20px;
+  }
+
+  .header-list-item:nth-child(3) {
+    left: -10px;
+  }
+
+  .header-list-item:nth-child(4) {
+    left: 0;
+  }
+
+  .header-list-item:nth-child(5) {
+    left: 20px;
+  }
+
+  .header-list-item:nth-child(6) {
+    left: 20px;
+  }
+
+  .header-list-item:nth-child(7) {
+    left: -10px;
+  }
+
+  .header-list-item:nth-child(8) img {
+    position: relative;
+    left: 20px;
+  }
+
+  .for-cards {
+    justify-content: space-between;
+  }
+
+  .for-card {
+    max-width: 200px;
+    min-width: 200px;
+    max-height: 192px;
+    min-height: 192px;
+  }
+
+  .card-1 {
+    margin-left: 0;
+  }
+
+  .card-4 {
+    margin-right: 0;
   }
 }
 
@@ -2696,6 +2675,14 @@ textarea::-webkit-scrollbar {
     justify-content: center;
   }
 
+  .header-list-item {
+    left: 0 !important;
+  }
+
+  .header-list-item:nth-child(8) img {
+    left: 0;
+  }
+
   .header-bottom-container {
     margin-top: 30px;
   }
@@ -2726,6 +2713,22 @@ textarea::-webkit-scrollbar {
 
   .program-list .row {
     padding: 0;
+  }
+
+  .for-cards {
+    justify-content: center;
+  }
+
+  .for-card {
+    max-width: 260px;
+    max-height: 202px;
+    min-height: 202px;
+    min-width: 260px;
+  }
+
+  .card-1,
+  .card-4 {
+    margin: 20px;
   }
 }
 
@@ -3025,6 +3028,22 @@ textarea::-webkit-scrollbar {
 @media (max-width: 576px) {
   .navbar-container {
     align-items: center;
+  }
+
+  .header-list {
+    margin-top: -50px;
+    margin-bottom: 80px;
+  }
+
+  .header-list-item {
+    justify-content: space-around;
+    margin: 5px 0;
+  }
+
+  .header-list-item:nth-child(2) img,
+  .header-list-item:nth-child(6) img{
+    left: -28px;
+    position: relative;
   }
 
   .gallery-line img {
