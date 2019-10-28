@@ -99,11 +99,12 @@
   height: auto;
   width: 24%;
   padding: 0;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1%;
   margin-right: .5%;
-  margin-left: .5%;
+  margin-left: .5%; */
   position: relative;
   cursor: pointer;
+  margin: 1%;
 }
 
 .speaker-name {
@@ -214,7 +215,7 @@
 }
 
 .fixedList .speaker:not(.speaker__large) {
-  width: 49%;
+  width: 48%;
 }
 
 .speaker:not(.speaker__large) .speaker__content-wrap:after {
@@ -281,7 +282,7 @@
   }
 
   .fixedList .speaker:not(.speaker__large) {
-    width: 49%;
+    width: 48%;
   }
 
   .speaker:not(.speaker__large) .speaker__content {
@@ -297,4 +298,7 @@
 }
 
 @media (max-width: 576px) {
+  .speakers .row .col-md-6, .speakers .row .col-md-12 {
+    padding: 0;
+  }
 }
