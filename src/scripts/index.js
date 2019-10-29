@@ -11,22 +11,22 @@ $(document).ready(function () {
   });
   $(".modal-menu").bind("click", function (e) {
     if ($(e.target).attr("class") === "modal-container" ||
-        $(e.target).attr('class') === 'close' ||
-        $(e.target).attr('class') === 'modal-link') {
+      $(e.target).attr('class') === 'close' ||
+      $(e.target).attr('class') === 'modal-link') {
       $(".modal").fadeOut('fast');
     }
   });
 
   $(window).on('scroll', () => {
-      if (window.pageYOffset >= 100) {
-        $('.navbar')[0].classList.add("sticky");
-      } else {
-        $('.navbar')[0].classList.remove("sticky");
-      }
+    if (window.pageYOffset >= 100) {
+      $('.navbar')[0].classList.add("sticky");
+    } else {
+      $('.navbar')[0].classList.remove("sticky");
+    }
   });
 
-  $(".card-radio").on('change', function(e) {
-    $(".for-text").each(function() {
+  $(".card-radio").on('change', function (e) {
+    $(".for-text").each(function () {
       if ($(this).hasClass('active-text')) $(this).removeClass('active-text');
     });
 
@@ -44,8 +44,7 @@ $(document).ready(function () {
       pauseOnHover: true,
       prevArrow: `<button type="button" role="presentation" class="owl-prev hotel-arrow hotel-prev"><img src="./src/images/left-arrow-bl.png"></button>`,
       nextArrow: `<button type="button" role="presentation" class="owl-next hotel-arrow hotel-next"><img src="./src/images/right-arrow-bl.png"></button>`,
-      responsive: [
-        {
+      responsive: [{
           breakpoint: 768,
           settings: {
             arrows: false,
@@ -69,19 +68,19 @@ $(document).ready(function () {
   $(".modal-hotel").bind("click", function (e) {
     e.preventDefault();
     if ($(e.target).attr("class") === "modal-container" ||
-        $(e.target).attr('id') === 'close-hotel') {
+      $(e.target).attr('id') === 'close-hotel') {
       $(".modal-hotel").fadeOut('fast');
       $('.hotel-slider').slick('unslick');
     }
   });
 
-  $('.speaker').not('.mentor').on('click', function(e) {
+  $('.speaker').not('.mentor').on('click', function (e) {
     let bg = $(this).children('.speaker__content-wrap').children('.speaker__image').css('background-image');
     let name = $(this).children('.speaker__content-wrap').children('.speaker__content').children('.speaker__content__inner').children('.speaker-name').html();
     let position = $(this).children('.speaker__content-wrap').children('.speaker__content').children('.speaker__content__inner').children('.speaker-review').html();
     let review = $(this).children('.speaker__content-wrap').children('.speaker__content').children('.speaker__content__inner').children('.speaker-text__inner').html();
 
-    bg = bg.replace('url(','').replace(')','').replace(/\"/gi, "");
+    bg = bg.replace('url(', '').replace(')', '').replace(/\"/gi, "");
 
     $('.speaker-image').attr('src', bg);
     $('.speaker-modal-name').html(name);
@@ -93,14 +92,14 @@ $(document).ready(function () {
   $(".modal-speaker").bind("click", function (e) {
     e.preventDefault();
     if ($(e.target).attr("class") === "modal-container" ||
-        $(e.target).attr('class') === 'close') {
+      $(e.target).attr('class') === 'close') {
       $(".modal-speaker").fadeOut('fast');
     }
   });
 
   $('.speakers-button').on('click', () => {
     let trigger = false;
-    $('.fixedList').each(function() {
+    $('.fixedList').each(function () {
       if (this.classList.contains('hidden')) {
         this.classList.remove('hidden');
         trigger = true;
@@ -124,14 +123,14 @@ $(document).ready(function () {
   let countbox = ".numbers-container";
 
   $(window).on("scroll load resize", function () {
-    let width = $( window ).width();
-    let height = $( window ).height(); 
+    let width = $(window).width();
+    let height = $(window).height();
     let circleSize = null;
-  
+
     if (width <= 576) {
       circleSize = 160;
     } else circleSize = 223;
-    
+
     if (!show) return false;
     var w_top = $(window).scrollTop();
     var e_top = $(countbox).offset().top;
@@ -249,7 +248,7 @@ $(document).ready(function () {
     startPosition: 'URLHash',
     dotsContainer: '.date-day__container',
     mouseDrag: false,
-    navText: ["<img src='./src/images/left-arrow.png'>","<img src='./src/images/right-arrow.png'>"]
+    navText: ["<img src='./src/images/left-arrow.png'>", "<img src='./src/images/right-arrow.png'>"]
   });
 
   $('.companies-carousel').slick({
@@ -262,8 +261,7 @@ $(document).ready(function () {
     pauseOnHover: true,
     prevArrow: `<button type="button" role="presentation" class="owl-prev companies-arrow companies-prev"><img src="./src/images/left-arrow-bl.png"></button>`,
     nextArrow: `<button type="button" role="presentation" class="owl-next companies-arrow companies-next"><img src="./src/images/right-arrow-bl.png"></button>`,
-    responsive: [
-      {
+    responsive: [{
         breakpoint: 1200,
         settings: {
           slidesToShow: 5,
@@ -300,8 +298,7 @@ $(document).ready(function () {
     centerMode: true,
     centerPadding: '25%',
     slidesToShow: 1,
-    responsive: [
-      {
+    responsive: [{
         breakpoint: 1400,
         settings: {
           arrows: false,
@@ -326,7 +323,44 @@ $(document).ready(function () {
     ]
   });
 
-  $(function() {
+  $('#program-slider').slick({
+    infinite: false,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    prevArrow: `<button class="program-arrow program-arrow__prev slick-prev slick-arrow"></button>`,
+    nextArrow: `<button class="program-arrow program-arrow__next slick-next slick-arrow"></button>`,
+    responsive: [{
+      breakpoint: 1531,
+      settings: {
+        slidesToShow: 4,
+        centerMode: false,
+        variableWidth: false
+      }
+    },
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 900,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+    }
+  ]
+  });
+
+  $(function () {
     $('.lazy').Lazy();
   });
 
@@ -341,6 +375,14 @@ $(document).ready(function () {
     });
   }
 
+  function programSlider() {
+    if (window.innerWidth < 580) {
+      $('#program-slider').slick('unslick');
+    }
+  }
+
   Triangles();
+  programSlider();
   window.addEventListener('resize', Triangles);
+  window.addEventListener('resize', programSlider);
 });
