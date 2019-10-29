@@ -956,13 +956,12 @@ option:hover {
 
 .info-item {
   position: relative;
-  margin: 18px 0px 0 16px;
+  margin: 18px 0px 0 12px;
   letter-spacing: 0.2px;
   padding-right: 5px;
 }
 
 .info-item::before {
-  /* content: ''; */
   display: block;
   height: 6px;
   width: 6px;
@@ -985,7 +984,6 @@ option:hover {
 .program-list .row {
   justify-content: center;
   margin-top: 26px;
-  /* padding: 0 112px; */
 }
 
 .bg-circle-2 {
