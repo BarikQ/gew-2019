@@ -278,17 +278,17 @@
   display: none;
   justify-content: flex-start;
   align-items: center;
-  height: 360px;
+  height: 424px;
 }
 
 .place-info__inner {
-  height: 360px;
-  min-height: 360px;
+  /* height: 424px;
+  min-height: 330px; */
   width: 290px;
   min-width: 290px;
   max-width: 290px;
   display: grid;
-  grid-template: 1fr 6fr 48px / 1fr 1fr;
+  grid-template: 1fr 5fr 58px / 1fr 1fr;
   position: relative;
   background: white;
 }
@@ -350,6 +350,18 @@
 .g52_card .day-head,
 .g52_card .day-button-container:hover {
   background-color: red;
+}
+
+.place-info__container .day-button-container {
+  background: white;
+}
+
+.place-info__container .day-button-container .day-button {
+  color: black;
+}
+
+.place-info__container .day-button-container:hover .day-button {
+  color: white;
 }
 
 @media (max-width: 1199px) {
