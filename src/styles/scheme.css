@@ -347,7 +347,7 @@
   background-color: red;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .rooms-list li {
     padding: 0;
   }
