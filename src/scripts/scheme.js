@@ -40,7 +40,7 @@ $(document).ready(function () {
 
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
       card.css('left', '50%');
-      card.css('top', '10%');
+      card.css('top', '25%');
     }
 
     $('.place-info__container').each(function(index) {
