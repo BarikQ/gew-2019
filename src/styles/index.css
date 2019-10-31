@@ -2977,10 +2977,12 @@ textarea::-webkit-scrollbar {
 
   .hotel-item {
     max-width: unset;
+    margin: 0;
   }
 
   .hotel-content {
     max-height: unset;
+    width: 100vw !important;
   }
 
   .hotel-photo-block {
