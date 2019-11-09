@@ -776,14 +776,15 @@ option:hover {
 }
 
 .program-item {
-  height: 460px;
+  /* height: 362px; */
+  height: 31em;
   width: 288px;
-  min-height: 460px;
+  min-height: 428px;
   min-width: 288px;
   max-width: 288px;
-  max-height: 460px;
+  max-height: 31em;
   display: grid !important;
-  grid-template: 98px 304px 58px / 1fr 1fr;
+  grid-template: 98px 1fr / 1fr 1fr;
   color: white;
   padding: 0;
   box-shadow: 0 0px 34px 0px rgba(0, 0, 0, 0.15);
@@ -948,6 +949,14 @@ option:hover {
   top: 0px;
   left: 8px;
   letter-spacing: 0.4px;
+}
+
+.program-item__container:nth-child(4) .info-item:nth-child(6) {
+  font-size: 12px;
+}
+
+.program-item__container:nth-child(4) .info-item:nth-child(6) .info-item__link {
+  font-size: 13px;
 }
 
 .day-info ul li:not(:first-child) {
