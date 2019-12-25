@@ -1441,15 +1441,15 @@ option:hover {
   padding-right: 59px;
 }
 
-.gallerys {
+.galleries {
   padding: 64px 0 11px 0;
 }
 
-.gallerys-head {
+.galleries-head {
   text-align: center;
 }
 
-.gallerys-head .lines {
+.galleries-head .lines {
   left: 0;
 }
 
@@ -1494,7 +1494,7 @@ option:hover {
   width: 2900px;
 }
 
-.gallerys>.container {
+.galleries>.container {
   padding: 0;
   max-width: 100%;
 }
@@ -1505,7 +1505,7 @@ option:hover {
   margin: 0;
 }
 
-.gallerys>.video-gallery__container .video-gallery {
+.galleries>.video-gallery__container .video-gallery {
   max-width: 1200px;
 }
 
@@ -3369,7 +3369,7 @@ textarea::-webkit-scrollbar {
     top: 0px !important;
   }
 
-  .gallerys {
+  .galleries {
     padding: 64px 0 10px 0;
   }
 
