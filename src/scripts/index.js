@@ -39,6 +39,18 @@ $(document).ready(function() {
     $(`.${choosen}`)[0].classList.add("active-text");
   });
 
+  $(".card-events-radio").on("change", function(e) {
+    $(".for-events-text").each(function() {
+      if ($(this).hasClass("active-text")) $(this).removeClass("active-text");
+    });
+
+    let choosen = this.id;
+
+    choosen += "-text";
+
+    $(`.${choosen}`)[0].classList.add("active-text");
+  });
+
   $(".open-photos").click(function() {
     $(".hotel-slider").slick({
       slidesToShow: 3,

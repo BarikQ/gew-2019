@@ -2304,10 +2304,57 @@ textarea::-webkit-scrollbar {
   cursor: pointer;
   background: white;
   overflow: hidden;
+  transition: 0.2s ease all;
+}
+
+.for-events .for-card {
+  max-width: 212px;
+  max-height: 282px;
+  min-height: 280px;
+  min-width: 210px;
+  transition: 0.2s ease all;
+}
+
+.card-circle {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background-color: rgba(130, 97, 204, 1);
+  position: absolute;
+  top: 31%;
+  left: 38%;
+  transition: 0.2s ease all;
+}
+
+.for-events .for-card:hover .card-circle {
+  background-color: white;
+  transition: 0.2s ease all;
 }
 
 .for-card:hover {
   box-shadow: 0 -6px 20px 0px rgba(0, 0, 0, 0.15);
+  transition: 0.2s ease all;
+}
+
+.for-events .for-card:hover {
+  background: rgba(130, 97, 204, 1);
+  color: white;
+  transition: 0.2s ease all;
+}
+
+.card-arrow {
+  width: 22px;
+  height: 12px;
+  background-image: url(./../images/for-events/arrow_bottom_purple.png);
+  position: absolute;
+  bottom: 30px;
+  transition: 0.2s ease all;
+}
+
+.for-events .for-card:hover .card-arrow {
+  background-image: url(./../images/for-events/arrow_bottom_white.png);
+  bottom: 25px;
+  transition: 0.2s ease all;
 }
 
 .for-card__inner {
@@ -2339,16 +2386,31 @@ textarea::-webkit-scrollbar {
   display: none;
 }
 
-.card-radio:checked+label {
+.card-radio:checked+label,
+.card-events-radio:checked+label {
   background: rgba(130, 97, 204, 1);
   color: white;
+  transition: 0.2s ease all;
 }
 
-.card-radio:checked+label .white-image {
+.card-events-radio:checked+label .card-circle {
+  background-color: white;
+  transition: 0.2s ease all;
+}
+
+.card-events-radio:checked+label .card-arrow {
+  background-image: url(./../images/for-events/arrow_bottom_white.png);
+  bottom: 25px;
+  transition: 0.2s ease all;
+}
+
+.card-radio:checked+label .white-image,
+.card-events-radio:checked+label .white-image {
   display: unset;
 }
 
-.card-radio:checked+label .purple-image {
+.card-radio:checked+label .purple-image,
+.card-events-radio:checked+label .purple-image {
   display: none;
 }
 
@@ -2359,7 +2421,8 @@ textarea::-webkit-scrollbar {
   position: relative;
 }
 
-.for-text {
+.for-text,
+.for-events-text {
   max-width: 1200px;
   margin: 0 auto;
   box-shadow: 0 0px 18px -5px rgba(0, 0, 0, 0.2);
@@ -2422,12 +2485,14 @@ textarea::-webkit-scrollbar {
   top: -9px;
 }
 
-.for-text-head {
+.for-text-head,
+.for-events-text-head {
   color: black;
   font-weight: 600;
 }
 
-.for-text__inner {
+.for-text__inner,
+.for-events-text__inner {
   padding-right: 20%;
 }
 
@@ -2445,6 +2510,69 @@ textarea::-webkit-scrollbar {
 
 .card-4-text {
   background-image: url("./../images/for/startupBG-P.png");
+}
+
+/* .card-1_1-text {
+  background-image: url("./../images/for-events/rocket.png");
+}
+
+.card-1_2-text {
+  background-image: url("./../images/for-events/people.png");
+}
+
+.card-1_3-text {
+  background-image: url("./../images/for-events/mol.png");
+}
+
+.card-1_4-text {
+  background-image: url("./../images/for-events/cup.png");
+}
+
+.card-1_5-text {
+  background-image: url("./../images/for-events/confetti.png");
+} */
+
+.for-events .bg-image {
+  width: 65%;
+  right: -10px;
+  bottom: -15px;
+}
+
+.for-events-text {}
+
+.for-events-text::after {
+  content: "";
+  background-repeat: no-repeat;
+  background-size: 22%;
+  opacity: 0.2;
+  right: 6px;
+  bottom: 0px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+  background-position-x: right;
+  background-position-y: bottom;
+}
+
+.card-1_1-text::after {
+  background-image: url("./../images/for-events/rocket.png");
+}
+
+.card-1_2-text::after {
+  background-image: url("./../images/for-events/people.png");
+}
+
+.card-1_3-text::after {
+  background-image: url("./../images/for-events/mol.png");
+}
+
+.card-1_4-text::after {
+  background-image: url("./../images/for-events/cup.png");
+}
+
+.card-1_5-text::after {
+  background-image: url("./../images/for-events/confetti.png");
 }
 
 .bg-image {
@@ -2698,6 +2826,13 @@ textarea::-webkit-scrollbar {
     padding: 0;
   }
 
+  .for-events .for-cards {
+    justify-content: center;
+
+    margin-bottom: 50px;
+  }
+
+
   .header .container {
     padding: 0 2vw;
     padding-top: 31px;
@@ -2743,7 +2878,7 @@ textarea::-webkit-scrollbar {
     margin: 20px;
   }
 
-  .for-text {
+  .for-text .for-events-text {
     margin-top: 20px;
   }
 
@@ -3130,11 +3265,12 @@ textarea::-webkit-scrollbar {
     min-width: 200px;
   }
 
-  .for-text__inner {
+  .for-text__inner .for-events-text__inner {
     padding: 0;
   }
 
-  .for-text {
+  .for-text,
+  .for-events-text {
     background-size: 50%;
   }
 
@@ -3147,7 +3283,8 @@ textarea::-webkit-scrollbar {
     top: 0px;
   }
 
-  .for-text {
+  .for-text,
+  .for-events-text {
     margin-top: 40px;
   }
 
