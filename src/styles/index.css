@@ -1283,6 +1283,100 @@ option:hover {
   padding-bottom: 80px;
 }
 
+.reservation {
+  color: white;
+  background-image: url(./../images/reservation/reserv_bg.png);
+  padding-top: 56px;
+  padding-bottom: 73px;
+}
+
+.reservation .battle-slider__container {
+  top: 5px;
+  left: -19px;
+}
+
+.reservation .slick-dots li {
+  top: 5px;
+  margin: 0 11px;
+}
+
+.reservation .slick-dots .slick-active button {
+  border-color: #ffffff;
+}
+
+.slick-dots .slick-active button {
+  background-color: transparent !important;
+}
+
+.reservation .slick-dots li:hover button {
+  border-color: #ffffff;
+  background-color: #ffffff;
+}
+
+
+.reservation .slick-dots .slick-active {
+  top: 2px;
+}
+
+.reservation .battle-text {
+  font-family: 'V-L';
+  text-align: center;
+  margin-top: 30px;
+  top: 28px;
+}
+
+.reservation-text-title {
+  position: relative;
+  top: -11px;
+  left: -16px;
+  font-size: 16px;
+  font-weight: 200;
+  font-family: 'V-L';
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.reservation-text-sentence {
+  position: relative;
+  top: -25px;
+  left: -16px;
+  letter-spacing: 1.1px;
+  word-spacing: 1px;
+}
+
+.reservation .battle-text>p:nth-child(3) {
+  top: -25px;
+  letter-spacing: 1.1px;
+  word-spacing: 1px;
+  left: -16px;
+}
+
+.reservation .battle-text>p:nth-child(4) {
+  top: -29px;
+  left: -15px;
+}
+
+.reservation .battle-text>p:nth-child(5) {
+  top: -32px;
+  left: -16px;
+}
+
+.reservation-price {
+  font-weight: 600;
+  color: #ff981d;
+  font-size: 18px;
+}
+
+.reservation .battle-button__container {
+  padding: 0;
+  position: relative;
+  left: -15px;
+  top: 2px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+}
+
 .battle-slider__container {
   max-width: 39.1%;
   padding: 0;
@@ -1291,7 +1385,8 @@ option:hover {
   left: -3px;
 }
 
-.battle-slider {
+.battle-slider,
+.reservation-slider {
   max-width: 571px;
 }
 
@@ -1343,14 +1438,11 @@ option:hover {
   position: relative;
   left: 40px;
   font-size: 14px;
+  padding-right: 59px;
 }
 
 .gallerys {
-  padding: 64px 0 54px 0;
-}
-
-.gallerys>.container {
-  height: 58px;
+  padding: 64px 0 11px 0;
 }
 
 .gallerys-head {
@@ -1369,9 +1461,13 @@ option:hover {
 }
 
 .gallery-line .video-source {
-  max-width: 360px;
+  max-width: 363px;
   max-height: 245px;
   width: 33vw;
+}
+
+.slick-track>.slick-active:nth-child(1) {
+  margin-left: 0;
 }
 
 .gallery-line .slick-slide {
@@ -1398,9 +1494,23 @@ option:hover {
   width: 2900px;
 }
 
+.gallerys>.container {
+  padding: 0;
+  max-width: 100%;
+}
+
 .video-gallery__container {
-  padding: 36px 0 15px 0;
-  width: 100vw;
+  padding: 30px 0 15px 0;
+  width: 100%;
+  margin: 0;
+}
+
+.gallerys>.video-gallery__container .video-gallery {
+  max-width: 1200px;
+}
+
+.reservation .orange:hover {
+  color: white;
 }
 
 .video-gallery .gallery-line {
@@ -1465,7 +1575,6 @@ option:hover {
   border-radius: 10rem;
   background: #af9bd7;
   border: 3px solid #af9bd7;
-  transition: 0.2s ease all;
   width: 5px;
   height: 5px;
   padding: 1px;
@@ -1490,7 +1599,6 @@ option:hover {
 .slick-dots .slick-active button {
   border: 2px solid #6d49b6;
   background: transparent;
-  transition: 0.2s ease all;
   padding: 6px;
 }
 
@@ -1508,7 +1616,7 @@ option:hover {
 }
 
 .mentors {
-  padding-bottom: 67px;
+  padding: 66px 0;
 }
 
 .mentors-gallery__container {
@@ -2013,12 +2121,11 @@ textarea::-webkit-scrollbar {
 
 .photo-gallery-new .gallery-line {
   display: grid;
-  grid-template: repeat(3, 290px)/repeat(3, 30.3%);
+  grid-template: repeat(3, 290px)/repeat(3, 30%);
   max-height: unset;
   height: auto;
   grid-gap: 1.5vw;
   position: relative;
-  left: 1px;
   padding: 0;
 }
 
@@ -2283,7 +2390,8 @@ textarea::-webkit-scrollbar {
 }
 
 .for {
-  padding-bottom: 80px;
+  padding-bottom: 60px;
+  padding-top: 60px;
 }
 
 .for-head {
@@ -2862,6 +2970,11 @@ textarea::-webkit-scrollbar {
     position: unset;
   }
 
+  .reservation .battle-button__container {
+    left: -15px;
+    top: -10px;
+  }
+
   .speaker:not(.speaker__large) .speaker-review {
     font-size: 12px !important;
   }
@@ -3073,6 +3186,21 @@ textarea::-webkit-scrollbar {
     height: 310px !important;
   }
 
+  .reservation .battle-slider__container {
+    top: 0;
+    left: 0;
+    margin-top: 60px;
+  }
+
+  .reservation .battle-text>p,
+  .reservation .battle-button__container {
+    left: 0 !important;
+  }
+
+  .reservation .battle-text {
+    padding: 0;
+  }
+
   .reviews .slick-active {
     transform: unset;
   }
@@ -3189,7 +3317,8 @@ textarea::-webkit-scrollbar {
     max-height: unset;
   }
 
-  .battle-slider {
+  .battle-slider,
+  .reservation-slider {
     max-width: unset;
   }
 
@@ -3263,6 +3392,10 @@ textarea::-webkit-scrollbar {
     max-height: 182px;
     min-height: 182px;
     min-width: 200px;
+  }
+
+  .for-events .for-card {
+    margin: 10px;
   }
 
   .for-text__inner .for-events-text__inner {
@@ -3385,6 +3518,25 @@ textarea::-webkit-scrollbar {
 
   .video-gallery .gallery-line {
     padding: 5px;
+    height: auto;
+    max-height: unset;
+  }
+
+  .slick-list,
+  .slick-slide {
+    margin: 0;
+  }
+
+  .gallery-line .slick-list {
+    padding: 50px 0;
+  }
+
+  .gallery-line .slick-dots {
+    bottom: 0px;
+  }
+
+  .video-source {
+    height: 400px;
   }
 }
 

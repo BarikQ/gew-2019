@@ -359,7 +359,15 @@ $(document).ready(function() {
   });
 
   $(".battle-slider").slick({
-    dots: true
+    dots: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false
+        }
+      }
+    ]
   });
 
   $(".reviews-slider").slick({
@@ -451,7 +459,9 @@ $(document).ready(function() {
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+          arrows: false,
+          dots: true
         }
       }
     ]
