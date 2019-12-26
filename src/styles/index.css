@@ -1466,7 +1466,7 @@ option:hover {
   width: 33vw;
 }
 
-.slick-track>.slick-active:nth-child(1) {
+.galleries .slick-track>.slick-active:nth-child(1) {
   margin-left: 0;
 }
 
@@ -2430,7 +2430,6 @@ textarea::-webkit-scrollbar {
   background-color: rgba(130, 97, 204, 1);
   position: absolute;
   top: 31%;
-  left: 38%;
   transition: 0.2s ease all;
 }
 
@@ -2492,6 +2491,10 @@ textarea::-webkit-scrollbar {
 
 .white-image {
   display: none;
+}
+
+.for-events .white-image {
+  display: initial;
 }
 
 .card-radio:checked+label,
