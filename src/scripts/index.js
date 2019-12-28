@@ -360,14 +360,7 @@ $(document).ready(function() {
 
   $(".battle-slider").slick({
     dots: true,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          arrows: false
-        }
-      }
-    ]
+    arrows: false
   });
 
   $(".reviews-slider").slick({

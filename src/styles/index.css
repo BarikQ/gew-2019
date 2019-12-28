@@ -2427,14 +2427,14 @@ textarea::-webkit-scrollbar {
   width: 58px;
   height: 58px;
   border-radius: 50%;
-  background-color: rgba(130, 97, 204, 1);
+  background-color: #ad97dd;
   position: absolute;
-  top: 31%;
+  top: 26%;
   transition: 0.2s ease all;
 }
 
 .for-events .for-card:hover .card-circle {
-  background-color: white;
+  background-color: #d4c9ee;
   transition: 0.2s ease all;
 }
 
@@ -2444,7 +2444,7 @@ textarea::-webkit-scrollbar {
 }
 
 .for-events .for-card:hover {
-  background: rgba(130, 97, 204, 1);
+  background: #8261cc;
   color: white;
   transition: 0.2s ease all;
 }
@@ -2454,13 +2454,13 @@ textarea::-webkit-scrollbar {
   height: 12px;
   background-image: url(./../images/for-events/arrow_bottom_purple.png);
   position: absolute;
-  bottom: 30px;
+  bottom: 20px;
   transition: 0.2s ease all;
 }
 
 .for-events .for-card:hover .card-arrow {
   background-image: url(./../images/for-events/arrow_bottom_white.png);
-  bottom: 25px;
+  bottom: 15px;
   transition: 0.2s ease all;
 }
 
@@ -2505,7 +2505,7 @@ textarea::-webkit-scrollbar {
 }
 
 .card-events-radio:checked+label .card-circle {
-  background-color: white;
+  background-color: #d4c9ee;
   transition: 0.2s ease all;
 }
 
@@ -2643,6 +2643,24 @@ textarea::-webkit-scrollbar {
   background-image: url("./../images/for-events/confetti.png");
 } */
 
+.card-1_1 .white-image:not(.bg-image),
+.card-1_5 .white-image:not(.bg-image) {
+  left: -5px;
+  top: -12px;
+}
+
+.card-1_2 .white-image:not(.bg-image) {
+  top: 0;
+}
+
+.card-1_4 .white-image:not(.bg-image) {
+  top: -5px;
+}
+
+.slick-list {
+  cursor: pointer;
+}
+
 .for-events .bg-image {
   width: 65%;
   right: -10px;
@@ -2667,23 +2685,31 @@ textarea::-webkit-scrollbar {
 }
 
 .card-1_1-text::after {
-  background-image: url("./../images/for-events/rocket.png");
+  background-image: url("./../images/for-events/rocket.svg");
 }
 
 .card-1_2-text::after {
-  background-image: url("./../images/for-events/people.png");
+  background-image: url("./../images/for-events/people.svg");
 }
 
 .card-1_3-text::after {
-  background-image: url("./../images/for-events/mol.png");
+  background-image: url("./../images/for-events/mol.svg");
 }
 
 .card-1_4-text::after {
-  background-image: url("./../images/for-events/cup.png");
+  background-image: url("./../images/for-events/cup.svg");
 }
 
 .card-1_5-text::after {
-  background-image: url("./../images/for-events/confetti.png");
+  background-image: url("./../images/for-events/rocket.svg");
+}
+
+.for-events .for-card {
+  border: none;
+}
+
+.for-events .for-card__inner h4 {
+  font-size: 18px;
 }
 
 .bg-image {
@@ -3087,6 +3113,11 @@ textarea::-webkit-scrollbar {
     padding: 0;
     left: 0;
     top: 15px;
+  }
+
+  .for-text__inner,
+  .for-events-text__inner {
+    padding-right: 0;
   }
 
   .video>span {
