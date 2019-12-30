@@ -2648,8 +2648,8 @@ textarea::-webkit-scrollbar {
 
 .card-1_1 .white-image:not(.bg-image),
 .card-1_5 .white-image:not(.bg-image) {
-  left: -5px;
-  top: -12px;
+  left: 0;
+  top: -16px;
 }
 
 .card-1_2 .white-image:not(.bg-image) {
@@ -2702,7 +2702,7 @@ textarea::-webkit-scrollbar {
 }
 
 .card-1_5-text::after {
-  background-image: url("./../images/for-events/rocket.svg");
+  background-image: url("./../images/for-events/confetti.svg");
 }
 
 .for-events .for-card {
