@@ -49,6 +49,7 @@ $(document).ready(function() {
     choosen += "-text";
 
     $(`.${choosen}`)[0].classList.add("active-text");
+    $(`.${choosen}`)[1].classList.add("active-text");
   });
 
   $(".open-photos").click(function() {
@@ -396,7 +397,7 @@ $(document).ready(function() {
     ]
   });
 
-  $("#program-slider").slick({
+  $(".program-slider").slick({
     infinite: false,
     slidesToShow: 5,
     slidesToScroll: 1,
