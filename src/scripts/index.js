@@ -27,31 +27,6 @@ $(document).ready(function() {
     }
   });
 
-  $(".card-radio").on("change", function(e) {
-    $(".for-text").each(function() {
-      if ($(this).hasClass("active-text")) $(this).removeClass("active-text");
-    });
-
-    let choosen = this.id;
-
-    choosen += "-text";
-
-    $(`.${choosen}`)[0].classList.add("active-text");
-  });
-
-  $(".card-events-radio").on("change", function(e) {
-    $(".for-events-text").each(function() {
-      if ($(this).hasClass("active-text")) $(this).removeClass("active-text");
-    });
-
-    let choosen = this.id;
-
-    choosen += "-text";
-
-    $(`.${choosen}`)[0].classList.add("active-text");
-    $(`.${choosen}`)[1].classList.add("active-text");
-  });
-
   $(".open-photos").click(function() {
     $(".hotel-slider").slick({
       slidesToShow: 3,
@@ -481,6 +456,58 @@ $(document).ready(function() {
       $("#program-slider").slick("unslick");
     }
   }
+
+  function changeRadio() {
+    if (window.innerWidth < 400) {
+      console.log("da");
+    }
+  }
+
+  $(".card-radio").on("change", function(e) {
+    e.preventDefault();
+    const current = $(this);
+    const current2 = this;
+
+    $(".card-radio").each(function() {
+      let currentCard = this.id;
+      currentCard += "-text";
+
+      if (this.id !== current2.id) $(this).prop("checked", false);
+
+      if ($(this).prop("checked")) {
+        $(`.${currentCard}`).each(function() {
+          $(this).addClass("active-text");
+        });
+      } else {
+        $(`.${currentCard}`).each(function() {
+          $(this).removeClass("active-text");
+        });
+      }
+    });
+  });
+
+  $(".card-events-radio").on("change", function(e) {
+    e.preventDefault();
+    const current = $(this);
+    const current2 = this;
+
+    $(".card-events-radio").each(function() {
+      let currentCard = this.id;
+      currentCard += "-text";
+
+      if (this.id !== current2.id) $(this).prop("checked", false);
+
+      if ($(this).prop("checked")) {
+        $(`.${currentCard}`).each(function() {
+          $(this).addClass("active-text");
+        });
+      } else {
+        $(`.${currentCard}`).each(function() {
+          $(this).removeClass("active-text");
+        });
+      }
+    });
+  });
 
   Triangles();
   programSlider();
